@@ -1,0 +1,921 @@
+<!-- Prospero, Build 2878 (Wed Mar 8 16:17:06 EST 2006), WEB021, 4/3/2006 12:30:56 AM -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- Last Update: 01/26/2006 11:45am -->
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Liberal Christian Parenting</title>
+<!-- Meta Information -->
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<!--Begin StyleSheet -->
+<LINK REL="STYLESHEET" HREF="http://acx.prospero.com/dir-app/look/stylesheet.aspx?zone=652028&ns=1&fpid=28" MEDIA="screen" TYPE="text/css">
+<SCRIPT LANGUAGE="JavaScript1.2" SRC="http://acx.prospero.com/dir-app/ds.aspx?webtag=iv-pplibchrist&fpid=28"></SCRIPT>
+
+<!--End StyleSheet -->
+<style type="text/css" media="screen, print">
+  @import "http://www.ivillage.com/prospero/css3/0,,,00.css";
+</style>
+
+<!-- Header Tracking Version 1.1 -->
+<script type="text/javascript" language="javascript" src="http://i.ivillage.com/includes/iv_header.js"></script>
+<script type="text/javascript" language="javascript" src="http://www.ivillage.com/prospero/js2/0,,iv-pplibchrist,00.js"></script>
+<script type="text/javascript" language="javascript" src="http://www.ivillage.com/shared/js/scriptlets/0,,cookies,00.js"></script>
+<script type="text/javascript" language="javascript" src="http://www.ivillage.com/shared/js/scriptlets/0,,search,00.js"></script>
+<script type="text/javascript" language="javascript" src="http://www.ivillage.com/shared/js/validation/0,,,00.js"></script>
+
+<script type="text/javascript" language="javascript">
+//<![CDATA[
+// === iv_WebtagRedirect ===
+function iv_WebtagRedirect(objSelect) {
+    if (objSelect.selectedIndex == 0) { return; }
+    document.location.href = "http://messageboards.ivillage.com/" + objSelect.options[objSelect.selectedIndex].value;
+}
+
+// === doFunnel4Submit ===
+function iv_doFunnel4Submit(theForm) {
+    var redirectURL = document.location;
+    theForm.action="https://subscriber.ivillage.com/funnels/4?vrt=" + iv_channelID + "&dd=" + escape(redirectURL);
+    if (!iv_isValidEmail(theForm.email.value)) {
+        alert("Enter valid email address");
+        return false;
+    }	
+
+    return true;
+}
+
+// === iv_openS2F ===
+// MOdified from IV standard version
+function iv_openS2F() {
+    iv_S2FUrl = typeof iv_S2FOverride == "undefined" ? window.document.location.href : iv_S2FOverride;
+
+    var w = 505;
+    var h = 610;
+    var cw = 252;
+    var ch = 203;
+
+    if (window.screen) {
+        cw = Math.floor((screen.availWidth - w) / 2);
+        ch = Math.floor((screen.availHeight - h) / 3);
+    }
+
+    var mywin = window.open ('http://www.ivillage.com/s2f/form/0,,' + iv_channelID + ',00.html?s2fURL=' + escape(iv_S2FUrl) + '&s2fTitle=' + escape(window.document.title), 's2f', 'width=505,height=610,top=' + ch + ',left=' + cw + ',scrollbars=yes');
+}
+
+
+// === drawWelcome ===
+// Modified from IV standard version
+var iv_login = iv_getCookie("iv_id");
+var iv_loggedin = iv_getCookie("iv_tkt");
+
+function iv_drawWelcome() {
+    if (typeof iv_sageHost == "undefined") {
+        iv_sageHost = "https://subscriber.ivillage.com";
+    }
+    if (typeof iv_verticalID == "undefined") {
+        iv_verticalID = "iv";
+    }
+    var destURL = escape(document.location);
+
+    var logout = '<a href="http://login.prospero.com/dir-login/quickLogout.asp?webtag=iv-pplibchrist">LOG OUT</a>';
+    if (!iv_loggedin || iv_loggedin == "NA") {
+        // not authed
+        var login = iv_sageHost + "/login/login?s=iv&dt=rurl&dd=" + destURL;
+        var join = iv_sageHost + "/funnels/8?prd=mb&vrt=" + iv_verticalID + "&dd=" + destURL;
+        document.write('<a href="' + login + '">LOG IN</a> or <a href="' + join + '">JOIN NOW</a>');
+        return;
+    } else {
+        if (!iv_login) {
+            var profile = '<a href="' + iv_sageHost + '/profile">YOUR PROFILE</a>';
+            document.write('Welcome! ' + profile + ' or '+ logout); return;
+        } else {
+            var profile = '<a href="' + iv_sageHost + '/profile">' + iv_login + '</a>';
+            document.write('Welcome, ' + profile + '! ' + logout);
+        }
+    }
+}
+//]]>
+</script>
+
+<!-- Top level PH5 (script/css extras). Need to override -->
+
+<!-- CTA: Needs to come after possibility of PH5 code -->
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+if (!window.suppressAdFlag || suppressAdFlag != 1) {
+    document.write("<scr"+"ipt language=\"javascript\" type=\"text/javascript\" src=\"" + iv_overtureSrcCTA + "\"></scr" + "ipt>");
+}
+//]]>
+</script>
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+if (!window.suppressAdFlag || suppressAdFlag != 1) {
+    // clone the original array
+    var zSrCTA = new Array();
+    if (typeof zSr != "undefined" && zSr.length > 6) { cs_cloneArray(zSr, zSrCTA); }
+}
+//]]>
+</script>
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+if (!window.suppressAdFlag || suppressAdFlag != 1) {
+    document.write("<scr"+"ipt language=\"javascript\" type=\"text/javascript\" src=\"" + iv_overtureSrcIL + "\"></scr" + "ipt>");
+}
+//]]>
+</script>
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+if (!window.suppressAdFlag || suppressAdFlag != 1) {
+    // create new data structure for easier parsing
+    iv_CTACounter = 0;
+    iv_masterCTAData = new Array();
+    var i = 6;
+    while (i < zSrCTA.length) { iv_masterCTAData[iv_CTACounter++] = new Array(zSrCTA[i++], zSrCTA[i++], zSrCTA[i++], zSrCTA[i++], zSrCTA[i++], zSrCTA[i++]); }
+
+    var i = 6;
+    if (typeof zSr != "undefined" && zSr.length > 6) {
+        while (i < zSr.length) { iv_masterCTAData[iv_CTACounter++] = new Array(zSr[i++], zSr[i++], zSr[i++], zSr[i++], zSr[i++], zSr[i++]); }
+    }
+}
+//]]>
+</script>
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class="alignLeftWrapper">
+    <div align="center">
+        <div class="alignLeftWrapper2">
+            <div id="welcomeLinks"><script language="javascript" type="text/javascript">iv_drawWelcome();</script></div>
+
+            <div id="nav">
+                <h1 class="hide">iVillage</h1><a href="http://www.ivillage.com" id="mainlogo" title="iVillage Home"><img src="http://a820.g.akamai.net/f/820/822/1d/i.ivillage.com/nav/mag_nav/ivillage_logo_72.jpg" alt="iVillage" /></a>
+                
+                <div id="topnav">
+                    <ul>
+                        <li id="navbeauty"><a href="http://beauty.ivillage.com/" ><span class="hide">Beauty &amp; Style</span></a></li>
+                        <li id="navhealth"><a href="http://health.ivillage.com/" ><span class="hide">Health &amp; Well-being</span></a></li>
+                        <li id="navdiet"><a href="http://diet.ivillage.com/" ><span class="hide">Diet &amp; Fitness</span></a></li>
+                        <li id="navlove"><a href="http://love.ivillage.com/" ><span class="hide">Love &amp; Sex</span></a></li>
+                        <li id="navpregnancy"><a href="http://parenting.ivillage.com/" ><span class="hide">Pregnancy &amp; Parenting</span></a></li>
+                        <li id="navhouse"><a href="http://home.ivillage.com/" ><span class="hide">House &amp; Home</span></a></li>
+                        <li id="naventertainment"><a href="http://entertainment.ivillage.com/"><span class="hide">Entertainment</span></a></li>
+                        <li id="navmagazines"><a href="http://magazines.ivillage.com/"><span class="hide">Magazines</span></a></li>
+                    </ul>
+                </div><!-- End: topnav -->
+
+                <div id="searchbox"><img src="http://a820.g.akamai.net/f/820/822/1d/i.ivillage.com/shared/iv/search.gif" alt="Search" id="searchimg" />
+                    <form action="" onsubmit="return iv_handleGoogleSearch(this, 'top');" method="get" id="frmSearchTop">
+                        <input type="hidden" name="sk" value="ivi" />
+                        <input type="hidden" name="restrict" value="ivillage" />
+                        <img src="http://a820.g.akamai.net/f/820/822/1d/i.ivillage.com/shared/iv/radio_on.gif" alt="radio" class="searchradio" onclick="iv_toggleSearch('ivillage', 'top');" id="top_ivradio" /> <label for="top_ivradio" onclick="iv_toggleSearch('ivillage', 'top');">iVillage</label>
+                        <img src="http://a820.g.akamai.net/f/820/822/1d/i.ivillage.com/shared/iv/radio_off.gif" alt="radio" class="searchradio" onclick="iv_toggleSearch('web', 'top');" id="top_webradio" /> <label for="top_webradio" onclick="iv_toggleSearch('web', 'top');">web</label>
+                        <input type="text" name="q" id="websearchtext" /> <input type="image" id="searchgo" src="http://a820.g.akamai.net/f/820/822/1d/i.ivillage.com/shared/iv/searchgo.gif" alt="GO!" />
+                    </form>
+                </div><!-- End: searchbox -->
+            </div><!-- End: nav -->
+
+            <!-- Ad Display -->
+            <div id="adBanner">
+                <div align="center"><script language="javascript" type="text/javascript">iv_drawAd1();</script></div>
+            </div><!-- End: adBanner -->
+            <div id="adBdr"><img src="http://a820.g.akamai.net/f/820/822/1d/i.ivillage.com/swoosh_images/dotted_line.gif" alt="" /></div>
+
+            <!-- BreadCrumbs -->
+            <span class="breadCrumb">
+                <!--Begin BreadCrumbs -->
+<span class=youarehere>you are here:</span> <a href=http://www.ivillage.com class=breadCrumb>iVillage</a> <img src=http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=4&iconName=blue_arrow> <a href=http://parenting.ivillage.com class=breadCrumb>Pregnancy &amp; Parenting</a> <img src=http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=4&iconName=blue_arrow> <a href=http://parenting.ivillage.com/messageboards/ class=breadcrumb>Pregnancy &amp; Parenting message boards</a> <img src=http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=4&iconName=blue_arrow> <a href="/iv-pplibchrist" target="_top" class=youarehere>Liberal Christian Parenting</a> &nbsp;/&nbsp;<a href="/iv-pplibchrist/?ctx=4096" target=_top class=youarehere>Liturgical Seasons</a> &nbsp;/&nbsp;<!--End BreadCrumbs -->
+            </span>
+            <br /><br />
+
+<!-- FP Specific Code -->
+<!-- PH3(FP27/28/29) -->
+<div class="mbTopNav">
+    <form method=get action="/n/find/results.asp" target="_self"><input type=hidden name=webtag value="iv-pplibchrist"><input type=hidden name=ctx value=search><input type=hidden name="o" value="newest"><input type=hidden name="af" value="366"><input type=hidden name="be" value="0"><input type=hidden name="f" value="this">
+    <div class="mbTopRightLinks">
+<a class="mc" id="advancedsearchlink" href="/n/find/find.asp?webtag=iv-pplibchrist" target="_top">advanced search</a> &nbsp;|&nbsp; <a href="#" class="mc" id="outlinelink" target="popupOutline" onClick="return LOW('0');">outline view</a> &nbsp;|&nbsp; <a href="javascript:void(0)" onclick="iv_openS2F();">invite a friend</a> &nbsp;|&nbsp; <a class="mc" href="#" id="discussionslink" onClick="return LLW();">folder view</a> &nbsp;|&nbsp; <a href="http://www.ivillage.com/boards/0,,hn8s,00.html ">about the boards</a>
+    </div><br /><!-- End: mbTopRightLinks -->
+
+    <span class="mbTitle">Liberal Christian Parenting</span> &nbsp; <div class="spacer"></div>
+    <div class="addThisBtn"><a class="mc" id=addfavelink href="/n/mydelphi/quickfavorite.asp?webtag=iv-pplibchrist&addToFavorite=1&backwebtag=%2Fn%2Fmb%2Fmessage%2Easp%3Fwebtag%3Div%2Dpplibchrist%26msg%3D1032%2E1%26ctx%3D0" target="_self"><img src="http://a820.g.akamai.net/f/820/822/1d/i.ivillage.com/messageboards/redesign/add_this_btn.gif" alt="add this" border="0" /></a></div>
+
+    <span class="mbNumberMess">
+        6058 messages posted to this board
+        </span>
+    <div class="spacer"></div><span class="mbFindMess">find messages about&nbsp; <input type="text" class="ts5" name="qu" />&nbsp;<input type="image" src="http://a820.g.akamai.net/f/820/822/1d/i.ivillage.com/messageboards/redesign/go_btn.gif" alt="go" style="vertical-align:bottom;" /></span></form>
+    <div class="spacer"></div>
+    <div class="welcomeBox">
+        <div class="welcomeRightLinks">
+        
+            <a class="mc" href="#" id="profilelink" onClick="return LBB(400184051);">your profile</a>&nbsp;&bull;&nbsp;
+            <a class="mc" href="#" id="faveslink" onClick="window.open('/dir-app/bbcard/bbFavoriteForum.asp?webtag=iv-pplibchrist&cType=2&uid=400184051&dMode=1&eBtn=0' ,'u400184051Window','scrollbars=yes,width=630,height=580,resizable=yes,toolbar=no,location=no,directories=no,status=no,menubar=no,copyhistory=no');return false;">favorite boards</a>&nbsp;&bull;&nbsp;
+            <a class="mc" href="#" id="accountlink" onClick="window.open('http://messageboards.ivillage.com/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=400184051&want=ea' ,'u400184051Window','scrollbars=yes,width=630,height=580,resizable=yes,toolbar=no,location=no,directories=no,status=no,menubar=no,copyhistory=no');return false;">board settings</a>&nbsp;&bull;&nbsp;
+            <a href=/n/mb/subscribe.asp?webtag=iv-pplibchrist>your digests</a>&nbsp;&bull;&nbsp;
+            <a class="mc" id="logoutlink" href="http://login.prospero.com/dir-login/quickLogout.asp?webtag=iv-pplibchrist" target="_top">log out</a>
+        
+        </div>
+        welcome, cl-pmclean!
+    </div>
+</div><!-- End: mbTopNav -->
+<!-- End FP Specific Code -->
+
+
+
+
+            <div class="clearBoth">&nbsp;</div>
+            <table cellpadding="0" cellspacing="0" border="0" width="765"><tr><td valign="top" width="100%">
+
+<!-- Folders/List -->
+<table border="0" cellpadding="0" cellspacing="0" width="765">
+
+
+
+  <tr><td>
+<script language=Javascript>
+<!--
+ top.document.title = document.title + ' #1032.1'; 
+//-->
+</script><!-- Adspace: iv-pplibchrist Sched: 0 Server: WEB021 -->
+	<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+   <!--
+HM_Array1 = [[120,"","","5c1a34","000000","ffffff","D6CFB5","black","ffffff",0,0,0,1,0,0,"null","null",0,0],["Ignore this Author","/n/mb/ignore.asp?webtag=iv-pplibchrist&Rptid=1032&u=400184051",1,0,0,1],["Add to Friends.  Your friends can view all the pages of your profile.","/n/mb/ignore.asp?webtag=iv-pplibchrist&Rptid=1032&f=1&u=400184051",1,0,0,1],["Report Violation","/n/mb/reportTOSViolation.asp?webtag=iv-pplibchrist&Rptid=1032",1,0,0,1]]
+HM_Array2 = [[120,"","","5c1a34","000000","ffffff","D6CFB5","black","ffffff",0,0,0,1,0,0,"null","null",0,0],["Stop Ignoring this Author","/n/mb/neutral.asp?webtag=iv-pplibchrist&Rptid=1032",1,0,0,1],["Report Violation","/n/mb/reportTOSViolation.asp?webtag=iv-pplibchrist&Rptid=1032",1,0,0,1]]
+     //-->
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript1.2" SRC="/n/mb/HM_Loader.js"></SCRIPT><!-- FP Universal: Shared -->
+<div class="topLinksRight">
+    <a href="/n/mb/message.asp?webtag=iv-pplibchrist&msg=1032.&next=yes" class="ls1">next discussion &gt;</a>
+</div><!-- End: topLinksRight -->
+
+<!-- FP Universal: Shared -->
+<div class="spacer30"></div>
+
+<div class="dBoxWrapper">
+    <div class="dBox">
+        <div class="dBoxLeftCol">
+            <div class="dBoxLeftColText">
+                <div align="center">
+                    <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369381505" onClick="return LBB(369381505);">trudyj</a> <nobr></nobr>
+                    <div class="memberPic"><img src="http://acx.prospero.com/dir-app/bbcard/bbMemberPicture.aspx?rid=185&uid=369381505" border=0 height=75 width=50></div>
+                </div><!-- End: center -->
+
+                <div class="lastVisit">
+                    
+                    last visit to<br />this board<br />
+                    3/21/2004<br /><br /><br />
+                    
+
+                    
+
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369381505&u=400184051&msg=1032.1&f=1" class="ls1">add to friends</a><br />
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369381505&u=400184051&msg=1032.1" class="ls1">ignore posts</a>
+                </div><!-- End: lastVisit -->
+            </div><!-- End: dBoxLeftColText -->
+        </div><!-- End: dBoxLeftCol -->
+
+        <div class="dBoxMain">
+            <div class="mainBodyTextTop">
+                <div class="oneLine"><div class="boldText">discussion title:</div><div class="textLeft1"><span class="fs10">&nbsp; Help Wanted! Re: Advent</span></div></div>
+                <div class="oneLine"><div class="boldText">emoticon:</div><div class="textLeft"><span class="fs11">&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=2&iconName=20" border=0 height=15 width=15 align=texttop alt="Emoticon"></span></div></div>
+                <div class="oneLine"><div class="boldText">message #:</div><div class="textLeft"><span class="fs11">&nbsp; 1032.1 </span></div></div>
+
+
+                <div class="oneLine"><div class="boldText">from:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369381505" onClick="return LBB(369381505);">trudyj</a> <nobr></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">date:</div><div class="textLeft"><span class="fs11">&nbsp; 11/27/2003 12:44 pm</span></div></div>
+                <div class="oneLine"><div class="boldText">replies:</div><div class="textLeft"><span class="fs11">&nbsp; 5</span></div></div>
+            </div><!-- End: mainBodyTextTop -->
+
+            <br clear="all" />
+
+            <div class="mainBodyText">
+                <span class="fs5">OK, so thanks to the ministry of you lovely ladies over the past year or so, your liturgically challenged friend here has learned SO much, and consequently I went out and purchased an Advent wreath and candles for my family.  I am really looking forward to doing something to make the weeks leading up to Christmas a time of meaningful spiritual reflection for our family.  The kids get excited about Christmas sooooo early...Emma goes ballistic when she sees Christmas decorations up anywhere (which is everywhere, as far as stores and stuff are concerned) and they want us to start decorating NOW, which is wayyyy too early for me.  So, I'm hoping doing some special things during Advent, focusing on our family dinnertime and family worship afterwards, will help refocus those energies a little.
+
+<P>Therefore, any input you can give, ideas or experiences you can share, resources or websites you can direct me to, that would help make our first (and quite solo, as our church doesn't celebrate it) Advent season meaningful for a family with a 3 y.o. and 5 y.o., would be most welcome.
+
+<P>Thanks,
+<BR>tj</span>
+                <table><tr></tr></table>
+            </div>
+
+            <div align="center">
+                
+            </div><!-- End: center -->
+        </div><!-- End: dBoxMain -->
+
+        <div class="dBoxMainCrumb1">
+            <div class="dBoxMainRateLinks">
+                <div class="dBoxMainRateLinksStars">&nbsp;</div>
+            </div><!-- End: dBoxMainRateLinks -->
+
+            <div class="dBoxMainCrumbLinks1">
+                
+                <a href="javascript:void(0)" onclick="iv_S2FOverride = 'http://messageboards.ivillage.com/n/mb/message.asp?webtag=iv-pplibchrist&msg=1032.1'; iv_openS2F();" class="ls3">send to a friend</a> > &nbsp;
+                <a href="/n/mb/display.asp?webtag=iv-pplibchrist&msg=1032.1&print=y" class="ls3">print</a> > &nbsp;
+                <a href="Javascript:bookmark_page('1032.1');" class="ls3">bookmark</a> > &nbsp;
+                <a href="/n/mb/reportTOSViolation.asp?webtag=iv-pplibchrist&rptid=1032&msg=1032.1&rptsn=1&lowtsn=1&uid=369381505" class="ls3">report a violation</a> >
+            </div><!-- End: dBoxMainCrumbLinks1 -->
+        </div><!-- End: dBoxMainCrumb 1 -->
+
+        
+    </div><!-- End: dBox -->
+</div><!-- End: dBoxWrapper --><!-- FP Universal: Shared -->
+<div class="spacer30"></div>
+
+<div class="dBoxWrapper">
+    <div class="dBox">
+        <div class="dBoxLeftCol">
+            <div class="dBoxLeftColText">
+                <div align="center">
+                    <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369383651" onClick="return LBB(369383651);">pmclean</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=cl" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr>
+                    <div class="memberPic"><img src="http://acx.prospero.com/dir-app/bbcard/bbMemberPicture.aspx?rid=185&uid=369383651" border=0 height=75 width=50></div>
+                </div><!-- End: center -->
+
+                <div class="lastVisit">
+                    
+                    last visit to<br />this board<br />
+                    8/27/2004<br /><br /><br />
+                    
+
+                    
+                    messages posted<br />this board<br />
+                    206<br /><br />
+                    
+
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369383651&u=400184051&msg=1032.2&f=1" class="ls1">add to friends</a><br />
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369383651&u=400184051&msg=1032.2" class="ls1">ignore posts</a>
+                </div><!-- End: lastVisit -->
+            </div><!-- End: dBoxLeftColText -->
+        </div><!-- End: dBoxLeftCol -->
+
+        <div class="dBoxMain">
+            <div class="mainBodyTextTop">
+                <div class="oneLine"><div class="boldText">re:</div><div class="textLeft1"><span class="fs10">&nbsp; Help Wanted! Re: Advent</span></div></div>
+                <div class="oneLine"><div class="boldText">emoticon:</div><div class="textLeft"><span class="fs11">&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=2&iconName=0" border=0 height=15 width=15 align=texttop alt="Emoticon"></span></div></div>
+                <div class="oneLine"><div class="boldText">message #:</div><div class="textLeft"><span class="fs11">&nbsp; 1032.2 in response to <a href="message.asp?webtag=iv-pplibchrist&msg=1032.1" target=_self>1032.1</a></span></div></div>
+
+
+                <div class="oneLine"><div class="boldText">from:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369383651" onClick="return LBB(369383651);">pmclean</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=cl" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">to:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369381505" onClick="return LBB(369381505);">trudyj</a> <nobr></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">date:</div><div class="textLeft"><span class="fs11">&nbsp; 11/27/2003 3:13 pm</span></div></div>
+                <div class="oneLine"><div class="boldText">replies:</div><div class="textLeft"><span class="fs11">&nbsp; 5</span></div></div>
+            </div><!-- End: mainBodyTextTop -->
+
+            <br clear="all" />
+
+            <div class="mainBodyText">
+                <span class="fs5">Oooooh! Our favourite kind of Advent question!!
+
+<P>First: this is &quot;Stir-up&quot; week. Advent is the start of the Christian year. Trinity season is the end. The circling of end into beginning is the cirle of eternity, the Alpha and Omega, the fullness of God made manifest in time: kairos in chronos and chronos within kairos. The bridge between the end of the past year and the start of the new year is the Christmas pudding, which we stir-up, taking all our good memories and learnings of the past year and using them to inform prayers and good wishes for the new year, to be stirred into the pudding.
+
+<P>Gather the family and the ingredients. Make the batter for the pudding, and pour the fruit on top. Pray aloud: &quot;Stir up, we beseech thee O God, the hearts of thy faithful servants; that they, plenteously bringing forth the fruits of good work, may of thee be plenteously rewarded. Amen.&quot; Each person present in turn then stirs their prayers for the coming year into the pudding, naming their petitions either aloud or silently according to their choice and your custom.
+
+
+<P>On Sunday, set up the creche (assuming you have one) but no animals or figures: just the empty manger. Put a handful of straw in a basket or dish nearby. Each time someone does an act of kindness over the next month, they should take one small straw from the dish and put it in the manger to make a soft bed for the Baby; as a symbol of how our care to one another are a comfort to our Saviour.
+
+
+<P>Put the Mary, Joseph and donkey figures in the farthest room of the house. Map out a route for them that will take them until Christmas eve to reach the creche. Each day at a routine time, move them a little further along their route.
+
+
+<P>Put out the bare Advent wreath: just candles and the frame. Over the first week of Advent, add rocks and water, gradually retelling the story of Creation. Over the second week, add greenery and other decorations, retelling the story of the prophets. Over the third week, start bringing out the angels and other figures (not the Kings or the Baby) and placing them gradually in the creche. During the fourth week, there's usually so much else going on -- baking, pageants, Christmas concerts, that you don't need to do anything extra.
+
+
+<P>Do you want the traditional collects? We pray them after lighting the Advent candle each night for supper, instead of our ordinary table-grace.</span>
+                <table><tr></tr></table>
+            </div>
+
+            <div align="center">
+                
+            </div><!-- End: center -->
+        </div><!-- End: dBoxMain -->
+
+        <div class="dBoxMainCrumb1">
+            <div class="dBoxMainRateLinks">
+                <div class="dBoxMainRateLinksStars">&nbsp;</div>
+            </div><!-- End: dBoxMainRateLinks -->
+
+            <div class="dBoxMainCrumbLinks1">
+                
+                <a href="javascript:void(0)" onclick="iv_S2FOverride = 'http://messageboards.ivillage.com/n/mb/message.asp?webtag=iv-pplibchrist&msg=1032.2'; iv_openS2F();" class="ls3">send to a friend</a> > &nbsp;
+                <a href="/n/mb/display.asp?webtag=iv-pplibchrist&msg=1032.2&print=y" class="ls3">print</a> > &nbsp;
+                <a href="Javascript:bookmark_page('1032.2');" class="ls3">bookmark</a> > &nbsp;
+                <a href="/n/mb/reportTOSViolation.asp?webtag=iv-pplibchrist&rptid=1032&msg=1032.2&rptsn=2&lowtsn=2&uid=369383651" class="ls3">report a violation</a> >
+            </div><!-- End: dBoxMainCrumbLinks1 -->
+        </div><!-- End: dBoxMainCrumb 1 -->
+
+        
+    </div><!-- End: dBox -->
+</div><!-- End: dBoxWrapper --><!-- FP Universal: Shared -->
+<div class="spacer30"></div>
+
+<div class="dBoxWrapper">
+    <div class="dBox">
+        <div class="dBoxLeftCol">
+            <div class="dBoxLeftColText">
+                <div align="center">
+                    <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369381605" onClick="return LBB(369381605);">marksma</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=196" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr>
+                    <div class="memberPic"><img src="http://acx.prospero.com/dir-app/bbcard/bbMemberPicture.aspx?rid=185&uid=369381605" border=0 height=75 width=50></div>
+                </div><!-- End: center -->
+
+                <div class="lastVisit">
+                    
+                    last visit to<br />this board<br />
+                    2/24/2004<br /><br /><br />
+                    
+
+                    
+                    messages posted<br />this board<br />
+                    83<br /><br />
+                    
+
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369381605&u=400184051&msg=1032.3&f=1" class="ls1">add to friends</a><br />
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369381605&u=400184051&msg=1032.3" class="ls1">ignore posts</a>
+                </div><!-- End: lastVisit -->
+            </div><!-- End: dBoxLeftColText -->
+        </div><!-- End: dBoxLeftCol -->
+
+        <div class="dBoxMain">
+            <div class="mainBodyTextTop">
+                <div class="oneLine"><div class="boldText">re:</div><div class="textLeft1"><span class="fs10">&nbsp; Help Wanted! Re: Advent</span></div></div>
+                <div class="oneLine"><div class="boldText">emoticon:</div><div class="textLeft"><span class="fs11">&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=2&iconName=0" border=0 height=15 width=15 align=texttop alt="Emoticon"></span></div></div>
+                <div class="oneLine"><div class="boldText">message #:</div><div class="textLeft"><span class="fs11">&nbsp; 1032.3 in response to <a href="message.asp?webtag=iv-pplibchrist&msg=1032.2" target=_self>1032.2</a></span></div></div>
+
+
+                <div class="oneLine"><div class="boldText">from:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369381605" onClick="return LBB(369381605);">marksma</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=196" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">to:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369383651" onClick="return LBB(369383651);">pmclean</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=cl" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">date:</div><div class="textLeft"><span class="fs11">&nbsp; 11/28/2003 1:48 pm</span></div></div>
+                <div class="oneLine"><div class="boldText">replies:</div><div class="textLeft"><span class="fs11">&nbsp; 5</span></div></div>
+            </div><!-- End: mainBodyTextTop -->
+
+            <br clear="all" />
+
+            <div class="mainBodyText">
+                <span class="fs5">Yes, yes, we want them.  I am eves dropping here and taking notes.  :-)
+
+<P>I love the idea of mapping our Mary and Josephs route to the creche.  My kids will think that's so fun and what a great way to teach them the story!</span>
+                <table><tr></tr></table>
+            </div>
+
+            <div align="center">
+                
+            </div><!-- End: center -->
+        </div><!-- End: dBoxMain -->
+
+        <div class="dBoxMainCrumb1">
+            <div class="dBoxMainRateLinks">
+                <div class="dBoxMainRateLinksStars">&nbsp;</div>
+            </div><!-- End: dBoxMainRateLinks -->
+
+            <div class="dBoxMainCrumbLinks1">
+                
+                <a href="javascript:void(0)" onclick="iv_S2FOverride = 'http://messageboards.ivillage.com/n/mb/message.asp?webtag=iv-pplibchrist&msg=1032.3'; iv_openS2F();" class="ls3">send to a friend</a> > &nbsp;
+                <a href="/n/mb/display.asp?webtag=iv-pplibchrist&msg=1032.3&print=y" class="ls3">print</a> > &nbsp;
+                <a href="Javascript:bookmark_page('1032.3');" class="ls3">bookmark</a> > &nbsp;
+                <a href="/n/mb/reportTOSViolation.asp?webtag=iv-pplibchrist&rptid=1032&msg=1032.3&rptsn=3&lowtsn=3&uid=369381605" class="ls3">report a violation</a> >
+            </div><!-- End: dBoxMainCrumbLinks1 -->
+        </div><!-- End: dBoxMainCrumb 1 -->
+
+        
+    </div><!-- End: dBox -->
+</div><!-- End: dBoxWrapper --><!-- FP Universal: Shared -->
+<div class="spacer30"></div>
+
+<div class="dBoxWrapper">
+    <div class="dBox">
+        <div class="dBoxLeftCol">
+            <div class="dBoxLeftColText">
+                <div align="center">
+                    <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369381605" onClick="return LBB(369381605);">marksma</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=196" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr>
+                    <div class="memberPic"><img src="http://acx.prospero.com/dir-app/bbcard/bbMemberPicture.aspx?rid=185&uid=369381605" border=0 height=75 width=50></div>
+                </div><!-- End: center -->
+
+                <div class="lastVisit">
+                    
+                    last visit to<br />this board<br />
+                    2/24/2004<br /><br /><br />
+                    
+
+                    
+                    messages posted<br />this board<br />
+                    83<br /><br />
+                    
+
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369381605&u=400184051&msg=1032.4&f=1" class="ls1">add to friends</a><br />
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369381605&u=400184051&msg=1032.4" class="ls1">ignore posts</a>
+                </div><!-- End: lastVisit -->
+            </div><!-- End: dBoxLeftColText -->
+        </div><!-- End: dBoxLeftCol -->
+
+        <div class="dBoxMain">
+            <div class="mainBodyTextTop">
+                <div class="oneLine"><div class="boldText">re:</div><div class="textLeft1"><span class="fs10">&nbsp; Help Wanted! Re: Advent</span></div></div>
+                <div class="oneLine"><div class="boldText">emoticon:</div><div class="textLeft"><span class="fs11">&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=2&iconName=20" border=0 height=15 width=15 align=texttop alt="Emoticon"></span></div></div>
+                <div class="oneLine"><div class="boldText">message #:</div><div class="textLeft"><span class="fs11">&nbsp; 1032.4 in response to <a href="message.asp?webtag=iv-pplibchrist&msg=1032.1" target=_self>1032.1</a></span></div></div>
+
+
+                <div class="oneLine"><div class="boldText">from:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369381605" onClick="return LBB(369381605);">marksma</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=196" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">to:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369381505" onClick="return LBB(369381505);">trudyj</a> <nobr></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">date:</div><div class="textLeft"><span class="fs11">&nbsp; 11/29/2003 1:29 pm</span></div></div>
+                <div class="oneLine"><div class="boldText">replies:</div><div class="textLeft"><span class="fs11">&nbsp; 5</span></div></div>
+            </div><!-- End: mainBodyTextTop -->
+
+            <br clear="all" />
+
+            <div class="mainBodyText">
+                <span class="fs5">I found this while surfing for Advent prayers.  It is similar to what Pamela does but has some good ideas...  Prayers  <A HREF="http://www.stcharleschurch.org/ministry/advent-weekly.htm" TARGET="_blank">http://www.stcharleschurch.org/ministry/advent-weekly.htm</A>
+
+<P>and 
+
+<P><A HREF="http://www.stcharleschurch.org/faith/prayer/advent-family.htm" TARGET="_blank">http://www.stcharleschurch.org/faith/prayer/advent-family.htm</A>
+
+<P>Celebrate Advent with your Family
+<BR>The parish's Mom's Ministry suggests these traditions to start with your family and friends this Advent
+
+<P>Bowl of Good Deeds
+<BR>At the start of Advent, fill up a jar with slips of paper that have kind
+<BR>actions written on them. Every morning, each family member picks a
+<BR>piece of paper from the jar and performs the action during the day.
+
+<P>    or
+
+<P>At the start of Advent, put an empty jar or bowl on your kitchen table.
+<BR>Each evening, each family member tells about one kind thing they did
+<BR>that day, writes it down. By the end of Advent the jar will be full of
+<BR>ways we can love one another.
+
+<P>Make an Advent Chain.
+<BR>Each part of Advent should be represented by a different color: The
+<BR>Sundays are white, then the first week has 6 purple (or blue) links, the
+<BR>second week has 6 purple (or blue) links, the third week has 6 pink
+<BR>strips, the last week has ____ purple links (depending on when Christmas
+<BR>falls) and Christmas is represented by a white or gold link.
+
+<P>Assemble the chains on the first day of Advent. Children take them apart day 
+<BR>by day, or keep them as separate strips and put them together day by day.
+
+<P>You can combine this activity with the Bowl of Good Deeds and ask each
+<BR>family member to write their kind actions on the link each day.
+
+<P>Set Aside Extra Time to be Quiet.
+<BR>Have your own moment of meditation every day at the same time. You can
+<BR>have a very short prayer service (see parish Advent reflections) or scripture
+<BR>reading, or just ask everyone to sit together in silence.
+
+<P>Advent Wreath
+<BR>Make an Advent Wreath from a tray and four votive candles. Have your
+<BR>children find items from outside to create a wreath. Use leaves,
+<BR>pinecones, sticks, greens, acorns, berries and other natural decorations
+<BR>to make it pretty. (Keep an eye on them that they don’t get too close to
+<BR>the flame.)
+
+<P>Celebrate the Saints’ Days in December
+<BR>December 6 is St. Nicholas Day; December 12 is Saint Lucy.
+<BR>Teach your children about these saints (and others) and have a special
+<BR>ceremony together.
+
+<P>Participate in Parish and Community Outreach Efforts
+<BR>Donate gifts through the Giving Tree, the Parish meals program. Make a
+<BR>way for your children to be involved by decorating the box, making a
+<BR>card, helping to bake bread, choosing the food and gifts to give. If
+<BR>possible, give a care package of winter staples and other items to go
+<BR>along with the Christmas dinner.
+
+<P>Visit a lonely neighbor on the third Sunday of Advent.
+
+<P>Celebrate the Creche
+<BR>When decorating for Christmas, make the assembly of the creche an
+<BR>important celebration together. Use candles, music, pine branches,
+<BR>straw. Talk about the individuals and animals, and the sense of
+<BR>anticipation that they felt about Jesus’ coming.
+
+<P>Prepare slowly
+<BR>Throughout Advent, bring out one Christmas item per day - a wreath, a
+<BR>candleholder. By the end of Advent, your home will be prepared for
+<BR>Christmas.
+
+<P>Use Resources
+<BR>There are great Advent Calendars, wreaths, prayer services, out there.
+<BR>It is very intimidating to start a new tradition, so rely on the books
+<BR>and family prayers that have already been formulated, including those 
+<BR>on the parish Advent site.
+<BR> 
+<BR></span>
+                <table><tr></tr></table>
+            </div>
+
+            <div align="center">
+                
+            </div><!-- End: center -->
+        </div><!-- End: dBoxMain -->
+
+        <div class="dBoxMainCrumb1">
+            <div class="dBoxMainRateLinks">
+                <div class="dBoxMainRateLinksStars">&nbsp;</div>
+            </div><!-- End: dBoxMainRateLinks -->
+
+            <div class="dBoxMainCrumbLinks1">
+                
+                <a href="javascript:void(0)" onclick="iv_S2FOverride = 'http://messageboards.ivillage.com/n/mb/message.asp?webtag=iv-pplibchrist&msg=1032.4'; iv_openS2F();" class="ls3">send to a friend</a> > &nbsp;
+                <a href="/n/mb/display.asp?webtag=iv-pplibchrist&msg=1032.4&print=y" class="ls3">print</a> > &nbsp;
+                <a href="Javascript:bookmark_page('1032.4');" class="ls3">bookmark</a> > &nbsp;
+                <a href="/n/mb/reportTOSViolation.asp?webtag=iv-pplibchrist&rptid=1032&msg=1032.4&rptsn=4&lowtsn=4&uid=369381605" class="ls3">report a violation</a> >
+            </div><!-- End: dBoxMainCrumbLinks1 -->
+        </div><!-- End: dBoxMainCrumb 1 -->
+
+        
+    </div><!-- End: dBox -->
+</div><!-- End: dBoxWrapper --><!-- FP Universal: Shared -->
+<div class="spacer30"></div>
+
+<div class="dBoxWrapper">
+    <div class="dBox">
+        <div class="dBoxLeftCol">
+            <div class="dBoxLeftColText">
+                <div align="center">
+                    <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369381605" onClick="return LBB(369381605);">marksma</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=196" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr>
+                    <div class="memberPic"><img src="http://acx.prospero.com/dir-app/bbcard/bbMemberPicture.aspx?rid=185&uid=369381605" border=0 height=75 width=50></div>
+                </div><!-- End: center -->
+
+                <div class="lastVisit">
+                    
+                    last visit to<br />this board<br />
+                    2/24/2004<br /><br /><br />
+                    
+
+                    
+                    messages posted<br />this board<br />
+                    83<br /><br />
+                    
+
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369381605&u=400184051&msg=1032.5&f=1" class="ls1">add to friends</a><br />
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369381605&u=400184051&msg=1032.5" class="ls1">ignore posts</a>
+                </div><!-- End: lastVisit -->
+            </div><!-- End: dBoxLeftColText -->
+        </div><!-- End: dBoxLeftCol -->
+
+        <div class="dBoxMain">
+            <div class="mainBodyTextTop">
+                <div class="oneLine"><div class="boldText">re:</div><div class="textLeft1"><span class="fs10">&nbsp; Help Wanted! Re: Advent</span></div></div>
+                <div class="oneLine"><div class="boldText">emoticon:</div><div class="textLeft"><span class="fs11">&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=2&iconName=20" border=0 height=15 width=15 align=texttop alt="Emoticon"></span></div></div>
+                <div class="oneLine"><div class="boldText">message #:</div><div class="textLeft"><span class="fs11">&nbsp; 1032.5 in response to <a href="message.asp?webtag=iv-pplibchrist&msg=1032.4" target=_self>1032.4</a></span></div></div>
+
+
+                <div class="oneLine"><div class="boldText">from:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369381605" onClick="return LBB(369381605);">marksma</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=196" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">to:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369381605" onClick="return LBB(369381605);">marksma</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=196" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">date:</div><div class="textLeft"><span class="fs11">&nbsp; 11/29/2003 1:35 pm</span></div></div>
+                <div class="oneLine"><div class="boldText">replies:</div><div class="textLeft"><span class="fs11">&nbsp; 5</span></div></div>
+            </div><!-- End: mainBodyTextTop -->
+
+            <br clear="all" />
+
+            <div class="mainBodyText">
+                <span class="fs5">And I liked this too....  <A HREF="http://www.stcharleschurch.org/faith/advent-figures.htm" TARGET="_blank">http://www.stcharleschurch.org/faith/advent-figures.htm</A>
+
+<P>Advent Thoughts
+<BR>Seeing the Wisdom in the Symbols of the Christmas Story
+<BR>We remember that God broke into time and history in human form that first Christmas. 
+<BR>We long for God’s on-going breaking into our own lives in the presence of Christ. 
+<BR>We allow God to be born again in our hearts, in our lives, in our world. 
+<BR>The figures and symbols of the Christmas story still hold wisdom for us:
+
+<P>Mary:
+<BR>Openess ( receiving the message of a spiritual reality) 
+<BR>Honesty (she speaks her doubts and fears to God) 
+<BR>Willingness ( she says her YES, I am available to serve the Lord). 
+<BR>Courage ( she faces criticism being an unwed mother in her culture, hardship in her pregnancy and birth. 
+<BR>In what ways or situations do you long to be like Mary or need some of these attributes?
+
+<P>Joseph:
+<BR>Listening to his deepest self (an angel in a dream leads him to act in the face of culture by not breaking his betrothal to Mary) 
+<BR>Trusting God’s guidance (He takes Mary and Jesus on the road to Egypt) 
+<BR>In what ways do you long to be like Joseph? Where do you need to face truth, act boldly? For your own behalf? Or for others?
+
+<P>The Donkey:
+<BR>Our animal self – stubborn, strong, simple, physical 
+<BR>And serves others. 
+<BR>Are there areas in your physical life that need tending to? That need nurture?
+
+<P>Or are you serving with no self-nurture?
+
+<P>The Innkeeper:
+<BR>There’s no room in the inn 
+<BR>How busy is your life? Where do you long to have more space for being, for birth, for newness to happen.? Ask God where to make more space? 
+
+<P>The cave (stable):
+<BR>In this “make-do” place something of significance happens. 
+<BR>In this messy situation something new begins. 
+<BR>In what messy situations in your life will you look for Christ to break into? Invite this.
+
+<P>Imagine also a place in the world that needs this divine intervention –see the Light of Christ breaking through.
+
+<P>The Shepherds:
+<BR>Rejects of society are the first to hear the “Glory to the Newborn King” 
+<BR>Wanderers who lived on the edge of society hear the good news? 
+<BR>What does this say personally about the parts of yourself that you reject? And what about your attitudes to those who you consider “outsiders”? 
+
+<P>The Wise Men (or Kings):
+<BR>Seekers looking for true fulfilment. 
+<BR>Givers of precious things 
+<BR>What does it mean for you to follow your star? What vision guides you? 
+
+<P>What giving comes from you?
+
+<P></span>
+                <table><tr></tr></table>
+            </div>
+
+            <div align="center">
+                
+            </div><!-- End: center -->
+        </div><!-- End: dBoxMain -->
+
+        <div class="dBoxMainCrumb1">
+            <div class="dBoxMainRateLinks">
+                <div class="dBoxMainRateLinksStars">&nbsp;</div>
+            </div><!-- End: dBoxMainRateLinks -->
+
+            <div class="dBoxMainCrumbLinks1">
+                
+                <a href="javascript:void(0)" onclick="iv_S2FOverride = 'http://messageboards.ivillage.com/n/mb/message.asp?webtag=iv-pplibchrist&msg=1032.5'; iv_openS2F();" class="ls3">send to a friend</a> > &nbsp;
+                <a href="/n/mb/display.asp?webtag=iv-pplibchrist&msg=1032.5&print=y" class="ls3">print</a> > &nbsp;
+                <a href="Javascript:bookmark_page('1032.5');" class="ls3">bookmark</a> > &nbsp;
+                <a href="/n/mb/reportTOSViolation.asp?webtag=iv-pplibchrist&rptid=1032&msg=1032.5&rptsn=5&lowtsn=5&uid=369381605" class="ls3">report a violation</a> >
+            </div><!-- End: dBoxMainCrumbLinks1 -->
+        </div><!-- End: dBoxMainCrumb 1 -->
+
+        
+    </div><!-- End: dBox -->
+</div><!-- End: dBoxWrapper -->
+
+<div class="dBoxWrapper2">
+    <div class="messDisLinks">MESSAGES IN THIS DISCUSSION &nbsp; </div>
+</div><!-- End; dBoxWrapper2 -->
+
+<div class="rightFloatLink"><a href="/n/mb/message.asp?webtag=iv-pplibchrist&msg=1032.&prev=yes">&lt; Jump to Previous Discussion</a>&nbsp; &nbsp; <a href="/n/mb/message.asp?webtag=iv-pplibchrist&msg=1032.&next=yes">Jump to Next Discussion &gt;</a></div>
+
+<div class="brownBox">
+    <div class="brownBoxLeft">
+        <div class="brownBoxLeftBox">
+            <div align="center">
+                Change the number of messages<br /> displayed on this page in<br />
+                <a class="mc" href="#" id="accountlink" onClick="window.open('http://messageboards.ivillage.com/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=400184051&want=ea' ,'u400184051Window','scrollbars=yes,width=630,height=580,resizable=yes,toolbar=no,location=no,directories=no,status=no,menubar=no,copyhistory=no');return false;"><img src="http://a820.g.akamai.net/f/820/822/1d/i.ivillage.com/messageboards/redesign/settings_btn.gif" alt="" border="0" /></a>
+            </div>
+        </div><!-- End: brownBoxLeftBox -->   
+    </div><!-- End: brownBoxLeft -->
+
+    <div class="brownBoxMid">
+        <div class="brownBoxMidBox">
+            Indicate your interest in the discussion
+            <form method=get name=rateform id=msgLNintForm action="/n/mb/message.asp" target="_self"><input type=hidden name=webtag value="iv-pplibchrist"><input type=hidden name=msg value="1032.1"><nobr><span class=winmed><input class=msgnavigation type=radio name=interest id=msgLNintH value=2><img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=4&iconName=tu" width=10 height=12><label for="msgLNintH">High</label>&nbsp;<input class=msgnavigation type=radio name=interest id=msgLNintN value=1 checked><label for="msgLNintN">Neutral</label>&nbsp;<input class=msgnavigation type=radio name=interest id=msgLNintI value=0><img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=4&iconName=td" width=10 height=12><label for="msgLNintI">Ignore</label>&nbsp;<input type=submit name="apply" value="Apply" onClick="this.className='b2'" onBlur="this.className='button'" class=button id=msgLNintBtn /></span></nobr></form>
+        </div><!-- End: brownBoxMidBox --> 
+    </div><!-- End: brownBoxMid-->
+
+    <div class="brownBoxRight">
+        <div class="brownBoxRightBox">
+            <div align="center">
+                Get updates to this discussion<br />delivered by email<br />
+                <a href="/n/mb/subscribe.asp?webtag=iv-pplibchrist&msg=1032"><img src="http://a820.g.akamai.net/f/820/822/1d/i.ivillage.com/messageboards/redesign/signup_btn.gif" alt="" border="0" /></a>
+            </div>
+        </div><!-- End: brownBoxRightBox -->   
+    </div><!-- End: brownBoxRight -->
+</div><!-- End: brownBox -->
+
+<!-- Top level PH4 (How Do I). FP Spec. FP28 -->
+<div class="spacer10"></div>
+
+<div class="bottomAdsWrapper">
+    <div class="howDo">
+        <div class="howDoPad">
+            <span class="howDoTitle">How Do I ...</span>
+            <div class="leftList">
+                <ul>
+                    <li><a href="http://www.ivillage.com/messageboardsplus?o=dcm,mbp,iv,el,hdiboxeyp,0,0">Block banner ads and pop-under advertising?</a></li>
+                </ul>
+            </div><!-- End: leftList -->
+        </div><!-- End: howDoPad -->
+    </div><!-- End: howdo -->
+</div>
+  </td></tr>
+</table>
+
+            </td></tr></table>
+
+            <div class="borderLine">&nbsp;</div>
+            <div class="youarehere"><script language="javascript" type="text/javascript">iv_drawBack();</script> <!--<a href="#" class="rightFloatLink">Mark all as read</a></div>-->
+            <div class="borderLine">&nbsp;</div>
+
+            <!-- Ads -->
+            <div class="clearBoth"></div>
+
+            <div class="messageAdLeft">
+                <script language="javascript" type="text/javascript">iv_drawBoardCTA();</script>
+            </div><!-- End: messageAdLeft -->
+
+
+            <div class="advert300RightRead">
+                <script language="javascript" type="text/javascript">iv_drawAd14();</script>
+            </div><!-- End: advert300RightRead -->
+
+            <div class="spacer">&nbsp;</div>
+
+
+
+<br clear="all" />
+<br clear="all" />
+
+<div align="center">
+<script language="javascript" type="text/javascript">iv_drawAd11();</script>
+</div><!-- End: center -->
+
+
+            <!-- Footer -->
+            <div id="footer">
+                <ul id="footivil">
+                    <li class="label"><span>On iVillage:</span></li>
+                    <li class="first"><a href="http://www.ivillage.com/">Home</a></li>
+                    <li><a href="http://www.ivillage.com/archive/a2z/">Topics A-Z</a></li>
+                    <li><a href="http://www.ivillage.com/messageboards/">Message Boards</a></li>
+                    <li><a href="http://www.ivillage.com/archive/0,,17-3,00.html">Quizzes</a></li>
+                    <li><a href="https://subscriber.ivillage.com/funnels/5">Newsletters</a></li>
+                    <li><a href="http://www.ivillage.com/promotions/">Free Stuff</a></li>
+                    <li><a href="http://www.astrology.com/">Astrology</a></li>
+					<li><a href="http://www.ivillage.com/videos/0,,s0pz,00.html">Multimedia</a></li>
+		            <li><a href="http://www.ivillage.com/blogs/topics/0,,8fnp4s3g,00.html">Blogs</a></li>
+                    <li class="subholder">
+                        <ul id="footmainnav">
+                            <li class="first"><a href="http://beauty.ivillage.com/">Beauty &amp; Style</a></li>
+                            <li><a href="http://health.ivillage.com/">Health &amp; Well-Being</a></li>
+                            <li><a href="http://diet.ivillage.com/">Diet &amp; Fitness</a></li>
+                            <li><a href="http://love.ivillage.com/">Love &amp; Sex</a></li>
+                            <li><a href="http://parenting.ivillage.com/">Pregnancy &amp; Parenting</a></li>
+                            <li><a href="http://home.ivillage.com/">Home &amp; Food</a></li>
+                            <li><a href="http://entertainment.ivillage.com/" class="last">Entertainment</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul id="footspecial">
+                    <li class="label"><span>Special Sections:</span></li>
+                    <li class="first"><a href="http://love.ivillage.com/snd/sndonline/0,,nddp,00.html?ice=spn,yh,pers,iv,botnav">Personals</a></li>
+                    <li><a href="http://www.ivillage.com/advanta?ice=spn,adv,brdg,wk,in_rec">small Business</a></li>
+                    <li><a href="http://ivillage.edmunds.com/">Cars</a></li>
+                    <li><a href="http://jobs.careerbuilder.com/?ch=al&amp;lr=cbcb_iv&amp;siteid=civil07&amp;cbRecursionCnt=1&amp;cbsid=2542072cc18543c98f1aebbaa3f76d64-149696427-xm-2">Job Resources</a></li>
+                    <li><a href="http://www.ivillage.com/advanta?ice=spn,adv,brdg,wk,in_rec">Your Money</a></li>
+                    <li><a href="http://www.ivillage.com/0,,78pxnkds,00.html">Coupons</a></li>
+                    <li><a href="http://entertainment.ivillage.com/games/topics/0,,4vm7,00.html">Games</a></li>
+                </ul>
+
+                <ul id="footmags">
+                    <li class="label"><span>Magazines:</span></li>
+                    <li class="first"><a href="http://magazines.ivillage.com/cosmopolitan/">Cosmopolitan</a></li>
+                    <li><a href="http://magazines.ivillage.com/countryliving/">Country Living</a></li>
+                    <li><a href="http://magazines.ivillage.com/goodhousekeeping/">Good Housekeeping</a></li>
+                    <li><a href="http://magazines.ivillage.com/housebeautiful/">House Beautiful</a></li>
+                    <li><a href="http://magazines.ivillage.com/marieclaire/">Marie Claire</a></li>
+                    <li><a href="http://magazines.ivillage.com/redbook/">Redbook</a></li>
+                    <li><a href="http://magazines.ivillage.com/townandcountry/">Town &amp; Country</a></li>
+                </ul>
+
+                <div id="subfoot">
+                    <ul>
+                        <li class="first"><a href="http://www.ivillage.com/about/0,,qr4p,00.html">Terms of Service</a></li>
+                        <li><a href="http://www.ivillage.com/about/0,,qqzh,00.html">Privacy Policy</a></li>
+                        <li><a href="http://phx.corporate-ir.net/phoenix.zhtml?c=90802&amp;p=irol-investor&amp;arrivalSA=1&amp;cobrandRef=0">About iVillage</a></li>
+                        <li><a href="http://www.ivillage.com/support/0,,qk3w,00.html">Customer Support</a></li>
+                    </ul>
+
+                    <div class="copyright">&copy;1995-2006 iVillage. All Rights Reserved.</div>
+                </div><!-- End: subfoot -->
+
+            </div><!-- End: footer -->
+
+        </div><!-- End: alignLeftWrapper2 -->
+    </div><!-- End: centering div -->
+</div><!-- End: alignLeftWrapper -->
+
+
+
+<!-- Footer Tracking Version 1.1 -->
+<script type="text/javascript" language="javascript">Tacoda_AMS_DDC_js=1.0</script>
+<script type="text/javascript" language="javascript1.1">Tacoda_AMS_DDC_js=1.1</script>
+<script type="text/javascript" language="javascript1.2">Tacoda_AMS_DDC_js=1.2</script>
+<script type="text/javascript" language="javascript1.3">Tacoda_AMS_DDC_js=1.3</script>
+<script type="text/javascript" language="javascript" src="http://i.ivillage.com/includes/iv_tacoda.js"></script>
+<script type="text/javascript" language="javascript" src="http://i.ivillage.com/includes/iv_footer.js"></script>
+
+</body>
+</html>
