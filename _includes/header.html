@@ -1,0 +1,19 @@
+<header class="main-header content-wrapper">
+
+<!--
+  <input type="checkbox" id="menu-checkbox" />
+ -->
+
+  <nav class="nav-main">
+
+    <div class="blog-logo"><a href="{{ site.baseurl }}/">{{ site.title }}</a></div>
+
+	{% for item in site.data.navigation %}
+    <a href="{{ item.link }}" {% if page.url == item.link %}style="color: $reference-visited"{% endif %}>
+      {{ item.name }}
+    </a>
+  {% endfor %}
+</nav>
+
+</header>
+<p fontsize=xx-large>{{ site.baseurl }}</p>
