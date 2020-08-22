@@ -1,0 +1,194 @@
+/*
+* Base Styles
+* ========================================================================== */
+.center-wrapper {
+  max-width: $break-point;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+
+
+body	{
+		border: none;
+		margin: 0;
+		padding: 0 0 1em 0;
+		width: 100%;
+		text-decoration: none;
+		font-family: $primary-font;
+		background: $primary-background;
+		color:	$bodyText;
+		font-size: medium;
+		}
+
+	h1 {
+		margin: 0;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: normal;
+		font-size: 4 em;
+		font-family: $accent-font;
+		background: $primary-background;
+		color:	$accent;
+		font-size: medium;
+		}
+	h2 {
+		text-align: center;
+		text-transform: uppercase;
+		font-size: xx-large;
+ 		font-family: $accent-font;
+		background: $primary-background;
+		color:	$accent;
+		}
+	h3 {
+		text-align: center;
+		font-size: xx-large;
+ 		font-family: $accent-font;
+		background: $primary-background;
+		color:	$accent;
+		margin: 2vh 0vh 1vh 0vh;
+		}
+	h4 {
+		text-align: center;
+		font-size: x-large;
+ 		font-family: $accent-font;
+		text-decoration: none;
+		color:	$accent;
+		margin: 2vh 0vh 1vh 0vh;
+		}
+	h5 {
+		text-align: center;
+		font-size: large;
+ 		font-family: $accent-font;
+		background: $primary-background;
+		color:	$accent;
+		margin: 2vh 0vh 1vh 0vh;
+		}
+	h6 {
+		text-align: center;
+		font-size: medium;
+ 		font-family: $accent-font;
+		background: $primary-background;
+		color:	$accent;
+		}
+	h7 {
+		text-align: center;
+		font-size: small;
+ 		font-family: $accent-font;
+		background: $primary-background;
+		color:	$accent;
+		}
+	h8 {
+		text-align: center;
+		font-size: x-small;
+ 		font-family: $accent-font;
+		background: $primary-background;
+		color:	$accent;
+		}
+	h9 {
+		text-align: center;
+		font-size: xx-small;
+		font-family: $accent-font;
+		background: $primary-background;
+		color:	$accent;
+		}
+
+	a	{
+		color:	$reference;
+		text-align: center;
+		}
+	a:hover, a:focus	{
+		color:	$reference-hover;
+		}
+	a:visited	{
+		color:	$reference-visited;
+		}
+	img {
+	    width: 100%;
+	    }
+
+
+
+.heading {
+  font-size: xx-large;
+  text-transform: uppercase;
+  font-weight: bold;
+ 		font-family: $caption-font;
+    }
+
+article p {
+  margin-bottom: 15px;
+  text-align: left;
+  }
+
+input[type="submit"],
+button {
+  border: 0;
+  outline: 0;
+  }
+
+textarea {
+  resize: vertical;
+  }
+
+/* Table
+* ========================================================================== */
+table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+/*
+* JavaScript Classes
+* ========================================================================== */
+#shadow {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: $primary-background;
+  display: none;
+  z-index: 1000;
+}
+
+#switcher {
+  width: 10%;
+  cursor: crosshair;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 400;
+  display: none;
+}
+
+.transition-divs {
+  transition: all .5s ease-in-out 0s;
+}
+
+.aside-left {
+  left: -33% !important;
+}
+
+.centering {
+  margin-left: calc(50% - (740px / 2)) !important;
+  transition: all .5s ease-in-out 0s;
+}
+
+.hide {display: none !important; }
+
+.img-popup {
+  width: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin: auto;
+  z-index: 2000;
+  box-shadow: 0 0 10px #000;
+}
