@@ -1,0 +1,446 @@
+/*
+* Header
+* ========================================================================== */
+.main-header {
+  background-color: $accent-background;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  top: 0;
+  border-bottom: 1px solid  $accent;
+}
+
+/*
+* Header Navigation
+* ========================================================================== */
+.nav-main {
+	text-transform: uppercase;
+	display: flex;
+	justify-content: space-around;
+	font-family: $reference-font;
+	background-color: $reference-background;
+  color: $reference;
+  vertical-align: center;
+  padding: 0 1rem;
+  width: 100%;
+  font-size: small;
+  text-decoration: none;
+  order: 0;
+  text-align: center;
+  a {
+  background-color: $reference-background;
+  }
+  }
+.blog-logo {
+    font-weight: bold;
+	font-family: $reference-font;
+	font-size: medium;
+	border: 0 0 1px 0;
+	border-color: accent;
+	text-align: center;
+	display: float;
+	clear: right;
+	clear:  left;
+  }
+
+/*
+* Aside
+* ========================================================================== */
+.sidebar {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: $reference-background;
+  display: none;
+}
+
+.cover {
+	text-align: center;
+	position: relative;
+	font-family: $caption-font;
+	text-shadow: 2px 0 5px #333;
+  	}
+
+.cover-text {
+	color: $caption;
+	font: $caption-font;
+	text-shadow: 2px 0 5px #333;
+	position: absolute;
+	bottom:	10%;
+	width: 80%;
+	left: 10%;
+	}
+
+.sidebar,.cover {
+	height: 100vh;
+	width: auto;
+	}
+	
+.landscape {
+	width: 100%;
+	height: auto;
+	}
+
+.portrait {
+	height: 80vh;
+	width:	auto;
+	}
+
+.square {
+	height: 80vh;
+	width:	80vh;
+	}
+
+/*
+* Footer
+* ========================================================================== */
+.blog-footer {
+	font-family: $reference-font;
+  background-color: $reference-background;
+  color: $reference;
+  vertical-align: center;
+  z-index: 100;
+  width: 100%;
+  border-top: 1px solid  $accent;
+}
+
+/*
+* Article
+* ========================================================================== */
+main {
+  padding-top: 3em;
+}
+
+.index-page {
+  position: relative;
+  color: $reference;
+  &:after {
+    content: "***";
+    position: absolute;
+    margin-top: 1em;
+    width: 100px;
+    left: 50%;
+  }
+}
+
+article {
+  padding: 2em 1em;
+  img,
+  embed,
+  object,
+  video,
+  iframe {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
+}
+.bodytext {
+	font-family: $primary-font;
+	color:  $bodyText;
+	text-align: left;
+  }
+.post-meta {
+  padding-bottom: 5vw;
+  text-transform: uppercase;
+  color: accent;
+  font-size: 70%;
+  font-weight: bold;
+	font-family: $accent-font;
+  a, a:hover, a:focus, a:visited {
+    color: $reference;
+  }
+.post-content	{
+	text-align: left;
+	}
+
+
+  .meta-black {
+    color: $reference;
+  }
+
+}
+
+
+
+/*
+* Footer
+* ========================================================================== */
+.blog-footer {
+  height: 4em;
+  margin: 5em auto 0;
+  font-size: 70%;
+  //border-top: 1px solid lightBlue;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.5em;
+  background: $accent-background;
+}
+
+
+
+/*
+* Next/Previous Posts
+* ========================================================================== */
+
+.link-to-post {
+  width: 100%;
+  display: block;
+  margin: 10px auto;
+  padding: 1em;
+  text-decoration: none;
+  outline: none;
+  text-align: center;
+  border: 1px solid Orange;
+  transition: border-color .5s ease-in 0s;
+  &:hover { border-color: $accent; }
+
+  &__prev, &__next {
+    font-size: .8em;
+    color: $reference;
+    margin: 10px 0;
+  }
+
+  &__title {
+    font-size: 1em;
+    font-weight: bold;
+    color: $accent;
+    margin-top: 10px;
+    display: block;
+  }
+}
+
+.quarter {
+  float: left;
+  width:	22vw;
+  height:	auto;
+//   height: 45vh;
+	text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 5vh;
+  padding: 0; 
+  border: 0;
+  }
+  
+.qi {
+	width:	22vw;
+	height:	auto;
+//     height: 39vh;
+//     width:  auto;
+    margin: 5vh;
+    border: 2vh;
+    border-color: $primary;
+    }
+.clear  {
+  clear: right;
+  clear:  left;
+  }
+
+.cat_list{
+	display:	flex;
+	flex-flow:	row wrap;
+	}
+.cats	{
+	margin: auto;
+	padding: 0 1vw 0 1vw}
+	
+//for Gaidhlig
+		#leftPanel	{
+			border-style: solid;
+			border-width:	2px;
+			border-color:	"#000000";
+			padding:	5px;
+			width:	46%;
+			margin:	1%; 
+			display:	float;
+			float:	left;
+			}
+		#rightPanel	{
+			border-style: solid;
+			border-width:	2px;
+			border-color:	"#000000";
+			padding:	5px;
+			width:	46%;
+			margin:	1%; 
+			display:	float;
+			float:	left;
+			}
+
+//for Champions
+	#ruler {
+		display: flex;
+		min-width: 3600px;
+		overflow: hidden;
+		}
+	.ruler1 {
+		border-top: 3px solid Tan;
+		width: 50px;
+		content: ' ';
+		overflow: hidden;
+		}
+	.ruler2 {
+		border-top: 3px solid Wheat;
+		width: 50px;
+		content: ' ';
+		overflow: hidden;
+		}
+		
+	main {
+		}
+
+	.timeline {						/* The div containing the timeline*/
+  		position: relative;
+  		max-width: 1200px;
+		margin: 0 auto;
+		}
+
+	.timeline::after {				/* The actual timeline (the vertical ruler) */
+		content: '';
+		position: absolute;
+		width: 6px;
+		background-color: Tan;/* Tan; *//* white; */
+		top: 0;
+		bottom: 0;
+		left: 31px;
+		margin-left: -3px;
+		}
+
+	.container {
+		padding: 10px 25px 10px 70px;
+		position: relative;
+		width: 100%;
+		left: 0;
+ 		background-color: SeaShell;
+		}
+		
+	.container::before {			/* Add arrows to the container (pointing left) */
+    	content: " ";
+    	height: 0;
+    	position: absolute;
+    	top: 22px;
+    	width: 0;
+    	z-index: 1;
+    	left: 60px;
+    	border: medium solid;
+    	border-width: 10px 10px 10px 0;
+    	border-color: transparent white transparent transparent;
+}
+
+	.container::after {   			/* The circles on the timeline */
+		content: '';
+		position: absolute;
+		width: 25px;
+		height: 25px;
+		left: 15px;
+		background-color: white;
+		border: 4px solid Maroon;
+		top: 15px;
+		border-radius: 50%;
+		z-index: 1;
+		}
+
+	.content {						/* The actual content */
+		padding: 20px 30px;
+		background-color: white;
+		position: relative;
+		border-radius: 6px;
+		}
+
+
+
+
+
+@media all and (min-width: 600px) { 	/* 	Media queries - Responsive timeline on screens
+											less than 600px wide */  
+											
+	.left h7	{
+		position: absolute;
+		right: auto;
+		top:	0;
+		left:	0;
+		}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    left: 50%;
+}
+
+/* Make container half-width with symmetrical padding, then alternate around timeline */
+	.container {
+	    padding: 10px 40px;
+	    width: 50%;
+		}
+	.right {							
+    	left: 50%;
+		}
+
+/* Shift arrows to the new content positions, and flip alternate arrows to point right */
+	.left::before {
+		left: auto;
+	    right: 30px;
+	    border: medium solid red;
+	    border-width: 10px 0 10px 10px;
+	    border-color: transparent transparent transparent white;
+		}
+
+/* Add arrows to the right container (pointing left) */
+	.right::before {
+		right: auto;
+	    left: 30px;
+		}
+
+/* shift circles to the new timeline-ruler position */
+	.left::after {  
+		left: auto;
+    	right: -15px;
+		}
+	.right::after {
+  		left: -16px;
+		}
+
+
+	}
+
+//for Recipes
+.step {
+	width: 100%;
+	display: float;
+	text-align: left;
+	float:	left;
+	border-color: $primary;
+	border-style: solid;
+	border-width: 2px 2px 0 2px;
+	}
+
+.ing {
+	width: 49%;
+	display: float;
+	float:	left;
+	text-align: left;
+	border-color: $primary;
+	border-style: solid;
+	border-width: 0 2px 0 0;
+	list-style-type: disc;
+	}
+
+.ing li {
+	text-align: left;
+	}
+	
+.dir {
+	width:	49%;
+	text-align: left;
+	display: float;
+	float:	right;
+	height: 100%;
+	}		
+
+.listOlinks	{
+	color:	$bodyText;
+	text-align:	center;
+	margin: 1px 0 1px 0;
+	padding: 0 0 0 0;
+	}

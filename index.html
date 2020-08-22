@@ -1,0 +1,68 @@
+---
+bg: "StSfrontal.jpg"
+layout: default
+crawlertitle: "Chaos Church"
+title: "The Church in the centre of Chaos"
+summary: "main page"
+---
+
+<div id="leftPanel">
+
+
+	<!-- create categories array-->
+	{% assign categories_array = "" | split:" " %}
+	{% for note in site.AnglicanNotes %}
+	    {% for tag in note.tags %}
+	        {% assign tag_array = tag_array | push: tag | uniq %}
+	    {% endfor %}
+	{% endfor %}
+	<br>
+	
+	<!-- {% assign tag_array = tag_array |sort %} -->
+	{% assign tag_array = tag_array | push: "uncategorized" | uniq %}
+	
+	<br>
+	
+	{% for each_tag in tag_array %}
+		<h4 id="{{each_tag}}">{{each_tag}}</h4>
+		{% for note in site.AnglicanNotes %}
+	
+			{% assign has_tag = False %}
+		    {% for tag in note.tags %}
+		        {% assign has_tag = True %}
+		        {% if tag == each_tag %}
+			    <p>
+			    	<a class="listOlinks" href="{{site.url}}{{site.baseurl}}{{note.url}}">
+			    	{{ note.title }}
+			    	</a>
+			    </p>
+		        {% endif %}
+		    {% endfor %}
+			{% if has_tag == False and each_tag == "uncategorized"%}
+			   <p><a class="listOlinks" href="{{site.url}}{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a></p>
+			{% endif %}
+		{%endfor %}
+	{% endfor %}
+	
+	{% for proper in site.lectionary %}
+		<p>proper {{proper.url}}</p>
+	{% endfor %}
+</div>
+
+
+
+
+<!-- ================================================================================= -->
+
+
+
+
+
+<div id="rightPanel">
+	<h1>Lectionary Resources</h1>
+	{% for proper in site.data.lectionary %}
+    <a href="{{ proper.proper }}" {% if page.url == item.proper %}style="color: $reference-visited"{% endif %}>
+      {{ proper.proper }}
+    </a>
+  {% endfor %}
+</div>

@@ -6,17 +6,16 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: The Logrus
+title: The Church at the centre of the Chaos
 owner: Pamela Mclean
 email: pamela@logrus.ca
 
 description: > # this means to ignore newlines until "baseurl:"
-  The Logrus is the nexus of chaos. All reality exists as shadows resonating from the
-  Logrus to the primal Pattern which is the nexus of all order.
-baseurl:  # the subpath of your site, e.g. /blog
+  Blog about things spiritual, ideas for worship at home, resources for Christian education.
+baseurl:  /HomeChurchWeb
 lang: "en"
-url: "http://localhost:4000" # the base hostname & protocol for your site
-#url: "http://logrus.ca" # the base hostname & protocol for your site
+url: "https://localhost:4000" # the base hostname & protocol for your site
+#url: "https://logrus.ca" # the base hostname & protocol for your site
 twitter_username:
 github_username:
 disqus_username:
@@ -32,12 +31,19 @@ lsi: false
 excerpt_separator: <!--more-->
 
 
-# May change this later, but for now:
 collections:
-    Lectionary:
-        output: true
-
+   patterns:
+       output: true
+   AnglicanNotes:
+       output: true
+        
+        
 defaults:
+  - scope:
+      path: ""
+      type: "anglicanNotes"
+    values:
+      layout: "default"
   - scope:
       path: ""
     values:
