@@ -1,0 +1,69 @@
+/* general margins - top right bottom left */
+.mrgn5 {margin: 5px 5px 5px 5px;}
+.mrgn10 {margin: 10px 10px 10px 10px;}
+.mrgn20 {margin: 20px 20px 20px 20px;}
+.mrgn20tenTopBtm {margin: 10px 20px 10px 20px;}
+.towermrgn {margin: 10px 14px 10px 14px}
+
+/* text */
+.text {font-family: verdana, arial, helvetica; font-size: 10pt; color:#000000;}
+.textb {font-family: verdana, arial, helvetica; font-size: 10pt; color:#000000; font-weight: bold;}
+
+
+.smtext {font-family: verdana, arial, helvetica; font-size: 8pt; color:#000000;}
+.smtextb {font-family: verdana, arial, helvetica; font-size: 8pt; color:#000000; font-weight: bold;}
+.smtextGrey {font-family: Verdana; font-size: 8pt; color: #666666;}
+.smtextWhite {font-family: Verdana; font-size: 8pt; color: #FFFFFF;}
+
+.lgtext {font-family: verdana, arial, helvetica; font-size: 12pt; color:#000000;}
+.lgtextb {font-family: verdana, arial, helvetica; font-size: 12pt; color:#000000; font-weight: bold;}
+
+
+.footerText {font-family: verdana, arial, helvetica; font-size: 10px; color:#CCFF99;}
+.footerWhite {font-family: verdana, arial, helvetica; font-size: 10px; color:#FFFFFF;}
+
+a.footerLink:link {color: #CCFF99;}
+a.footerLink:visited {color: #CCFF99;}
+a.footerLink:active {color: #CCFF99;}
+a.footerLink:hover {color: #CCFF99;}
+
+
+/* discovery.com */
+.msnBack {font-family: Verdana; font-size: 8px; margin-left: 8px;}
+a.black:link {color: #000000;}
+a.black:visited {color: #000000;}
+a.black:active {color: #000000;}
+a.black:hover {color: #000000;}
+
+.leftnavoff {
+	color : #006600;
+	font-family : Verdana;
+	font-style : normal;
+	font-size : 8pt;
+}
+
+/* lesson planner */
+.lgpurpletext {font-family: verdana, sans-serif; font-size: 12pt; color:#660099; font-weight:bold}
+.greentext {font-family: verdana, sans-serif; font-size: 10pt; color:#339933; font-weight:bold}
+
+/*
+###########################
+DISPLAY ADS
+###########################
+*/
+.hide {display: none;}
+
+/*
+###########################
+SEARCH RESULTS SPECIFIC
+###########################
+*/
+.crdts { font-family: Arial; font-size: 10px; }
+.primecolor {color: #339933}
+.shim5 {margin-top: 5px;}
+.shim10 {margin-top: 10px;}
+
+/* schrockguide */
+.link {font-family: verdana, arial, helvetica; font-size: 10pt; color:#000000;}
+a.link {font-family: verdana, arial, helvetica; font-size: 10pt; color:#000000; font-weight: bold;}
+.intro {font-family: verdana, arial, helvetica; font-size: 10pt; color:#000000;}

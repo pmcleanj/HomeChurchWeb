@@ -1,0 +1,2127 @@
+<!-- Prospero, Build 2878 (Wed Mar 8 16:17:06 EST 2006), WEB103, 4/5/2006 8:42:26 AM -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- Last Update: 01/26/2006 11:45am -->
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Liberal Christian Parenting</title>
+<!-- Meta Information -->
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<!--Begin StyleSheet -->
+<LINK REL="STYLESHEET" HREF="http://acx.prospero.com/dir-app/look/stylesheet.aspx?zone=652028&ns=1&fpid=28" MEDIA="screen" TYPE="text/css">
+<SCRIPT LANGUAGE="JavaScript1.2" SRC="http://acx.prospero.com/dir-app/ds.aspx?webtag=iv-pplibchrist&fpid=28"></SCRIPT>
+
+<!--End StyleSheet -->
+<style type="text/css" media="screen, print">
+  @import "http://www.ivillage.com/prospero/css3/0,,,00.css";
+</style>
+
+<!-- Header Tracking Version 1.1 -->
+<script type="text/javascript" language="javascript" src="http://i.ivillage.com/includes/iv_header.js"></script>
+<script type="text/javascript" language="javascript" src="http://www.ivillage.com/prospero/js2/0,,iv-pplibchrist,00.js"></script>
+<script type="text/javascript" language="javascript" src="http://www.ivillage.com/shared/js/scriptlets/0,,cookies,00.js"></script>
+<script type="text/javascript" language="javascript" src="http://www.ivillage.com/shared/js/scriptlets/0,,search,00.js"></script>
+<script type="text/javascript" language="javascript" src="http://www.ivillage.com/shared/js/validation/0,,,00.js"></script>
+
+<script type="text/javascript" language="javascript">
+//<![CDATA[
+// === iv_WebtagRedirect ===
+function iv_WebtagRedirect(objSelect) {
+    if (objSelect.selectedIndex == 0) { return; }
+    document.location.href = "http://messageboards.ivillage.com/" + objSelect.options[objSelect.selectedIndex].value;
+}
+
+// === doFunnel4Submit ===
+function iv_doFunnel4Submit(theForm) {
+    var redirectURL = document.location;
+    theForm.action="https://subscriber.ivillage.com/funnels/4?vrt=" + iv_channelID + "&dd=" + escape(redirectURL);
+    if (!iv_isValidEmail(theForm.email.value)) {
+        alert("Enter valid email address");
+        return false;
+    }	
+
+    return true;
+}
+
+// === iv_openS2F ===
+// MOdified from IV standard version
+function iv_openS2F() {
+    iv_S2FUrl = typeof iv_S2FOverride == "undefined" ? window.document.location.href : iv_S2FOverride;
+
+    var w = 505;
+    var h = 610;
+    var cw = 252;
+    var ch = 203;
+
+    if (window.screen) {
+        cw = Math.floor((screen.availWidth - w) / 2);
+        ch = Math.floor((screen.availHeight - h) / 3);
+    }
+
+    var mywin = window.open ('http://www.ivillage.com/s2f/form/0,,' + iv_channelID + ',00.html?s2fURL=' + escape(iv_S2FUrl) + '&s2fTitle=' + escape(window.document.title), 's2f', 'width=505,height=610,top=' + ch + ',left=' + cw + ',scrollbars=yes');
+}
+
+
+// === drawWelcome ===
+// Modified from IV standard version
+var iv_login = iv_getCookie("iv_id");
+var iv_loggedin = iv_getCookie("iv_tkt");
+
+function iv_drawWelcome() {
+    if (typeof iv_sageHost == "undefined") {
+        iv_sageHost = "https://subscriber.ivillage.com";
+    }
+    if (typeof iv_verticalID == "undefined") {
+        iv_verticalID = "iv";
+    }
+    var destURL = escape(document.location);
+
+    var logout = '<a href="http://login.prospero.com/dir-login/quickLogout.asp?webtag=iv-pplibchrist">LOG OUT</a>';
+    if (!iv_loggedin || iv_loggedin == "NA") {
+        // not authed
+        var login = iv_sageHost + "/login/login?s=iv&dt=rurl&dd=" + destURL;
+        var join = iv_sageHost + "/funnels/8?prd=mb&vrt=" + iv_verticalID + "&dd=" + destURL;
+        document.write('<a href="' + login + '">LOG IN</a> or <a href="' + join + '">JOIN NOW</a>');
+        return;
+    } else {
+        if (!iv_login) {
+            var profile = '<a href="' + iv_sageHost + '/profile">YOUR PROFILE</a>';
+            document.write('Welcome! ' + profile + ' or '+ logout); return;
+        } else {
+            var profile = '<a href="' + iv_sageHost + '/profile">' + iv_login + '</a>';
+            document.write('Welcome, ' + profile + '! ' + logout);
+        }
+    }
+}
+//]]>
+</script>
+
+<!-- Top level PH5 (script/css extras). Need to override -->
+
+<!-- CTA: Needs to come after possibility of PH5 code -->
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+if (!window.suppressAdFlag || suppressAdFlag != 1) {
+    document.write("<scr"+"ipt language=\"javascript\" type=\"text/javascript\" src=\"" + iv_overtureSrcCTA + "\"></scr" + "ipt>");
+}
+//]]>
+</script>
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+if (!window.suppressAdFlag || suppressAdFlag != 1) {
+    // clone the original array
+    var zSrCTA = new Array();
+    if (typeof zSr != "undefined" && zSr.length > 6) { cs_cloneArray(zSr, zSrCTA); }
+}
+//]]>
+</script>
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+if (!window.suppressAdFlag || suppressAdFlag != 1) {
+    document.write("<scr"+"ipt language=\"javascript\" type=\"text/javascript\" src=\"" + iv_overtureSrcIL + "\"></scr" + "ipt>");
+}
+//]]>
+</script>
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+if (!window.suppressAdFlag || suppressAdFlag != 1) {
+    // create new data structure for easier parsing
+    iv_CTACounter = 0;
+    iv_masterCTAData = new Array();
+    var i = 6;
+    while (i < zSrCTA.length) { iv_masterCTAData[iv_CTACounter++] = new Array(zSrCTA[i++], zSrCTA[i++], zSrCTA[i++], zSrCTA[i++], zSrCTA[i++], zSrCTA[i++]); }
+
+    var i = 6;
+    if (typeof zSr != "undefined" && zSr.length > 6) {
+        while (i < zSr.length) { iv_masterCTAData[iv_CTACounter++] = new Array(zSr[i++], zSr[i++], zSr[i++], zSr[i++], zSr[i++], zSr[i++]); }
+    }
+}
+//]]>
+</script>
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class="alignLeftWrapper">
+    <div align="center">
+        <div class="alignLeftWrapper2">
+            <div id="welcomeLinks"><script language="javascript" type="text/javascript">iv_drawWelcome();</script></div>
+
+            <div id="nav">
+                <h1 class="hide">iVillage</h1><a href="http://www.ivillage.com" id="mainlogo" title="iVillage Home"><img src="http://a820.g.akamai.net/f/820/822/1d/i.ivillage.com/nav/mag_nav/ivillage_logo_72.jpg" alt="iVillage" /></a>
+                
+                <div id="topnav">
+                    <ul>
+                        <li id="navbeauty"><a href="http://beauty.ivillage.com/" ><span class="hide">Beauty &amp; Style</span></a></li>
+                        <li id="navhealth"><a href="http://health.ivillage.com/" ><span class="hide">Health &amp; Well-being</span></a></li>
+                        <li id="navdiet"><a href="http://diet.ivillage.com/" ><span class="hide">Diet &amp; Fitness</span></a></li>
+                        <li id="navlove"><a href="http://love.ivillage.com/" ><span class="hide">Love &amp; Sex</span></a></li>
+                        <li id="navpregnancy"><a href="http://parenting.ivillage.com/" ><span class="hide">Pregnancy &amp; Parenting</span></a></li>
+                        <li id="navhouse"><a href="http://home.ivillage.com/" ><span class="hide">House &amp; Home</span></a></li>
+                        <li id="naventertainment"><a href="http://entertainment.ivillage.com/"><span class="hide">Entertainment</span></a></li>
+                        <li id="navmagazines"><a href="http://magazines.ivillage.com/"><span class="hide">Magazines</span></a></li>
+                    </ul>
+                </div><!-- End: topnav -->
+
+                <div id="searchbox"><img src="http://a820.g.akamai.net/f/820/822/1d/i.ivillage.com/shared/iv/search.gif" alt="Search" id="searchimg" />
+                    <form action="" onsubmit="return iv_handleGoogleSearch(this, 'top');" method="get" id="frmSearchTop">
+                        <input type="hidden" name="sk" value="ivi" />
+                        <input type="hidden" name="restrict" value="ivillage" />
+                        <img src="http://a820.g.akamai.net/f/820/822/1d/i.ivillage.com/shared/iv/radio_on.gif" alt="radio" class="searchradio" onclick="iv_toggleSearch('ivillage', 'top');" id="top_ivradio" /> <label for="top_ivradio" onclick="iv_toggleSearch('ivillage', 'top');">iVillage</label>
+                        <img src="http://a820.g.akamai.net/f/820/822/1d/i.ivillage.com/shared/iv/radio_off.gif" alt="radio" class="searchradio" onclick="iv_toggleSearch('web', 'top');" id="top_webradio" /> <label for="top_webradio" onclick="iv_toggleSearch('web', 'top');">web</label>
+                        <input type="text" name="q" id="websearchtext" /> <input type="image" id="searchgo" src="http://a820.g.akamai.net/f/820/822/1d/i.ivillage.com/shared/iv/searchgo.gif" alt="GO!" />
+                    </form>
+                </div><!-- End: searchbox -->
+            </div><!-- End: nav -->
+
+            <!-- Ad Display -->
+            <div id="adBanner">
+                <div align="center"><script language="javascript" type="text/javascript">iv_drawAd1();</script></div>
+            </div><!-- End: adBanner -->
+            <div id="adBdr"><img src="http://a820.g.akamai.net/f/820/822/1d/i.ivillage.com/swoosh_images/dotted_line.gif" alt="" /></div>
+
+            <!-- BreadCrumbs -->
+            <span class="breadCrumb">
+                <!--Begin BreadCrumbs -->
+<span class=youarehere>you are here:</span> <a href=http://www.ivillage.com class=breadCrumb>iVillage</a> <img src=http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=4&iconName=blue_arrow> <a href=http://parenting.ivillage.com class=breadCrumb>Pregnancy &amp; Parenting</a> <img src=http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=4&iconName=blue_arrow> <a href=http://parenting.ivillage.com/messageboards/ class=breadcrumb>Pregnancy &amp; Parenting message boards</a> <img src=http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=4&iconName=blue_arrow> <a href="/iv-pplibchrist" target="_top" class=youarehere>Liberal Christian Parenting</a> &nbsp;/&nbsp;<a href="/iv-pplibchrist/?ctx=4194304" target=_top class=youarehere>Archives</a> &nbsp;/&nbsp;<!--End BreadCrumbs -->
+            </span>
+            <br /><br />
+
+<!-- FP Specific Code -->
+<!-- PH3(FP27/28/29) -->
+<div class="mbTopNav">
+    <form method=get action="/n/find/results.asp" target="_self"><input type=hidden name=webtag value="iv-pplibchrist"><input type=hidden name=ctx value=search><input type=hidden name="o" value="newest"><input type=hidden name="af" value="366"><input type=hidden name="be" value="0"><input type=hidden name="f" value="this">
+    <div class="mbTopRightLinks">
+<a class="mc" id="advancedsearchlink" href="/n/find/find.asp?webtag=iv-pplibchrist" target="_top">advanced search</a> &nbsp;|&nbsp; <a href="#" class="mc" id="outlinelink" target="popupOutline" onClick="return LOW('0');">outline view</a> &nbsp;|&nbsp; <a href="javascript:void(0)" onclick="iv_openS2F();">invite a friend</a> &nbsp;|&nbsp; <a class="mc" href="#" id="discussionslink" onClick="return LLW();">folder view</a> &nbsp;|&nbsp; <a href="http://www.ivillage.com/boards/0,,hn8s,00.html ">about the boards</a>
+    </div><br /><!-- End: mbTopRightLinks -->
+
+    <span class="mbTitle">Liberal Christian Parenting</span> &nbsp; <div class="spacer"></div>
+    <div class="addThisBtn"><a class="mc" id=addfavelink href="/n/mydelphi/quickfavorite.asp?webtag=iv-pplibchrist&addToFavorite=1&backwebtag=%2Fn%2Fmb%2Fmessage%2Easp%3Fwebtag%3Div%2Dpplibchrist%26msg%3D775%2E1" target="_self"><img src="http://a820.g.akamai.net/f/820/822/1d/i.ivillage.com/messageboards/redesign/add_this_btn.gif" alt="add this" border="0" /></a></div>
+
+    <span class="mbNumberMess">
+        6058 messages posted to this board
+        </span>
+    <div class="spacer"></div><span class="mbFindMess">find messages about&nbsp; <input type="text" class="ts5" name="qu" />&nbsp;<input type="image" src="http://a820.g.akamai.net/f/820/822/1d/i.ivillage.com/messageboards/redesign/go_btn.gif" alt="go" style="vertical-align:bottom;" /></span></form>
+    <div class="spacer"></div>
+    <div class="welcomeBox">
+        <div class="welcomeRightLinks">
+        
+            <a class="mc" href="#" id="profilelink" onClick="return LBB(400184051);">your profile</a>&nbsp;&bull;&nbsp;
+            <a class="mc" href="#" id="faveslink" onClick="window.open('/dir-app/bbcard/bbFavoriteForum.asp?webtag=iv-pplibchrist&cType=2&uid=400184051&dMode=1&eBtn=0' ,'u400184051Window','scrollbars=yes,width=630,height=580,resizable=yes,toolbar=no,location=no,directories=no,status=no,menubar=no,copyhistory=no');return false;">favorite boards</a>&nbsp;&bull;&nbsp;
+            <a class="mc" href="#" id="accountlink" onClick="window.open('http://messageboards.ivillage.com/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=400184051&want=ea' ,'u400184051Window','scrollbars=yes,width=630,height=580,resizable=yes,toolbar=no,location=no,directories=no,status=no,menubar=no,copyhistory=no');return false;">board settings</a>&nbsp;&bull;&nbsp;
+            <a href=/n/mb/subscribe.asp?webtag=iv-pplibchrist>your digests</a>&nbsp;&bull;&nbsp;
+            <a class="mc" id="logoutlink" href="http://login.prospero.com/dir-login/quickLogout.asp?webtag=iv-pplibchrist" target="_top">log out</a>
+        
+        </div>
+        welcome, cl-pmclean!
+    </div>
+</div><!-- End: mbTopNav -->
+<!-- End FP Specific Code -->
+
+
+
+
+            <div class="clearBoth">&nbsp;</div>
+            <table cellpadding="0" cellspacing="0" border="0" width="765"><tr><td valign="top" width="100%">
+
+<!-- Folders/List -->
+<table border="0" cellpadding="0" cellspacing="0" width="765">
+
+
+
+  <tr><td>
+<script language=Javascript>
+<!--
+ top.document.title = document.title + ' #775.1'; 
+//-->
+</script><!-- Adspace: iv-pplibchrist Sched: 0 Server: WEB103 -->
+	<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+   <!--
+HM_Array1 = [[120,"","","5c1a34","000000","ffffff","D6CFB5","black","ffffff",0,0,0,1,0,0,"null","null",0,0],["Ignore this Author","/n/mb/ignore.asp?webtag=iv-pplibchrist&Rptid=775&u=400184051",1,0,0,1],["Add to Friends.  Your friends can view all the pages of your profile.","/n/mb/ignore.asp?webtag=iv-pplibchrist&Rptid=775&f=1&u=400184051",1,0,0,1],["Report Violation","/n/mb/reportTOSViolation.asp?webtag=iv-pplibchrist&Rptid=775",1,0,0,1]]
+HM_Array2 = [[120,"","","5c1a34","000000","ffffff","D6CFB5","black","ffffff",0,0,0,1,0,0,"null","null",0,0],["Stop Ignoring this Author","/n/mb/neutral.asp?webtag=iv-pplibchrist&Rptid=775",1,0,0,1],["Report Violation","/n/mb/reportTOSViolation.asp?webtag=iv-pplibchrist&Rptid=775",1,0,0,1]]
+     //-->
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript1.2" SRC="/n/mb/HM_Loader.js"></SCRIPT><!-- FP Universal: Shared -->
+<div class="topLinksRight">
+    <a href="/n/mb/message.asp?webtag=iv-pplibchrist&msg=775.&next=yes" class="ls1">next discussion &gt;</a>
+</div><!-- End: topLinksRight -->
+
+<!-- FP Universal: Shared -->
+<div class="spacer30"></div>
+
+<div class="dBoxWrapper">
+    <div class="dBox">
+        <div class="dBoxLeftCol">
+            <div class="dBoxLeftColText">
+                <div align="center">
+                    <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369383651" onClick="return LBB(369383651);">pmclean</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=cl" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr>
+                    <div class="memberPic"><img src="http://acx.prospero.com/dir-app/bbcard/bbMemberPicture.aspx?rid=185&uid=369383651" border=0 height=75 width=50></div>
+                </div><!-- End: center -->
+
+                <div class="lastVisit">
+                    
+                    last visit to<br />this board<br />
+                    8/27/2004<br /><br /><br />
+                    
+
+                    
+                    messages posted<br />this board<br />
+                    206<br /><br />
+                    
+
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369383651&u=400184051&msg=775.1&f=1" class="ls1">add to friends</a><br />
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369383651&u=400184051&msg=775.1" class="ls1">ignore posts</a>
+                </div><!-- End: lastVisit -->
+            </div><!-- End: dBoxLeftColText -->
+        </div><!-- End: dBoxLeftCol -->
+
+        <div class="dBoxMain">
+            <div class="mainBodyTextTop">
+                <div class="oneLine"><div class="boldText">discussion title:</div><div class="textLeft1"><span class="fs10">&nbsp; Okay,  let's do it again!  Lectionary...</span></div></div>
+                <div class="oneLine"><div class="boldText">emoticon:</div><div class="textLeft"><span class="fs11">&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=2&iconName=14" border=0 height=15 width=15 align=texttop alt="Emoticon"></span></div></div>
+                <div class="oneLine"><div class="boldText">message #:</div><div class="textLeft"><span class="fs11">&nbsp; 775.1 </span></div></div>
+
+
+                <div class="oneLine"><div class="boldText">from:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369383651" onClick="return LBB(369383651);">pmclean</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=cl" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">date:</div><div class="textLeft"><span class="fs11">&nbsp; 11/11/2001 9:37 pm</span></div></div>
+                <div class="oneLine"><div class="boldText">replies:</div><div class="textLeft"><span class="fs11">&nbsp; 25</span></div></div>
+            </div><!-- End: mainBodyTextTop -->
+
+            <br clear="all" />
+
+            <div class="mainBodyText">
+                <span class="fs5"><!-- OldURL: http://boards2.parentsplace.com/messages/get/pplibchristiann9/40.html -->
+<p>Okay,  let's do it again!  Lectionary readings for November 18...</p>
+
+Here are the lessons for next week. As always, please feel welcome to share 
+your ideas and insights on next Sunday's lessons, especially if you can think 
+of some way to share the themes with your children. 
+<P>
+
+
+<PRE>                   Revised Common Lectionary</PRE>
+<P>
+
+
+<PRE>   Old Testament   Isaiah 65:17-25                  
+   Psalm           Isaiah 12
+   or
+   Old Testament   Malachi 4:1-2a
+   Psalm           Psalm 98
+   Epistle         2 Thessalonians 3:6-13
+   Gospel          Luke 21:5-19</PRE>
+<P>
+
+
+<PRE> RCL: <A HREF="http://divinity.library.vanderbilt.edu/lectionary/CPentecost/cProper28.htm">http://divinity.library.vanderbilt.edu/lectionary/CPentecost/cProper28.htm</A></PRE>
+<P>
+
+
+<PRE>Sunday-school:
+ <A HREF="http://www.sundayschoollessons.com/pen24ales.htm">http://www.sundayschoollessons.com/pen24ales.htm</A>
+ <A HREF="http://www.sundayschoollessons.com/pent24art.htm">http://www.sundayschoollessons.com/pent24art.htm</A></PRE>
+<P>
+
+
+<PRE>Commentary from the Anglican Diocese of Montreal
+ <A HREF="http://www.montreal.anglican.org/comment/nextweek.shtml">http://www.montreal.anglican.org/comment/nextweek.shtml</A> </PRE>
+<P>
+
+</span>
+                <table><tr></tr></table>
+            </div>
+
+            <div align="center">
+                
+            </div><!-- End: center -->
+        </div><!-- End: dBoxMain -->
+
+        <div class="dBoxMainCrumb1">
+            <div class="dBoxMainRateLinks">
+                <div class="dBoxMainRateLinksStars">&nbsp;</div>
+            </div><!-- End: dBoxMainRateLinks -->
+
+            <div class="dBoxMainCrumbLinks1">
+                
+                <a href="javascript:void(0)" onclick="iv_S2FOverride = 'http://messageboards.ivillage.com/n/mb/message.asp?webtag=iv-pplibchrist&msg=775.1'; iv_openS2F();" class="ls3">send to a friend</a> > &nbsp;
+                <a href="/n/mb/display.asp?webtag=iv-pplibchrist&msg=775.1&print=y" class="ls3">print</a> > &nbsp;
+                <a href="Javascript:bookmark_page('775.1');" class="ls3">bookmark</a> > &nbsp;
+                <a href="/n/mb/reportTOSViolation.asp?webtag=iv-pplibchrist&rptid=775&msg=775.1&rptsn=1&lowtsn=1&uid=369383651" class="ls3">report a violation</a> >
+            </div><!-- End: dBoxMainCrumbLinks1 -->
+        </div><!-- End: dBoxMainCrumb 1 -->
+
+        
+    </div><!-- End: dBox -->
+</div><!-- End: dBoxWrapper --><!-- FP Universal: Shared -->
+<div class="spacer30"></div>
+
+<div class="dBoxWrapper">
+    <div class="dBox">
+        <div class="dBoxLeftCol">
+            <div class="dBoxLeftColText">
+                <div align="center">
+                    <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369383651" onClick="return LBB(369383651);">pmclean</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=cl" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr>
+                    <div class="memberPic"><img src="http://acx.prospero.com/dir-app/bbcard/bbMemberPicture.aspx?rid=185&uid=369383651" border=0 height=75 width=50></div>
+                </div><!-- End: center -->
+
+                <div class="lastVisit">
+                    
+                    last visit to<br />this board<br />
+                    8/27/2004<br /><br /><br />
+                    
+
+                    
+                    messages posted<br />this board<br />
+                    206<br /><br />
+                    
+
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369383651&u=400184051&msg=775.2&f=1" class="ls1">add to friends</a><br />
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369383651&u=400184051&msg=775.2" class="ls1">ignore posts</a>
+                </div><!-- End: lastVisit -->
+            </div><!-- End: dBoxLeftColText -->
+        </div><!-- End: dBoxLeftCol -->
+
+        <div class="dBoxMain">
+            <div class="mainBodyTextTop">
+                <div class="oneLine"><div class="boldText">re:</div><div class="textLeft1"><span class="fs10">&nbsp; Okay,  let's do it again!  Lectionary...</span></div></div>
+                <div class="oneLine"><div class="boldText">emoticon:</div><div class="textLeft"><span class="fs11">&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=2&iconName=2" border=0 height=15 width=15 align=texttop alt="Emoticon"></span></div></div>
+                <div class="oneLine"><div class="boldText">message #:</div><div class="textLeft"><span class="fs11">&nbsp; 775.2 in response to <a href="message.asp?webtag=iv-pplibchrist&msg=775.1" target=_self>775.1</a></span></div></div>
+
+
+                <div class="oneLine"><div class="boldText">from:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369383651" onClick="return LBB(369383651);">pmclean</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=cl" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">to:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369383651" onClick="return LBB(369383651);">pmclean</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=cl" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">date:</div><div class="textLeft"><span class="fs11">&nbsp; 11/12/2001 11:34 am</span></div></div>
+                <div class="oneLine"><div class="boldText">replies:</div><div class="textLeft"><span class="fs11">&nbsp; 25</span></div></div>
+            </div><!-- End: mainBodyTextTop -->
+
+            <br clear="all" />
+
+            <div class="mainBodyText">
+                <span class="fs5"><!-- OldURL: http://boards2.parentsplace.com/messages/get/pplibchristiann9/40/1.html -->
+<p>Some context for the Gospel of Luke...</p>
+
+Always, there is debate and speculation about the authorship and date of Biblical texts. The internal evidence of the book does not attribute it to anyone. Its attribution to Luke, one of the Apostles, is a medaeival tradition so even an inerrantist is free to engage in this speculation -- and, if intellectually honest, must; since inerrancy denies the validity of medaeival tradidition.
+<P>
+
+I have read evidence that placed Luke as early as 45 CE. However, the Oxford study notes place it about 90 CE, the work of a Gentile Christian. Luke's author saw Christ as the histrical pivot between past and future: all history prior to Christ leads to His incarnation; all future after Christ is a response to His resurrection. The authors of Matthew, Mark and John write from an immediate expectation of Christ's return in glory (although the epilogue to John suggests that that expectation was getting rather weary). "Luke", however, writes from the expectation that the Church will carry forward from the time of his writing. He is also the author of Acts, which forms the second volume of this two-volume work. Acts documents the life of the earliest Christian churches.
+
+<P>
+
+</span>
+                <table><tr></tr></table>
+            </div>
+
+            <div align="center">
+                
+            </div><!-- End: center -->
+        </div><!-- End: dBoxMain -->
+
+        <div class="dBoxMainCrumb1">
+            <div class="dBoxMainRateLinks">
+                <div class="dBoxMainRateLinksStars">&nbsp;</div>
+            </div><!-- End: dBoxMainRateLinks -->
+
+            <div class="dBoxMainCrumbLinks1">
+                
+                <a href="javascript:void(0)" onclick="iv_S2FOverride = 'http://messageboards.ivillage.com/n/mb/message.asp?webtag=iv-pplibchrist&msg=775.2'; iv_openS2F();" class="ls3">send to a friend</a> > &nbsp;
+                <a href="/n/mb/display.asp?webtag=iv-pplibchrist&msg=775.2&print=y" class="ls3">print</a> > &nbsp;
+                <a href="Javascript:bookmark_page('775.2');" class="ls3">bookmark</a> > &nbsp;
+                <a href="/n/mb/reportTOSViolation.asp?webtag=iv-pplibchrist&rptid=775&msg=775.2&rptsn=2&lowtsn=2&uid=369383651" class="ls3">report a violation</a> >
+            </div><!-- End: dBoxMainCrumbLinks1 -->
+        </div><!-- End: dBoxMainCrumb 1 -->
+
+        
+    </div><!-- End: dBox -->
+</div><!-- End: dBoxWrapper --><!-- FP Universal: Shared -->
+<div class="spacer30"></div>
+
+<div class="dBoxWrapper">
+    <div class="dBox">
+        <div class="dBoxLeftCol">
+            <div class="dBoxLeftColText">
+                <div align="center">
+                    <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369383651" onClick="return LBB(369383651);">pmclean</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=cl" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr>
+                    <div class="memberPic"><img src="http://acx.prospero.com/dir-app/bbcard/bbMemberPicture.aspx?rid=185&uid=369383651" border=0 height=75 width=50></div>
+                </div><!-- End: center -->
+
+                <div class="lastVisit">
+                    
+                    last visit to<br />this board<br />
+                    8/27/2004<br /><br /><br />
+                    
+
+                    
+                    messages posted<br />this board<br />
+                    206<br /><br />
+                    
+
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369383651&u=400184051&msg=775.3&f=1" class="ls1">add to friends</a><br />
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369383651&u=400184051&msg=775.3" class="ls1">ignore posts</a>
+                </div><!-- End: lastVisit -->
+            </div><!-- End: dBoxLeftColText -->
+        </div><!-- End: dBoxLeftCol -->
+
+        <div class="dBoxMain">
+            <div class="mainBodyTextTop">
+                <div class="oneLine"><div class="boldText">re:</div><div class="textLeft1"><span class="fs10">&nbsp; Okay,  let's do it again!  Lectionary...</span></div></div>
+                <div class="oneLine"><div class="boldText">emoticon:</div><div class="textLeft"><span class="fs11">&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=2&iconName=2" border=0 height=15 width=15 align=texttop alt="Emoticon"></span></div></div>
+                <div class="oneLine"><div class="boldText">message #:</div><div class="textLeft"><span class="fs11">&nbsp; 775.3 in response to <a href="message.asp?webtag=iv-pplibchrist&msg=775.2" target=_self>775.2</a></span></div></div>
+
+
+                <div class="oneLine"><div class="boldText">from:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369383651" onClick="return LBB(369383651);">pmclean</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=cl" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">to:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369383651" onClick="return LBB(369383651);">pmclean</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=cl" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">date:</div><div class="textLeft"><span class="fs11">&nbsp; 11/13/2001 6:30 am</span></div></div>
+                <div class="oneLine"><div class="boldText">replies:</div><div class="textLeft"><span class="fs11">&nbsp; 25</span></div></div>
+            </div><!-- End: mainBodyTextTop -->
+
+            <br clear="all" />
+
+            <div class="mainBodyText">
+                <span class="fs5"><!-- OldURL: http://boards2.parentsplace.com/messages/get/pplibchristiann9/40/1/1.html -->
+<p>(Welcome Marksma! Join right in!) What is known about "the temple" ...</p>
+
+where Jesus sat teaching, and which he used as his "sermon text" in this case? How do modern churches reflect the archetype of the Temple, either spiritually, or physically? Does the temple in this teaching of Jesus stand metaphorically for something else?
+
+<P>
+
+</span>
+                <table><tr></tr></table>
+            </div>
+
+            <div align="center">
+                
+            </div><!-- End: center -->
+        </div><!-- End: dBoxMain -->
+
+        <div class="dBoxMainCrumb1">
+            <div class="dBoxMainRateLinks">
+                <div class="dBoxMainRateLinksStars">&nbsp;</div>
+            </div><!-- End: dBoxMainRateLinks -->
+
+            <div class="dBoxMainCrumbLinks1">
+                
+                <a href="javascript:void(0)" onclick="iv_S2FOverride = 'http://messageboards.ivillage.com/n/mb/message.asp?webtag=iv-pplibchrist&msg=775.3'; iv_openS2F();" class="ls3">send to a friend</a> > &nbsp;
+                <a href="/n/mb/display.asp?webtag=iv-pplibchrist&msg=775.3&print=y" class="ls3">print</a> > &nbsp;
+                <a href="Javascript:bookmark_page('775.3');" class="ls3">bookmark</a> > &nbsp;
+                <a href="/n/mb/reportTOSViolation.asp?webtag=iv-pplibchrist&rptid=775&msg=775.3&rptsn=3&lowtsn=3&uid=369383651" class="ls3">report a violation</a> >
+            </div><!-- End: dBoxMainCrumbLinks1 -->
+        </div><!-- End: dBoxMainCrumb 1 -->
+
+        
+    </div><!-- End: dBox -->
+</div><!-- End: dBoxWrapper --><!-- FP Universal: Shared -->
+<div class="spacer30"></div>
+
+<div class="dBoxWrapper">
+    <div class="dBox">
+        <div class="dBoxLeftCol">
+            <div class="dBoxLeftColText">
+                <div align="center">
+                    <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369385549" onClick="return LBB(369385549);">sara_k</a> <nobr></nobr>
+                    <div class="memberPic"><img src="http://acx.prospero.com/dir-app/bbcard/bbMemberPicture.aspx?rid=185&uid=369385549" border=0 height=75 width=50></div>
+                </div><!-- End: center -->
+
+                <div class="lastVisit">
+                    
+                    last visit to<br />this board<br />
+                    5/22/2005<br /><br /><br />
+                    
+
+                    
+                    messages posted<br />this board<br />
+                    153<br /><br />
+                    
+
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369385549&u=400184051&msg=775.4&f=1" class="ls1">add to friends</a><br />
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369385549&u=400184051&msg=775.4" class="ls1">ignore posts</a>
+                </div><!-- End: lastVisit -->
+            </div><!-- End: dBoxLeftColText -->
+        </div><!-- End: dBoxLeftCol -->
+
+        <div class="dBoxMain">
+            <div class="mainBodyTextTop">
+                <div class="oneLine"><div class="boldText">re:</div><div class="textLeft1"><span class="fs10">&nbsp; Okay,  let's do it again!  Lectionary...</span></div></div>
+                <div class="oneLine"><div class="boldText">emoticon:</div><div class="textLeft"><span class="fs11">&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=2&iconName=2" border=0 height=15 width=15 align=texttop alt="Emoticon"></span></div></div>
+                <div class="oneLine"><div class="boldText">message #:</div><div class="textLeft"><span class="fs11">&nbsp; 775.4 in response to <a href="message.asp?webtag=iv-pplibchrist&msg=775.3" target=_self>775.3</a></span></div></div>
+
+
+                <div class="oneLine"><div class="boldText">from:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369385549" onClick="return LBB(369385549);">sara_k</a> <nobr></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">to:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369383651" onClick="return LBB(369383651);">pmclean</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=cl" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">date:</div><div class="textLeft"><span class="fs11">&nbsp; 11/15/2001 7:27 am</span></div></div>
+                <div class="oneLine"><div class="boldText">replies:</div><div class="textLeft"><span class="fs11">&nbsp; 25</span></div></div>
+            </div><!-- End: mainBodyTextTop -->
+
+            <br clear="all" />
+
+            <div class="mainBodyText">
+                <span class="fs5"><!-- OldURL: http://boards2.parentsplace.com/messages/get/pplibchristiann9/40/1/1/1.html -->
+<p>Many churches still glow with jewel colours and many have small plaques noting the gifts of the people in adoration or..</p>
+
+thanksgiving. The temple then and churches now is where our public worship is held, where the community gathered together to renew the bonds of religion. The "old boys network".
+<P>
+
+Most churches now do not have a "holy of holies" and women and "foreigners" are not relegated to the outer courtyard. BUT while the building may be open (if you don't make a big point of your 'difference') some churches who keep women and other strangers out of the decision making and internal roles...the roles that really depend on and reflect the spiritual strength of the congregation.
+<P>
+
+"Does the temple in this teaching of Jesus stand metaphorically for something else?"
+<P>
+
+I've been taught several different understandings of this passage - that Jesus was talking about his own body being ruined - that Jesus was talking about the downfall of Judaism - that the 'temple' was the current religious establishment which christianity was going to show as empty - that Jesus is referring to political upheaval ending with the Jews in charge of Jerusalem.
+<P>
+
+In the first two centuries after Christ, this must have seemed so immediate to the christians. The temple WAS destroyed, christians were persecuted by Judaism, Rome put pressure on them to renounce Christ and families were split and turned against each other, wars and famines are always with us.... And at each blow people of faith clung to Jesus' words and looked for an end to come.
+<P>
+
+After September 11th there was quite an outcry that THIS WAS IT all the signs are fulfilled....wars, famines, bin Ladin, terrorism, religious hatred against christians (shock brought to this Christian Land!).
+<P>
+
+This tension around the end times and how to keep the people holding on with hope without a) panicking or b)doing nothing is in a lot of the Pauline works.
+<P>
+
+Sara
+
+<P>
+
+</span>
+                <table><tr></tr></table>
+            </div>
+
+            <div align="center">
+                
+            </div><!-- End: center -->
+        </div><!-- End: dBoxMain -->
+
+        <div class="dBoxMainCrumb1">
+            <div class="dBoxMainRateLinks">
+                <div class="dBoxMainRateLinksStars">&nbsp;</div>
+            </div><!-- End: dBoxMainRateLinks -->
+
+            <div class="dBoxMainCrumbLinks1">
+                
+                <a href="javascript:void(0)" onclick="iv_S2FOverride = 'http://messageboards.ivillage.com/n/mb/message.asp?webtag=iv-pplibchrist&msg=775.4'; iv_openS2F();" class="ls3">send to a friend</a> > &nbsp;
+                <a href="/n/mb/display.asp?webtag=iv-pplibchrist&msg=775.4&print=y" class="ls3">print</a> > &nbsp;
+                <a href="Javascript:bookmark_page('775.4');" class="ls3">bookmark</a> > &nbsp;
+                <a href="/n/mb/reportTOSViolation.asp?webtag=iv-pplibchrist&rptid=775&msg=775.4&rptsn=4&lowtsn=4&uid=369385549" class="ls3">report a violation</a> >
+            </div><!-- End: dBoxMainCrumbLinks1 -->
+        </div><!-- End: dBoxMainCrumb 1 -->
+
+        
+    </div><!-- End: dBox -->
+</div><!-- End: dBoxWrapper --><!-- FP Universal: Shared -->
+<div class="spacer30"></div>
+
+<div class="dBoxWrapper">
+    <div class="dBox">
+        <div class="dBoxLeftCol">
+            <div class="dBoxLeftColText">
+                <div align="center">
+                    <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369383651" onClick="return LBB(369383651);">pmclean</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=cl" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr>
+                    <div class="memberPic"><img src="http://acx.prospero.com/dir-app/bbcard/bbMemberPicture.aspx?rid=185&uid=369383651" border=0 height=75 width=50></div>
+                </div><!-- End: center -->
+
+                <div class="lastVisit">
+                    
+                    last visit to<br />this board<br />
+                    8/27/2004<br /><br /><br />
+                    
+
+                    
+                    messages posted<br />this board<br />
+                    206<br /><br />
+                    
+
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369383651&u=400184051&msg=775.5&f=1" class="ls1">add to friends</a><br />
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369383651&u=400184051&msg=775.5" class="ls1">ignore posts</a>
+                </div><!-- End: lastVisit -->
+            </div><!-- End: dBoxLeftColText -->
+        </div><!-- End: dBoxLeftCol -->
+
+        <div class="dBoxMain">
+            <div class="mainBodyTextTop">
+                <div class="oneLine"><div class="boldText">re:</div><div class="textLeft1"><span class="fs10">&nbsp; Okay,  let's do it again!  Lectionary...</span></div></div>
+                <div class="oneLine"><div class="boldText">emoticon:</div><div class="textLeft"><span class="fs11">&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=2&iconName=2" border=0 height=15 width=15 align=texttop alt="Emoticon"></span></div></div>
+                <div class="oneLine"><div class="boldText">message #:</div><div class="textLeft"><span class="fs11">&nbsp; 775.5 in response to <a href="message.asp?webtag=iv-pplibchrist&msg=775.3" target=_self>775.3</a></span></div></div>
+
+
+                <div class="oneLine"><div class="boldText">from:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369383651" onClick="return LBB(369383651);">pmclean</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=cl" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">to:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369383651" onClick="return LBB(369383651);">pmclean</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=cl" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">date:</div><div class="textLeft"><span class="fs11">&nbsp; 11/17/2001 3:27 am</span></div></div>
+                <div class="oneLine"><div class="boldText">replies:</div><div class="textLeft"><span class="fs11">&nbsp; 25</span></div></div>
+            </div><!-- End: mainBodyTextTop -->
+
+            <br clear="all" />
+
+            <div class="mainBodyText">
+                <span class="fs5"><!-- OldURL: http://boards2.parentsplace.com/messages/get/pplibchristiann9/40/1/1/2.html -->
+<p>The Temple in which Jesus sat teaching, is the same one described by Haggai...</p>
+
+last week. Its building is recounted in Ezra 3 and 1 Esdras 6 (you need a Bible with apocrypha to read this; some Bibles may refer to it as Esdras 3 -- Ezra, Nehemiah, 1 Esdras and 2 Esdras being four volumes of the same work, which is referred to in Greek as "Esdras".) It is a reconstruction of the Temple of Solomon, which is copiously described in 1 Kings chapters 5 to 7. Based on those passages, Architecture Week's Great Buildings Collection briefly describes it as:
+<P>
+
+
+<PRE> "Solomon's temple ...was a rectangular structure surrounded
+  by open courtyards; it had an inner sanctum, a forehall
+  with two grand columns of bronze, and between these spaces
+  a larger main room"
+  <A HREF="http://www.greatbuildings.com/buildings/Solomons_Temple.html">http://www.greatbuildings.com/buildings/Solomons_Temple.html</A></PRE>
+<P>
+
+The original temple was built by 153,000 skilled workmen in the pay of perhaps the greatest monarch of their age. The walls and floors were overlaid with exotic woods and precious metals. It was ornately decorated and furnished in precious metals. The second temple was built by a fraction of that number of returning impoverished exiles, under the dubious sponsorship of a foreign king. Although we are told that those furnishings which had been held in the Babylonian treasury were returned, it is likely that the actual construction and decoration of the second temple was markedly more modest than was Solomon's.
+<P>
+
+Pre-Exilic Israelite religion centred on sacrifice, and sacrifice centred on the temple. Early in the occupation of the Promised Land, sacrifices were made at house-hold altars and local shrines. Later, however, it became a matter of importance that sacrifices be made at the one temple. Amos preaces against the use of local hill-shrines for sacrifice, as a kind of apostacy. How much this emphasis on the temple was meant to support the control of the Temple priests over religion, and the political legitimacy of the Southern Kingdom over the Northern Kingdom, is a matter for some debate.
+<P>
+
+During the Diaspora, Jewish religion was reformed around the Torah, rather than around sacrifice. First century Jerusalem was a place of tension in the Jewish religion, between the new synagogue style of worship, featuring the Pharisees (forerunners of modern Rabbi's), and the traditional temple worship under the Levites and Aaronic priesthood.
+<P>
+
+Within the half-century following Jesus life, a Jewish rebellion provoked Rome's ire. In the course of putting down the rebellion, Rome destroyed the second temple as the first had been destroyed.
+
+<P>
+
+</span>
+                <table><tr></tr></table>
+            </div>
+
+            <div align="center">
+                
+            </div><!-- End: center -->
+        </div><!-- End: dBoxMain -->
+
+        <div class="dBoxMainCrumb1">
+            <div class="dBoxMainRateLinks">
+                <div class="dBoxMainRateLinksStars">&nbsp;</div>
+            </div><!-- End: dBoxMainRateLinks -->
+
+            <div class="dBoxMainCrumbLinks1">
+                
+                <a href="javascript:void(0)" onclick="iv_S2FOverride = 'http://messageboards.ivillage.com/n/mb/message.asp?webtag=iv-pplibchrist&msg=775.5'; iv_openS2F();" class="ls3">send to a friend</a> > &nbsp;
+                <a href="/n/mb/display.asp?webtag=iv-pplibchrist&msg=775.5&print=y" class="ls3">print</a> > &nbsp;
+                <a href="Javascript:bookmark_page('775.5');" class="ls3">bookmark</a> > &nbsp;
+                <a href="/n/mb/reportTOSViolation.asp?webtag=iv-pplibchrist&rptid=775&msg=775.5&rptsn=5&lowtsn=5&uid=369383651" class="ls3">report a violation</a> >
+            </div><!-- End: dBoxMainCrumbLinks1 -->
+        </div><!-- End: dBoxMainCrumb 1 -->
+
+        
+    </div><!-- End: dBox -->
+</div><!-- End: dBoxWrapper --><!-- FP Universal: Shared -->
+<div class="spacer30"></div>
+
+<div class="dBoxWrapper">
+    <div class="dBox">
+        <div class="dBoxLeftCol">
+            <div class="dBoxLeftColText">
+                <div align="center">
+                    <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369383651" onClick="return LBB(369383651);">pmclean</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=cl" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr>
+                    <div class="memberPic"><img src="http://acx.prospero.com/dir-app/bbcard/bbMemberPicture.aspx?rid=185&uid=369383651" border=0 height=75 width=50></div>
+                </div><!-- End: center -->
+
+                <div class="lastVisit">
+                    
+                    last visit to<br />this board<br />
+                    8/27/2004<br /><br /><br />
+                    
+
+                    
+                    messages posted<br />this board<br />
+                    206<br /><br />
+                    
+
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369383651&u=400184051&msg=775.6&f=1" class="ls1">add to friends</a><br />
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369383651&u=400184051&msg=775.6" class="ls1">ignore posts</a>
+                </div><!-- End: lastVisit -->
+            </div><!-- End: dBoxLeftColText -->
+        </div><!-- End: dBoxLeftCol -->
+
+        <div class="dBoxMain">
+            <div class="mainBodyTextTop">
+                <div class="oneLine"><div class="boldText">re:</div><div class="textLeft1"><span class="fs10">&nbsp; Okay,  let's do it again!  Lectionary...</span></div></div>
+                <div class="oneLine"><div class="boldText">emoticon:</div><div class="textLeft"><span class="fs11">&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=2&iconName=2" border=0 height=15 width=15 align=texttop alt="Emoticon"></span></div></div>
+                <div class="oneLine"><div class="boldText">message #:</div><div class="textLeft"><span class="fs11">&nbsp; 775.6 in response to <a href="message.asp?webtag=iv-pplibchrist&msg=775.3" target=_self>775.3</a></span></div></div>
+
+
+                <div class="oneLine"><div class="boldText">from:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369383651" onClick="return LBB(369383651);">pmclean</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=cl" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">to:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369383651" onClick="return LBB(369383651);">pmclean</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=cl" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">date:</div><div class="textLeft"><span class="fs11">&nbsp; 11/18/2001 9:02 pm</span></div></div>
+                <div class="oneLine"><div class="boldText">replies:</div><div class="textLeft"><span class="fs11">&nbsp; 25</span></div></div>
+            </div><!-- End: mainBodyTextTop -->
+
+            <br clear="all" />
+
+            <div class="mainBodyText">
+                <span class="fs5"><!-- OldURL: http://boards2.parentsplace.com/messages/get/pplibchristiann9/40/1/1/3.html -->
+<p>Temple-centred worship anchored Judaism in one place, and secured it for a "chosen people". (more)</p>
+
+If our Christianity focuses on a church building, it too becomes anchored in place, and we lose our freedom to "go out into all the world". It can lead to an exclusiveness, as when parishioners objecting to hosting an Inn from the Cold say "but, we don't want those people hanging around our church, we wouldn't feel safe". Over and over we hear Christians who should know better, referring to "the church with the green roof" as though a church *were* a building. It is not.
+<P>
+
+The physical construction of traditional (liturgical) church buildings is divided into three spaces analogous to the Solomonic temple: the "nave", which is open to seekers and catechumens being analogous to the entry court; the "chancel", set off from the nave by a rail or screen and raised above the nave by a few steps and reserved to initiates: members of the religious community, the choir, lay-ministers and deacons; and the "sanctuary", reserved to the bishop, the priest, and those who assist the celebrant at the altar. 
+<P>
+
+Liturgical reform of the late 20th century acted on church architecture to blur these divisions, and recover a new-testament archetype for the church building: the archetype of a patrician home. Immersion baptistries, modelled on the atrium fountains of a roman house; and central altars set in the midst of the congregation, modelled on the family table; became features of new churches. In some cases, the rails and elevations separating chancel and sanctuary vanished completely, in other cases they morphed, remaining present in less obviously segregating forms.
+<P>
+
+A house is a better model for a church building than is a temple: a house is important only because of the family that it shelters, not in and of itself. "The Church" must always refer to the people, never to a building no matter how lovely. 
+
+<P>
+
+</span>
+                <table><tr></tr></table>
+            </div>
+
+            <div align="center">
+                
+            </div><!-- End: center -->
+        </div><!-- End: dBoxMain -->
+
+        <div class="dBoxMainCrumb1">
+            <div class="dBoxMainRateLinks">
+                <div class="dBoxMainRateLinksStars">&nbsp;</div>
+            </div><!-- End: dBoxMainRateLinks -->
+
+            <div class="dBoxMainCrumbLinks1">
+                
+                <a href="javascript:void(0)" onclick="iv_S2FOverride = 'http://messageboards.ivillage.com/n/mb/message.asp?webtag=iv-pplibchrist&msg=775.6'; iv_openS2F();" class="ls3">send to a friend</a> > &nbsp;
+                <a href="/n/mb/display.asp?webtag=iv-pplibchrist&msg=775.6&print=y" class="ls3">print</a> > &nbsp;
+                <a href="Javascript:bookmark_page('775.6');" class="ls3">bookmark</a> > &nbsp;
+                <a href="/n/mb/reportTOSViolation.asp?webtag=iv-pplibchrist&rptid=775&msg=775.6&rptsn=6&lowtsn=6&uid=369383651" class="ls3">report a violation</a> >
+            </div><!-- End: dBoxMainCrumbLinks1 -->
+        </div><!-- End: dBoxMainCrumb 1 -->
+
+        
+    </div><!-- End: dBox -->
+</div><!-- End: dBoxWrapper --><!-- FP Universal: Shared -->
+<div class="spacer30"></div>
+
+<div class="dBoxWrapper">
+    <div class="dBox">
+        <div class="dBoxLeftCol">
+            <div class="dBoxLeftColText">
+                <div align="center">
+                    <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369381605" onClick="return LBB(369381605);">marksma</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=196" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr>
+                    <div class="memberPic"><img src="http://acx.prospero.com/dir-app/bbcard/bbMemberPicture.aspx?rid=185&uid=369381605" border=0 height=75 width=50></div>
+                </div><!-- End: center -->
+
+                <div class="lastVisit">
+                    
+                    last visit to<br />this board<br />
+                    2/24/2004<br /><br /><br />
+                    
+
+                    
+                    messages posted<br />this board<br />
+                    83<br /><br />
+                    
+
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369381605&u=400184051&msg=775.7&f=1" class="ls1">add to friends</a><br />
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369381605&u=400184051&msg=775.7" class="ls1">ignore posts</a>
+                </div><!-- End: lastVisit -->
+            </div><!-- End: dBoxLeftColText -->
+        </div><!-- End: dBoxLeftCol -->
+
+        <div class="dBoxMain">
+            <div class="mainBodyTextTop">
+                <div class="oneLine"><div class="boldText">re:</div><div class="textLeft1"><span class="fs10">&nbsp; Okay,  let's do it again!  Lectionary...</span></div></div>
+                <div class="oneLine"><div class="boldText">emoticon:</div><div class="textLeft"><span class="fs11">&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=2&iconName=2" border=0 height=15 width=15 align=texttop alt="Emoticon"></span></div></div>
+                <div class="oneLine"><div class="boldText">message #:</div><div class="textLeft"><span class="fs11">&nbsp; 775.7 in response to <a href="message.asp?webtag=iv-pplibchrist&msg=775.2" target=_self>775.2</a></span></div></div>
+
+
+                <div class="oneLine"><div class="boldText">from:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369381605" onClick="return LBB(369381605);">marksma</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=196" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">to:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369383651" onClick="return LBB(369383651);">pmclean</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=cl" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">date:</div><div class="textLeft"><span class="fs11">&nbsp; 11/15/2001 12:16 am</span></div></div>
+                <div class="oneLine"><div class="boldText">replies:</div><div class="textLeft"><span class="fs11">&nbsp; 25</span></div></div>
+            </div><!-- End: mainBodyTextTop -->
+
+            <br clear="all" />
+
+            <div class="mainBodyText">
+                <span class="fs5"><!-- OldURL: http://boards2.parentsplace.com/messages/get/pplibchristiann9/40/1/2.html -->
+<p>One thing that struck me in this Luke passage....m</p>
+
+It always seemed to me that the disciples all thought the "end" (Jesus' return) was going to happen soon, probably within their lifetime.  This passage in Luke seems to indicate that (at least by the time Luke wrote) the expectation was that Jesus would come back but not 'right away'.  Even that it could be quite awhile.  ie. "many will come in my name" If many are to come, wouldn't that indicate a longish period of time?  "Wars and revolutions...must happen first"; wouldn't the plural indicate at least several if not many years?  And of course Jesus says "the end will not come right away."  
+<P>
+
+Just a thought.
+
+<P>
+
+</span>
+                <table><tr></tr></table>
+            </div>
+
+            <div align="center">
+                
+            </div><!-- End: center -->
+        </div><!-- End: dBoxMain -->
+
+        <div class="dBoxMainCrumb1">
+            <div class="dBoxMainRateLinks">
+                <div class="dBoxMainRateLinksStars">&nbsp;</div>
+            </div><!-- End: dBoxMainRateLinks -->
+
+            <div class="dBoxMainCrumbLinks1">
+                
+                <a href="javascript:void(0)" onclick="iv_S2FOverride = 'http://messageboards.ivillage.com/n/mb/message.asp?webtag=iv-pplibchrist&msg=775.7'; iv_openS2F();" class="ls3">send to a friend</a> > &nbsp;
+                <a href="/n/mb/display.asp?webtag=iv-pplibchrist&msg=775.7&print=y" class="ls3">print</a> > &nbsp;
+                <a href="Javascript:bookmark_page('775.7');" class="ls3">bookmark</a> > &nbsp;
+                <a href="/n/mb/reportTOSViolation.asp?webtag=iv-pplibchrist&rptid=775&msg=775.7&rptsn=7&lowtsn=7&uid=369381605" class="ls3">report a violation</a> >
+            </div><!-- End: dBoxMainCrumbLinks1 -->
+        </div><!-- End: dBoxMainCrumb 1 -->
+
+        
+    </div><!-- End: dBox -->
+</div><!-- End: dBoxWrapper --><!-- FP Universal: Shared -->
+<div class="spacer30"></div>
+
+<div class="dBoxWrapper">
+    <div class="dBox">
+        <div class="dBoxLeftCol">
+            <div class="dBoxLeftColText">
+                <div align="center">
+                    <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369456187" onClick="return LBB(369456187);">trishfs</a> <nobr></nobr>
+                    <div class="memberPic"><img src="http://acx.prospero.com/dir-app/bbcard/bbMemberPicture.aspx?rid=185&uid=369456187" border=0 height=75 width=50></div>
+                </div><!-- End: center -->
+
+                <div class="lastVisit">
+                    
+                    last visit to<br />this board<br />
+                    2/20/2004<br /><br /><br />
+                    
+
+                    
+
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369456187&u=400184051&msg=775.8&f=1" class="ls1">add to friends</a><br />
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369456187&u=400184051&msg=775.8" class="ls1">ignore posts</a>
+                </div><!-- End: lastVisit -->
+            </div><!-- End: dBoxLeftColText -->
+        </div><!-- End: dBoxLeftCol -->
+
+        <div class="dBoxMain">
+            <div class="mainBodyTextTop">
+                <div class="oneLine"><div class="boldText">re:</div><div class="textLeft1"><span class="fs10">&nbsp; Okay,  let's do it again!  Lectionary...</span></div></div>
+                <div class="oneLine"><div class="boldText">emoticon:</div><div class="textLeft"><span class="fs11">&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=2&iconName=1" border=0 height=15 width=15 align=texttop alt="Emoticon"></span></div></div>
+                <div class="oneLine"><div class="boldText">message #:</div><div class="textLeft"><span class="fs11">&nbsp; 775.8 in response to <a href="message.asp?webtag=iv-pplibchrist&msg=775.1" target=_self>775.1</a></span></div></div>
+
+
+                <div class="oneLine"><div class="boldText">from:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369456187" onClick="return LBB(369456187);">trishfs</a> <nobr></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">to:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369383651" onClick="return LBB(369383651);">pmclean</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=cl" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">date:</div><div class="textLeft"><span class="fs11">&nbsp; 11/14/2001 10:18 am</span></div></div>
+                <div class="oneLine"><div class="boldText">replies:</div><div class="textLeft"><span class="fs11">&nbsp; 25</span></div></div>
+            </div><!-- End: mainBodyTextTop -->
+
+            <br clear="all" />
+
+            <div class="mainBodyText">
+                <span class="fs5"><!-- OldURL: http://boards2.parentsplace.com/messages/get/pplibchristiann9/40/2.html -->
+<p>Pamela, thanks for posting this.  (M)</p>
+
+I've been reading the lessons, and I just keep thinking "Oh yuck."  I wish I had something productive or profound to add, and I am anxious to read what others have to say.  Perhaps we'll get some readings with a lower yuck-factor that I'll feel able to discuss.
+<P>
+
+But don't feel like the posts are going unread!
+<P>
+
+Trish
+
+<P>
+
+</span>
+                <table><tr></tr></table>
+            </div>
+
+            <div align="center">
+                
+            </div><!-- End: center -->
+        </div><!-- End: dBoxMain -->
+
+        <div class="dBoxMainCrumb1">
+            <div class="dBoxMainRateLinks">
+                <div class="dBoxMainRateLinksStars">&nbsp;</div>
+            </div><!-- End: dBoxMainRateLinks -->
+
+            <div class="dBoxMainCrumbLinks1">
+                
+                <a href="javascript:void(0)" onclick="iv_S2FOverride = 'http://messageboards.ivillage.com/n/mb/message.asp?webtag=iv-pplibchrist&msg=775.8'; iv_openS2F();" class="ls3">send to a friend</a> > &nbsp;
+                <a href="/n/mb/display.asp?webtag=iv-pplibchrist&msg=775.8&print=y" class="ls3">print</a> > &nbsp;
+                <a href="Javascript:bookmark_page('775.8');" class="ls3">bookmark</a> > &nbsp;
+                <a href="/n/mb/reportTOSViolation.asp?webtag=iv-pplibchrist&rptid=775&msg=775.8&rptsn=8&lowtsn=8&uid=369456187" class="ls3">report a violation</a> >
+            </div><!-- End: dBoxMainCrumbLinks1 -->
+        </div><!-- End: dBoxMainCrumb 1 -->
+
+        
+    </div><!-- End: dBox -->
+</div><!-- End: dBoxWrapper --><!-- FP Universal: Shared -->
+<div class="spacer30"></div>
+
+<div class="dBoxWrapper">
+    <div class="dBox">
+        <div class="dBoxLeftCol">
+            <div class="dBoxLeftColText">
+                <div align="center">
+                    <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369383651" onClick="return LBB(369383651);">pmclean</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=cl" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr>
+                    <div class="memberPic"><img src="http://acx.prospero.com/dir-app/bbcard/bbMemberPicture.aspx?rid=185&uid=369383651" border=0 height=75 width=50></div>
+                </div><!-- End: center -->
+
+                <div class="lastVisit">
+                    
+                    last visit to<br />this board<br />
+                    8/27/2004<br /><br /><br />
+                    
+
+                    
+                    messages posted<br />this board<br />
+                    206<br /><br />
+                    
+
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369383651&u=400184051&msg=775.9&f=1" class="ls1">add to friends</a><br />
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369383651&u=400184051&msg=775.9" class="ls1">ignore posts</a>
+                </div><!-- End: lastVisit -->
+            </div><!-- End: dBoxLeftColText -->
+        </div><!-- End: dBoxLeftCol -->
+
+        <div class="dBoxMain">
+            <div class="mainBodyTextTop">
+                <div class="oneLine"><div class="boldText">re:</div><div class="textLeft1"><span class="fs10">&nbsp; Okay,  let's do it again!  Lectionary...</span></div></div>
+                <div class="oneLine"><div class="boldText">emoticon:</div><div class="textLeft"><span class="fs11">&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=2&iconName=14" border=0 height=15 width=15 align=texttop alt="Emoticon"></span></div></div>
+                <div class="oneLine"><div class="boldText">message #:</div><div class="textLeft"><span class="fs11">&nbsp; 775.9 in response to <a href="message.asp?webtag=iv-pplibchrist&msg=775.8" target=_self>775.8</a></span></div></div>
+
+
+                <div class="oneLine"><div class="boldText">from:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369383651" onClick="return LBB(369383651);">pmclean</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=cl" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">to:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369456187" onClick="return LBB(369456187);">trishfs</a> <nobr></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">date:</div><div class="textLeft"><span class="fs11">&nbsp; 11/14/2001 12:36 pm</span></div></div>
+                <div class="oneLine"><div class="boldText">replies:</div><div class="textLeft"><span class="fs11">&nbsp; 25</span></div></div>
+            </div><!-- End: mainBodyTextTop -->
+
+            <br clear="all" />
+
+            <div class="mainBodyText">
+                <span class="fs5"><!-- OldURL: http://boards2.parentsplace.com/messages/get/pplibchristiann9/40/2/1.html -->
+<p>Thanks, Trish. I do sometimes feel like the voice of one babbling in the wilderness &lt;nt&gt;</p>
+</span>
+                <table><tr></tr></table>
+            </div>
+
+            <div align="center">
+                
+            </div><!-- End: center -->
+        </div><!-- End: dBoxMain -->
+
+        <div class="dBoxMainCrumb1">
+            <div class="dBoxMainRateLinks">
+                <div class="dBoxMainRateLinksStars">&nbsp;</div>
+            </div><!-- End: dBoxMainRateLinks -->
+
+            <div class="dBoxMainCrumbLinks1">
+                
+                <a href="javascript:void(0)" onclick="iv_S2FOverride = 'http://messageboards.ivillage.com/n/mb/message.asp?webtag=iv-pplibchrist&msg=775.9'; iv_openS2F();" class="ls3">send to a friend</a> > &nbsp;
+                <a href="/n/mb/display.asp?webtag=iv-pplibchrist&msg=775.9&print=y" class="ls3">print</a> > &nbsp;
+                <a href="Javascript:bookmark_page('775.9');" class="ls3">bookmark</a> > &nbsp;
+                <a href="/n/mb/reportTOSViolation.asp?webtag=iv-pplibchrist&rptid=775&msg=775.9&rptsn=9&lowtsn=9&uid=369383651" class="ls3">report a violation</a> >
+            </div><!-- End: dBoxMainCrumbLinks1 -->
+        </div><!-- End: dBoxMainCrumb 1 -->
+
+        
+    </div><!-- End: dBox -->
+</div><!-- End: dBoxWrapper --><!-- FP Universal: Shared -->
+<div class="spacer30"></div>
+
+<div class="dBoxWrapper">
+    <div class="dBox">
+        <div class="dBoxLeftCol">
+            <div class="dBoxLeftColText">
+                <div align="center">
+                    <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369385549" onClick="return LBB(369385549);">sara_k</a> <nobr></nobr>
+                    <div class="memberPic"><img src="http://acx.prospero.com/dir-app/bbcard/bbMemberPicture.aspx?rid=185&uid=369385549" border=0 height=75 width=50></div>
+                </div><!-- End: center -->
+
+                <div class="lastVisit">
+                    
+                    last visit to<br />this board<br />
+                    5/22/2005<br /><br /><br />
+                    
+
+                    
+                    messages posted<br />this board<br />
+                    153<br /><br />
+                    
+
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369385549&u=400184051&msg=775.10&f=1" class="ls1">add to friends</a><br />
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369385549&u=400184051&msg=775.10" class="ls1">ignore posts</a>
+                </div><!-- End: lastVisit -->
+            </div><!-- End: dBoxLeftColText -->
+        </div><!-- End: dBoxLeftCol -->
+
+        <div class="dBoxMain">
+            <div class="mainBodyTextTop">
+                <div class="oneLine"><div class="boldText">re:</div><div class="textLeft1"><span class="fs10">&nbsp; Okay,  let's do it again!  Lectionary...</span></div></div>
+                <div class="oneLine"><div class="boldText">emoticon:</div><div class="textLeft"><span class="fs11">&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=2&iconName=2" border=0 height=15 width=15 align=texttop alt="Emoticon"></span></div></div>
+                <div class="oneLine"><div class="boldText">message #:</div><div class="textLeft"><span class="fs11">&nbsp; 775.10 in response to <a href="message.asp?webtag=iv-pplibchrist&msg=775.9" target=_self>775.9</a></span></div></div>
+
+
+                <div class="oneLine"><div class="boldText">from:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369385549" onClick="return LBB(369385549);">sara_k</a> <nobr></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">to:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369383651" onClick="return LBB(369383651);">pmclean</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=cl" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">date:</div><div class="textLeft"><span class="fs11">&nbsp; 11/15/2001 7:46 am</span></div></div>
+                <div class="oneLine"><div class="boldText">replies:</div><div class="textLeft"><span class="fs11">&nbsp; 25</span></div></div>
+            </div><!-- End: mainBodyTextTop -->
+
+            <br clear="all" />
+
+            <div class="mainBodyText">
+                <span class="fs5"><!-- OldURL: http://boards2.parentsplace.com/messages/get/pplibchristiann9/40/2/1/1.html -->
+<p>Sorry Pamela,</p>
+
+I've been struggling with my classes. My co-mentor is in South Africa for three weeks so instead of studying my lesson and prep for one other class and the theological reflection, I've been prepping for 3 classes, the reflection and my own work.
+<P>
+
+On Thursdays, I'm free of stress and ready to go!
+<P>
+
+I do appreciate you!
+<P>
+
+Sara
+
+<P>
+
+</span>
+                <table><tr></tr></table>
+            </div>
+
+            <div align="center">
+                
+            </div><!-- End: center -->
+        </div><!-- End: dBoxMain -->
+
+        <div class="dBoxMainCrumb1">
+            <div class="dBoxMainRateLinks">
+                <div class="dBoxMainRateLinksStars">&nbsp;</div>
+            </div><!-- End: dBoxMainRateLinks -->
+
+            <div class="dBoxMainCrumbLinks1">
+                
+                <a href="javascript:void(0)" onclick="iv_S2FOverride = 'http://messageboards.ivillage.com/n/mb/message.asp?webtag=iv-pplibchrist&msg=775.10'; iv_openS2F();" class="ls3">send to a friend</a> > &nbsp;
+                <a href="/n/mb/display.asp?webtag=iv-pplibchrist&msg=775.10&print=y" class="ls3">print</a> > &nbsp;
+                <a href="Javascript:bookmark_page('775.10');" class="ls3">bookmark</a> > &nbsp;
+                <a href="/n/mb/reportTOSViolation.asp?webtag=iv-pplibchrist&rptid=775&msg=775.10&rptsn=10&lowtsn=10&uid=369385549" class="ls3">report a violation</a> >
+            </div><!-- End: dBoxMainCrumbLinks1 -->
+        </div><!-- End: dBoxMainCrumb 1 -->
+
+        
+    </div><!-- End: dBox -->
+</div><!-- End: dBoxWrapper --><!-- FP Universal: Shared -->
+<div class="spacer30"></div>
+
+<div class="dBoxWrapper">
+    <div class="dBox">
+        <div class="dBoxLeftCol">
+            <div class="dBoxLeftColText">
+                <div align="center">
+                    <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369383651" onClick="return LBB(369383651);">pmclean</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=cl" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr>
+                    <div class="memberPic"><img src="http://acx.prospero.com/dir-app/bbcard/bbMemberPicture.aspx?rid=185&uid=369383651" border=0 height=75 width=50></div>
+                </div><!-- End: center -->
+
+                <div class="lastVisit">
+                    
+                    last visit to<br />this board<br />
+                    8/27/2004<br /><br /><br />
+                    
+
+                    
+                    messages posted<br />this board<br />
+                    206<br /><br />
+                    
+
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369383651&u=400184051&msg=775.11&f=1" class="ls1">add to friends</a><br />
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369383651&u=400184051&msg=775.11" class="ls1">ignore posts</a>
+                </div><!-- End: lastVisit -->
+            </div><!-- End: dBoxLeftColText -->
+        </div><!-- End: dBoxLeftCol -->
+
+        <div class="dBoxMain">
+            <div class="mainBodyTextTop">
+                <div class="oneLine"><div class="boldText">re:</div><div class="textLeft1"><span class="fs10">&nbsp; Okay,  let's do it again!  Lectionary...</span></div></div>
+                <div class="oneLine"><div class="boldText">emoticon:</div><div class="textLeft"><span class="fs11">&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=2&iconName=14" border=0 height=15 width=15 align=texttop alt="Emoticon"></span></div></div>
+                <div class="oneLine"><div class="boldText">message #:</div><div class="textLeft"><span class="fs11">&nbsp; 775.11 in response to <a href="message.asp?webtag=iv-pplibchrist&msg=775.10" target=_self>775.10</a></span></div></div>
+
+
+                <div class="oneLine"><div class="boldText">from:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369383651" onClick="return LBB(369383651);">pmclean</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=cl" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">to:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369385549" onClick="return LBB(369385549);">sara_k</a> <nobr></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">date:</div><div class="textLeft"><span class="fs11">&nbsp; 11/15/2001 1:37 pm</span></div></div>
+                <div class="oneLine"><div class="boldText">replies:</div><div class="textLeft"><span class="fs11">&nbsp; 25</span></div></div>
+            </div><!-- End: mainBodyTextTop -->
+
+            <br clear="all" />
+
+            <div class="mainBodyText">
+                <span class="fs5"><!-- OldURL: http://boards2.parentsplace.com/messages/get/pplibchristiann9/40/2/1/1/1.html -->
+<p>No, Sara! Usually you're out in the wilderness babbling with me! Why...</p>
+
+do you suppose, when "liberal Christians" are unregenerate tools of Satan who will be spewed from the mouth of God; and when there are so many self-identified "Bible believing" Christians on the other boards that I frequent; does a poll about what make of car one drives garner responses so readily, and a post about the Bible garners, frequently, no discussion at all?
+<P>
+
+I could feel quite cynical about it, but actually I'm genuinely curious. 
+
+<P>
+
+</span>
+                <table><tr></tr></table>
+            </div>
+
+            <div align="center">
+                
+            </div><!-- End: center -->
+        </div><!-- End: dBoxMain -->
+
+        <div class="dBoxMainCrumb1">
+            <div class="dBoxMainRateLinks">
+                <div class="dBoxMainRateLinksStars">&nbsp;</div>
+            </div><!-- End: dBoxMainRateLinks -->
+
+            <div class="dBoxMainCrumbLinks1">
+                
+                <a href="javascript:void(0)" onclick="iv_S2FOverride = 'http://messageboards.ivillage.com/n/mb/message.asp?webtag=iv-pplibchrist&msg=775.11'; iv_openS2F();" class="ls3">send to a friend</a> > &nbsp;
+                <a href="/n/mb/display.asp?webtag=iv-pplibchrist&msg=775.11&print=y" class="ls3">print</a> > &nbsp;
+                <a href="Javascript:bookmark_page('775.11');" class="ls3">bookmark</a> > &nbsp;
+                <a href="/n/mb/reportTOSViolation.asp?webtag=iv-pplibchrist&rptid=775&msg=775.11&rptsn=11&lowtsn=11&uid=369383651" class="ls3">report a violation</a> >
+            </div><!-- End: dBoxMainCrumbLinks1 -->
+        </div><!-- End: dBoxMainCrumb 1 -->
+
+        
+    </div><!-- End: dBox -->
+</div><!-- End: dBoxWrapper --><!-- FP Universal: Shared -->
+<div class="spacer30"></div>
+
+<div class="dBoxWrapper">
+    <div class="dBox">
+        <div class="dBoxLeftCol">
+            <div class="dBoxLeftColText">
+                <div align="center">
+                    <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369385549" onClick="return LBB(369385549);">sara_k</a> <nobr></nobr>
+                    <div class="memberPic"><img src="http://acx.prospero.com/dir-app/bbcard/bbMemberPicture.aspx?rid=185&uid=369385549" border=0 height=75 width=50></div>
+                </div><!-- End: center -->
+
+                <div class="lastVisit">
+                    
+                    last visit to<br />this board<br />
+                    5/22/2005<br /><br /><br />
+                    
+
+                    
+                    messages posted<br />this board<br />
+                    153<br /><br />
+                    
+
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369385549&u=400184051&msg=775.12&f=1" class="ls1">add to friends</a><br />
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369385549&u=400184051&msg=775.12" class="ls1">ignore posts</a>
+                </div><!-- End: lastVisit -->
+            </div><!-- End: dBoxLeftColText -->
+        </div><!-- End: dBoxLeftCol -->
+
+        <div class="dBoxMain">
+            <div class="mainBodyTextTop">
+                <div class="oneLine"><div class="boldText">re:</div><div class="textLeft1"><span class="fs10">&nbsp; Okay,  let's do it again!  Lectionary...</span></div></div>
+                <div class="oneLine"><div class="boldText">emoticon:</div><div class="textLeft"><span class="fs11">&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=2&iconName=2" border=0 height=15 width=15 align=texttop alt="Emoticon"></span></div></div>
+                <div class="oneLine"><div class="boldText">message #:</div><div class="textLeft"><span class="fs11">&nbsp; 775.12 in response to <a href="message.asp?webtag=iv-pplibchrist&msg=775.11" target=_self>775.11</a></span></div></div>
+
+
+                <div class="oneLine"><div class="boldText">from:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369385549" onClick="return LBB(369385549);">sara_k</a> <nobr></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">to:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369383651" onClick="return LBB(369383651);">pmclean</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=cl" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">date:</div><div class="textLeft"><span class="fs11">&nbsp; 11/15/2001 8:12 pm</span></div></div>
+                <div class="oneLine"><div class="boldText">replies:</div><div class="textLeft"><span class="fs11">&nbsp; 25</span></div></div>
+            </div><!-- End: mainBodyTextTop -->
+
+            <br clear="all" />
+
+            <div class="mainBodyText">
+                <span class="fs5"><!-- OldURL: http://boards2.parentsplace.com/messages/get/pplibchristiann9/40/2/1/1/1/1.html -->
+<p>I think they feel uncomfortable and are deflecting their attention...</p>
+
+You know, like when the woman at coffee hour starts picking her nose and all the Mom's in the area say..."Oh, look kids! Geese out the far window!"
+<P>
+
+I understand deflecting the children since they'll either start picking their noses (and wiping on the linens) or else making loud statements.
+<P>
+
+I don't understand the discomfort at what is really basic Bible study.
+<P>
+
+I have been feeling guilty for waiting until so late this week and last to respond to your posts.  I hate that feeling of standing alone, and &lt;blush&gt; I've complained about it before on this very board and now I've done the same thing to you.
+<P>
+
+Things are looking up at class. I've managed to shorten the leash on the lecturing student and they ran with the reflection last night.
+<P>
+
+Sara
+
+<P>
+
+</span>
+                <table><tr></tr></table>
+            </div>
+
+            <div align="center">
+                
+            </div><!-- End: center -->
+        </div><!-- End: dBoxMain -->
+
+        <div class="dBoxMainCrumb1">
+            <div class="dBoxMainRateLinks">
+                <div class="dBoxMainRateLinksStars">&nbsp;</div>
+            </div><!-- End: dBoxMainRateLinks -->
+
+            <div class="dBoxMainCrumbLinks1">
+                
+                <a href="javascript:void(0)" onclick="iv_S2FOverride = 'http://messageboards.ivillage.com/n/mb/message.asp?webtag=iv-pplibchrist&msg=775.12'; iv_openS2F();" class="ls3">send to a friend</a> > &nbsp;
+                <a href="/n/mb/display.asp?webtag=iv-pplibchrist&msg=775.12&print=y" class="ls3">print</a> > &nbsp;
+                <a href="Javascript:bookmark_page('775.12');" class="ls3">bookmark</a> > &nbsp;
+                <a href="/n/mb/reportTOSViolation.asp?webtag=iv-pplibchrist&rptid=775&msg=775.12&rptsn=12&lowtsn=12&uid=369385549" class="ls3">report a violation</a> >
+            </div><!-- End: dBoxMainCrumbLinks1 -->
+        </div><!-- End: dBoxMainCrumb 1 -->
+
+        
+    </div><!-- End: dBox -->
+</div><!-- End: dBoxWrapper --><!-- FP Universal: Shared -->
+<div class="spacer30"></div>
+
+<div class="dBoxWrapper">
+    <div class="dBox">
+        <div class="dBoxLeftCol">
+            <div class="dBoxLeftColText">
+                <div align="center">
+                    <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=365373045" onClick="return LBB(365373045);">duende</a> <nobr></nobr>
+                    <div class="memberPic"><img src="http://acx.prospero.com/dir-app/bbcard/bbMemberPicture.aspx?rid=185&uid=365373045" border=0 height=75 width=50></div>
+                </div><!-- End: center -->
+
+                <div class="lastVisit">
+                    
+                    last visit to<br />this board<br />
+                    8/23/2004<br /><br /><br />
+                    
+
+                    
+                    messages posted<br />this board<br />
+                    83<br /><br />
+                    
+
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=365373045&u=400184051&msg=775.13&f=1" class="ls1">add to friends</a><br />
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=365373045&u=400184051&msg=775.13" class="ls1">ignore posts</a>
+                </div><!-- End: lastVisit -->
+            </div><!-- End: dBoxLeftColText -->
+        </div><!-- End: dBoxLeftCol -->
+
+        <div class="dBoxMain">
+            <div class="mainBodyTextTop">
+                <div class="oneLine"><div class="boldText">re:</div><div class="textLeft1"><span class="fs10">&nbsp; Okay,  let's do it again!  Lectionary...</span></div></div>
+                <div class="oneLine"><div class="boldText">emoticon:</div><div class="textLeft"><span class="fs11">&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=2&iconName=23" border=0 height=15 width=15 align=texttop alt="Emoticon"></span></div></div>
+                <div class="oneLine"><div class="boldText">message #:</div><div class="textLeft"><span class="fs11">&nbsp; 775.13 in response to <a href="message.asp?webtag=iv-pplibchrist&msg=775.12" target=_self>775.12</a></span></div></div>
+
+
+                <div class="oneLine"><div class="boldText">from:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=365373045" onClick="return LBB(365373045);">duende</a> <nobr></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">to:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369385549" onClick="return LBB(369385549);">sara_k</a> <nobr></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">date:</div><div class="textLeft"><span class="fs11">&nbsp; 11/16/2001 11:23 am</span></div></div>
+                <div class="oneLine"><div class="boldText">replies:</div><div class="textLeft"><span class="fs11">&nbsp; 25</span></div></div>
+            </div><!-- End: mainBodyTextTop -->
+
+            <br clear="all" />
+
+            <div class="mainBodyText">
+                <span class="fs5"><!-- OldURL: http://boards2.parentsplace.com/messages/get/pplibchristiann9/40/2/1/1/1/1/1.html -->
+<p>I apologize for not having more to say...</p>
+
+...I've been having trouble with this ever since Sept 11.  It seems like every week the readings include the most blood-thirsty segments of the OT, war, war, war...  I read it and feel to damned depressed to respond.
+<P>
+
+I agree, Sara, this week really is a lovely Psalm!
+
+<P>
+
+</span>
+                <table><tr></tr></table>
+            </div>
+
+            <div align="center">
+                
+            </div><!-- End: center -->
+        </div><!-- End: dBoxMain -->
+
+        <div class="dBoxMainCrumb1">
+            <div class="dBoxMainRateLinks">
+                <div class="dBoxMainRateLinksStars">&nbsp;</div>
+            </div><!-- End: dBoxMainRateLinks -->
+
+            <div class="dBoxMainCrumbLinks1">
+                
+                <a href="javascript:void(0)" onclick="iv_S2FOverride = 'http://messageboards.ivillage.com/n/mb/message.asp?webtag=iv-pplibchrist&msg=775.13'; iv_openS2F();" class="ls3">send to a friend</a> > &nbsp;
+                <a href="/n/mb/display.asp?webtag=iv-pplibchrist&msg=775.13&print=y" class="ls3">print</a> > &nbsp;
+                <a href="Javascript:bookmark_page('775.13');" class="ls3">bookmark</a> > &nbsp;
+                <a href="/n/mb/reportTOSViolation.asp?webtag=iv-pplibchrist&rptid=775&msg=775.13&rptsn=13&lowtsn=13&uid=365373045" class="ls3">report a violation</a> >
+            </div><!-- End: dBoxMainCrumbLinks1 -->
+        </div><!-- End: dBoxMainCrumb 1 -->
+
+        
+    </div><!-- End: dBox -->
+</div><!-- End: dBoxWrapper --><!-- FP Universal: Shared -->
+<div class="spacer30"></div>
+
+<div class="dBoxWrapper">
+    <div class="dBox">
+        <div class="dBoxLeftCol">
+            <div class="dBoxLeftColText">
+                <div align="center">
+                    <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369383651" onClick="return LBB(369383651);">pmclean</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=cl" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr>
+                    <div class="memberPic"><img src="http://acx.prospero.com/dir-app/bbcard/bbMemberPicture.aspx?rid=185&uid=369383651" border=0 height=75 width=50></div>
+                </div><!-- End: center -->
+
+                <div class="lastVisit">
+                    
+                    last visit to<br />this board<br />
+                    8/27/2004<br /><br /><br />
+                    
+
+                    
+                    messages posted<br />this board<br />
+                    206<br /><br />
+                    
+
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369383651&u=400184051&msg=775.14&f=1" class="ls1">add to friends</a><br />
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369383651&u=400184051&msg=775.14" class="ls1">ignore posts</a>
+                </div><!-- End: lastVisit -->
+            </div><!-- End: dBoxLeftColText -->
+        </div><!-- End: dBoxLeftCol -->
+
+        <div class="dBoxMain">
+            <div class="mainBodyTextTop">
+                <div class="oneLine"><div class="boldText">re:</div><div class="textLeft1"><span class="fs10">&nbsp; Okay,  let's do it again!  Lectionary...</span></div></div>
+                <div class="oneLine"><div class="boldText">emoticon:</div><div class="textLeft"><span class="fs11">&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=2&iconName=7" border=0 height=15 width=15 align=texttop alt="Emoticon"></span></div></div>
+                <div class="oneLine"><div class="boldText">message #:</div><div class="textLeft"><span class="fs11">&nbsp; 775.14 in response to <a href="message.asp?webtag=iv-pplibchrist&msg=775.1" target=_self>775.1</a></span></div></div>
+
+
+                <div class="oneLine"><div class="boldText">from:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369383651" onClick="return LBB(369383651);">pmclean</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=cl" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">to:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369383651" onClick="return LBB(369383651);">pmclean</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=cl" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">date:</div><div class="textLeft"><span class="fs11">&nbsp; 11/14/2001 3:50 pm</span></div></div>
+                <div class="oneLine"><div class="boldText">replies:</div><div class="textLeft"><span class="fs11">&nbsp; 25</span></div></div>
+            </div><!-- End: mainBodyTextTop -->
+
+            <br clear="all" />
+
+            <div class="mainBodyText">
+                <span class="fs5"><!-- OldURL: http://boards2.parentsplace.com/messages/get/pplibchristiann9/40/3.html -->
+<p>Thessalonians: How are we to apply the instruction to "work quietly and to earn your own living"? ...</p>
+
+Does it apply to women? To mothers? To persons with disabilities?
+<P>
+
+What was the situation in the church in Thessalonica that Paul was addressing in this injunction?
+<P>
+
+What situations in our modern churches are parallel, to which we might, by extension, apply this passage?
+
+<P>
+
+</span>
+                <table><tr></tr></table>
+            </div>
+
+            <div align="center">
+                
+            </div><!-- End: center -->
+        </div><!-- End: dBoxMain -->
+
+        <div class="dBoxMainCrumb1">
+            <div class="dBoxMainRateLinks">
+                <div class="dBoxMainRateLinksStars">&nbsp;</div>
+            </div><!-- End: dBoxMainRateLinks -->
+
+            <div class="dBoxMainCrumbLinks1">
+                
+                <a href="javascript:void(0)" onclick="iv_S2FOverride = 'http://messageboards.ivillage.com/n/mb/message.asp?webtag=iv-pplibchrist&msg=775.14'; iv_openS2F();" class="ls3">send to a friend</a> > &nbsp;
+                <a href="/n/mb/display.asp?webtag=iv-pplibchrist&msg=775.14&print=y" class="ls3">print</a> > &nbsp;
+                <a href="Javascript:bookmark_page('775.14');" class="ls3">bookmark</a> > &nbsp;
+                <a href="/n/mb/reportTOSViolation.asp?webtag=iv-pplibchrist&rptid=775&msg=775.14&rptsn=14&lowtsn=14&uid=369383651" class="ls3">report a violation</a> >
+            </div><!-- End: dBoxMainCrumbLinks1 -->
+        </div><!-- End: dBoxMainCrumb 1 -->
+
+        
+    </div><!-- End: dBox -->
+</div><!-- End: dBoxWrapper --><!-- FP Universal: Shared -->
+<div class="spacer30"></div>
+
+<div class="dBoxWrapper">
+    <div class="dBox">
+        <div class="dBoxLeftCol">
+            <div class="dBoxLeftColText">
+                <div align="center">
+                    <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369396311" onClick="return LBB(369396311);">karenww</a> <nobr></nobr>
+                    <div class="memberPic"><img src="http://acx.prospero.com/dir-app/bbcard/bbMemberPicture.aspx?rid=185&uid=369396311" border=0 height=75 width=50></div>
+                </div><!-- End: center -->
+
+                <div class="lastVisit">
+                    
+                    last visit to<br />this board<br />
+                    4/7/2003<br /><br /><br />
+                    
+
+                    
+
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369396311&u=400184051&msg=775.15&f=1" class="ls1">add to friends</a><br />
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369396311&u=400184051&msg=775.15" class="ls1">ignore posts</a>
+                </div><!-- End: lastVisit -->
+            </div><!-- End: dBoxLeftColText -->
+        </div><!-- End: dBoxLeftCol -->
+
+        <div class="dBoxMain">
+            <div class="mainBodyTextTop">
+                <div class="oneLine"><div class="boldText">re:</div><div class="textLeft1"><span class="fs10">&nbsp; Okay,  let's do it again!  Lectionary...</span></div></div>
+                <div class="oneLine"><div class="boldText">emoticon:</div><div class="textLeft"><span class="fs11">&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=2&iconName=2" border=0 height=15 width=15 align=texttop alt="Emoticon"></span></div></div>
+                <div class="oneLine"><div class="boldText">message #:</div><div class="textLeft"><span class="fs11">&nbsp; 775.15 in response to <a href="message.asp?webtag=iv-pplibchrist&msg=775.14" target=_self>775.14</a></span></div></div>
+
+
+                <div class="oneLine"><div class="boldText">from:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369396311" onClick="return LBB(369396311);">karenww</a> <nobr></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">to:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369383651" onClick="return LBB(369383651);">pmclean</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=cl" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">date:</div><div class="textLeft"><span class="fs11">&nbsp; 11/14/2001 9:39 pm</span></div></div>
+                <div class="oneLine"><div class="boldText">replies:</div><div class="textLeft"><span class="fs11">&nbsp; 25</span></div></div>
+            </div><!-- End: mainBodyTextTop -->
+
+            <br clear="all" />
+
+            <div class="mainBodyText">
+                <span class="fs5"><!-- OldURL: http://boards2.parentsplace.com/messages/get/pplibchristiann9/40/3/1.html -->
+<p>It's been forever and a half since I've been around here, but may I take a stab?</p>
+
+(I apologize up front for just jumping in -- I just wandered by and couldn't resist.  And I don't claim to have any educated, scholarly insight here -- just off the top of my head -- so feel free to shoot me down.  I am definitely not experienced at the bible study thing.)
+<P>
+
+When you asked, "What situations in our modern churches are parallel, to which we might, by extension, apply this passage?" -- it occurred to me that I would apply this to church members who aren't actively living their faith and those who aren't working to advance Christian principles in their community.  I think we've all probably seen at least one church that isn't doing a whole lot to help others -- those, to me anyway, are believers living in idleness.
+<P>
+
+I don't really know what the situation was in Thessalonica, but I think Paul was telling people to get up off their rear ends and *do* something -- and that if they didn't, they didn't deserve to eat.  Since, as Christians, our main expression of our faith is the communal meal, it seems that Paul is excluding those idle believers (I love the "busybodies") from the community of believers -- I like the American Standard version, "If any will not work, neither let him eat."
+
+<P>
+
+</span>
+                <table><tr></tr></table>
+            </div>
+
+            <div align="center">
+                
+            </div><!-- End: center -->
+        </div><!-- End: dBoxMain -->
+
+        <div class="dBoxMainCrumb1">
+            <div class="dBoxMainRateLinks">
+                <div class="dBoxMainRateLinksStars">&nbsp;</div>
+            </div><!-- End: dBoxMainRateLinks -->
+
+            <div class="dBoxMainCrumbLinks1">
+                
+                <a href="javascript:void(0)" onclick="iv_S2FOverride = 'http://messageboards.ivillage.com/n/mb/message.asp?webtag=iv-pplibchrist&msg=775.15'; iv_openS2F();" class="ls3">send to a friend</a> > &nbsp;
+                <a href="/n/mb/display.asp?webtag=iv-pplibchrist&msg=775.15&print=y" class="ls3">print</a> > &nbsp;
+                <a href="Javascript:bookmark_page('775.15');" class="ls3">bookmark</a> > &nbsp;
+                <a href="/n/mb/reportTOSViolation.asp?webtag=iv-pplibchrist&rptid=775&msg=775.15&rptsn=15&lowtsn=15&uid=369396311" class="ls3">report a violation</a> >
+            </div><!-- End: dBoxMainCrumbLinks1 -->
+        </div><!-- End: dBoxMainCrumb 1 -->
+
+        
+    </div><!-- End: dBox -->
+</div><!-- End: dBoxWrapper --><!-- FP Universal: Shared -->
+<div class="spacer30"></div>
+
+<div class="dBoxWrapper">
+    <div class="dBox">
+        <div class="dBoxLeftCol">
+            <div class="dBoxLeftColText">
+                <div align="center">
+                    <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=365373045" onClick="return LBB(365373045);">duende</a> <nobr></nobr>
+                    <div class="memberPic"><img src="http://acx.prospero.com/dir-app/bbcard/bbMemberPicture.aspx?rid=185&uid=365373045" border=0 height=75 width=50></div>
+                </div><!-- End: center -->
+
+                <div class="lastVisit">
+                    
+                    last visit to<br />this board<br />
+                    8/23/2004<br /><br /><br />
+                    
+
+                    
+                    messages posted<br />this board<br />
+                    83<br /><br />
+                    
+
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=365373045&u=400184051&msg=775.16&f=1" class="ls1">add to friends</a><br />
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=365373045&u=400184051&msg=775.16" class="ls1">ignore posts</a>
+                </div><!-- End: lastVisit -->
+            </div><!-- End: dBoxLeftColText -->
+        </div><!-- End: dBoxLeftCol -->
+
+        <div class="dBoxMain">
+            <div class="mainBodyTextTop">
+                <div class="oneLine"><div class="boldText">re:</div><div class="textLeft1"><span class="fs10">&nbsp; Okay,  let's do it again!  Lectionary...</span></div></div>
+                <div class="oneLine"><div class="boldText">emoticon:</div><div class="textLeft"><span class="fs11">&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=2&iconName=14" border=0 height=15 width=15 align=texttop alt="Emoticon"></span></div></div>
+                <div class="oneLine"><div class="boldText">message #:</div><div class="textLeft"><span class="fs11">&nbsp; 775.16 in response to <a href="message.asp?webtag=iv-pplibchrist&msg=775.15" target=_self>775.15</a></span></div></div>
+
+
+                <div class="oneLine"><div class="boldText">from:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=365373045" onClick="return LBB(365373045);">duende</a> <nobr></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">to:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369396311" onClick="return LBB(369396311);">karenww</a> <nobr></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">date:</div><div class="textLeft"><span class="fs11">&nbsp; 11/15/2001 7:37 pm</span></div></div>
+                <div class="oneLine"><div class="boldText">replies:</div><div class="textLeft"><span class="fs11">&nbsp; 25</span></div></div>
+            </div><!-- End: mainBodyTextTop -->
+
+            <br clear="all" />
+
+            <div class="mainBodyText">
+                <span class="fs5"><!-- OldURL: http://boards2.parentsplace.com/messages/get/pplibchristiann9/40/3/1/1.html -->
+<p>Yes, I can see what you're saying...</p>
+
+...I'm sure that was an issue the apostles dealt with regularly.  Also, what leapt to my mind at this question is "busybodies", or rather "busybiddies" I experienced as a child in church.  You know, the older ladies who's children are gone, who seem to spend an inordinant amount of time carping about the child rearing skills of the younger women in the church.  They always have something to say when one of the children get's out of line, but they never seem to volunteer to *help* keep the children in line.  They are often the same old ladies who pitch a fit if new hymns are introduced or something changed from "the way we've always done things."  They probably have a lot more to offer a church than just their complaints, but that seems to be what they prefer to share.
+<P>
+
+I'm not sure how I got off on this tangent, but it really is what came to my mind...
+
+<P>
+
+</span>
+                <table><tr></tr></table>
+            </div>
+
+            <div align="center">
+                
+            </div><!-- End: center -->
+        </div><!-- End: dBoxMain -->
+
+        <div class="dBoxMainCrumb1">
+            <div class="dBoxMainRateLinks">
+                <div class="dBoxMainRateLinksStars">&nbsp;</div>
+            </div><!-- End: dBoxMainRateLinks -->
+
+            <div class="dBoxMainCrumbLinks1">
+                
+                <a href="javascript:void(0)" onclick="iv_S2FOverride = 'http://messageboards.ivillage.com/n/mb/message.asp?webtag=iv-pplibchrist&msg=775.16'; iv_openS2F();" class="ls3">send to a friend</a> > &nbsp;
+                <a href="/n/mb/display.asp?webtag=iv-pplibchrist&msg=775.16&print=y" class="ls3">print</a> > &nbsp;
+                <a href="Javascript:bookmark_page('775.16');" class="ls3">bookmark</a> > &nbsp;
+                <a href="/n/mb/reportTOSViolation.asp?webtag=iv-pplibchrist&rptid=775&msg=775.16&rptsn=16&lowtsn=16&uid=365373045" class="ls3">report a violation</a> >
+            </div><!-- End: dBoxMainCrumbLinks1 -->
+        </div><!-- End: dBoxMainCrumb 1 -->
+
+        
+    </div><!-- End: dBox -->
+</div><!-- End: dBoxWrapper --><!-- FP Universal: Shared -->
+<div class="spacer30"></div>
+
+<div class="dBoxWrapper">
+    <div class="dBox">
+        <div class="dBoxLeftCol">
+            <div class="dBoxLeftColText">
+                <div align="center">
+                    <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369381605" onClick="return LBB(369381605);">marksma</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=196" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr>
+                    <div class="memberPic"><img src="http://acx.prospero.com/dir-app/bbcard/bbMemberPicture.aspx?rid=185&uid=369381605" border=0 height=75 width=50></div>
+                </div><!-- End: center -->
+
+                <div class="lastVisit">
+                    
+                    last visit to<br />this board<br />
+                    2/24/2004<br /><br /><br />
+                    
+
+                    
+                    messages posted<br />this board<br />
+                    83<br /><br />
+                    
+
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369381605&u=400184051&msg=775.17&f=1" class="ls1">add to friends</a><br />
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369381605&u=400184051&msg=775.17" class="ls1">ignore posts</a>
+                </div><!-- End: lastVisit -->
+            </div><!-- End: dBoxLeftColText -->
+        </div><!-- End: dBoxLeftCol -->
+
+        <div class="dBoxMain">
+            <div class="mainBodyTextTop">
+                <div class="oneLine"><div class="boldText">re:</div><div class="textLeft1"><span class="fs10">&nbsp; Okay,  let's do it again!  Lectionary...</span></div></div>
+                <div class="oneLine"><div class="boldText">emoticon:</div><div class="textLeft"><span class="fs11">&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=2&iconName=2" border=0 height=15 width=15 align=texttop alt="Emoticon"></span></div></div>
+                <div class="oneLine"><div class="boldText">message #:</div><div class="textLeft"><span class="fs11">&nbsp; 775.17 in response to <a href="message.asp?webtag=iv-pplibchrist&msg=775.14" target=_self>775.14</a></span></div></div>
+
+
+                <div class="oneLine"><div class="boldText">from:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369381605" onClick="return LBB(369381605);">marksma</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=196" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">to:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369383651" onClick="return LBB(369383651);">pmclean</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=cl" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">date:</div><div class="textLeft"><span class="fs11">&nbsp; 11/15/2001 12:44 am</span></div></div>
+                <div class="oneLine"><div class="boldText">replies:</div><div class="textLeft"><span class="fs11">&nbsp; 25</span></div></div>
+            </div><!-- End: mainBodyTextTop -->
+
+            <br clear="all" />
+
+            <div class="mainBodyText">
+                <span class="fs5"><!-- OldURL: http://boards2.parentsplace.com/messages/get/pplibchristiann9/40/3/2.html -->
+<p>It seems.....m</p>
+
+that it was a directive to "lead by example".  It would apply to everyone, I think.  Women, disabled, anyone who was capable of doing *something*.  Everyone has something to offer and Paul seems to be saying, put your talents to honest work, not idle busy bodiness, so that you don't inhibit others and cause problems within the church.
+<P>
+
+It applies today in all churches (or any group process really).  It always seems that there are a *few* who do (volunteer) alot and *many* who don't do anything but attend.  There also seems to be a few that are 'involved' in all the wrong ways (busybodies) stiring up trouble.  Paul says here that we should ALL pull our own weight to the extent we are able and not tire of it even if those around us don't follow our example.
+
+<P>
+
+</span>
+                <table><tr></tr></table>
+            </div>
+
+            <div align="center">
+                
+            </div><!-- End: center -->
+        </div><!-- End: dBoxMain -->
+
+        <div class="dBoxMainCrumb1">
+            <div class="dBoxMainRateLinks">
+                <div class="dBoxMainRateLinksStars">&nbsp;</div>
+            </div><!-- End: dBoxMainRateLinks -->
+
+            <div class="dBoxMainCrumbLinks1">
+                
+                <a href="javascript:void(0)" onclick="iv_S2FOverride = 'http://messageboards.ivillage.com/n/mb/message.asp?webtag=iv-pplibchrist&msg=775.17'; iv_openS2F();" class="ls3">send to a friend</a> > &nbsp;
+                <a href="/n/mb/display.asp?webtag=iv-pplibchrist&msg=775.17&print=y" class="ls3">print</a> > &nbsp;
+                <a href="Javascript:bookmark_page('775.17');" class="ls3">bookmark</a> > &nbsp;
+                <a href="/n/mb/reportTOSViolation.asp?webtag=iv-pplibchrist&rptid=775&msg=775.17&rptsn=17&lowtsn=17&uid=369381605" class="ls3">report a violation</a> >
+            </div><!-- End: dBoxMainCrumbLinks1 -->
+        </div><!-- End: dBoxMainCrumb 1 -->
+
+        
+    </div><!-- End: dBox -->
+</div><!-- End: dBoxWrapper --><!-- FP Universal: Shared -->
+<div class="spacer30"></div>
+
+<div class="dBoxWrapper">
+    <div class="dBox">
+        <div class="dBoxLeftCol">
+            <div class="dBoxLeftColText">
+                <div align="center">
+                    <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369385549" onClick="return LBB(369385549);">sara_k</a> <nobr></nobr>
+                    <div class="memberPic"><img src="http://acx.prospero.com/dir-app/bbcard/bbMemberPicture.aspx?rid=185&uid=369385549" border=0 height=75 width=50></div>
+                </div><!-- End: center -->
+
+                <div class="lastVisit">
+                    
+                    last visit to<br />this board<br />
+                    5/22/2005<br /><br /><br />
+                    
+
+                    
+                    messages posted<br />this board<br />
+                    153<br /><br />
+                    
+
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369385549&u=400184051&msg=775.18&f=1" class="ls1">add to friends</a><br />
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369385549&u=400184051&msg=775.18" class="ls1">ignore posts</a>
+                </div><!-- End: lastVisit -->
+            </div><!-- End: dBoxLeftColText -->
+        </div><!-- End: dBoxLeftCol -->
+
+        <div class="dBoxMain">
+            <div class="mainBodyTextTop">
+                <div class="oneLine"><div class="boldText">re:</div><div class="textLeft1"><span class="fs10">&nbsp; Okay,  let's do it again!  Lectionary...</span></div></div>
+                <div class="oneLine"><div class="boldText">emoticon:</div><div class="textLeft"><span class="fs11">&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=2&iconName=2" border=0 height=15 width=15 align=texttop alt="Emoticon"></span></div></div>
+                <div class="oneLine"><div class="boldText">message #:</div><div class="textLeft"><span class="fs11">&nbsp; 775.18 in response to <a href="message.asp?webtag=iv-pplibchrist&msg=775.14" target=_self>775.14</a></span></div></div>
+
+
+                <div class="oneLine"><div class="boldText">from:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369385549" onClick="return LBB(369385549);">sara_k</a> <nobr></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">to:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369383651" onClick="return LBB(369383651);">pmclean</a> <nobr>&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=1&iconName=cl" border=0 height=15 width=15 align=texttop alt='Member Icon'></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">date:</div><div class="textLeft"><span class="fs11">&nbsp; 11/15/2001 7:06 am</span></div></div>
+                <div class="oneLine"><div class="boldText">replies:</div><div class="textLeft"><span class="fs11">&nbsp; 25</span></div></div>
+            </div><!-- End: mainBodyTextTop -->
+
+            <br clear="all" />
+
+            <div class="mainBodyText">
+                <span class="fs5"><!-- OldURL: http://boards2.parentsplace.com/messages/get/pplibchristiann9/40/3/3.html -->
+<p>If you thought the end was at hand it might seem safer to ease up (less chance of blowing it)...</p>
+
+If the Maranatha is around the corner, there would be a tendency to live as quietly as you could. No need to evangelize, no need to make next monthes mortgage payment, no need to store up for winter.  I'll just sit here in my good clothes so I look pretty for Jesus.
+<P>
+
+That would be shocking to those who saw that the storm was coming and the harvest must come in if any of it was to be saved.
+<P>
+
+C'mon Pauline writer! Dig up the parable of the investing servants. Point out that those who risk themselves for the Lord are those most valued. The "hide it to keep it safe" servant is not a help to the master.
+<P>
+
+&lt;sigh&gt;
+<P>
+
+I agree with the other posters who see that there are those who think that as long as they are taking care of their spiritual lives they don't need to reach out and carry any of the community burden. If you are part of the community, you must work the fields to share in the harvest.
+<P>
+
+I wonder if the Pauline writer had ANY idea how often that passage would be used to push kids to do their chores?
+<P>
+
+Sara
+
+<P>
+
+</span>
+                <table><tr></tr></table>
+            </div>
+
+            <div align="center">
+                
+            </div><!-- End: center -->
+        </div><!-- End: dBoxMain -->
+
+        <div class="dBoxMainCrumb1">
+            <div class="dBoxMainRateLinks">
+                <div class="dBoxMainRateLinksStars">&nbsp;</div>
+            </div><!-- End: dBoxMainRateLinks -->
+
+            <div class="dBoxMainCrumbLinks1">
+                
+                <a href="javascript:void(0)" onclick="iv_S2FOverride = 'http://messageboards.ivillage.com/n/mb/message.asp?webtag=iv-pplibchrist&msg=775.18'; iv_openS2F();" class="ls3">send to a friend</a> > &nbsp;
+                <a href="/n/mb/display.asp?webtag=iv-pplibchrist&msg=775.18&print=y" class="ls3">print</a> > &nbsp;
+                <a href="Javascript:bookmark_page('775.18');" class="ls3">bookmark</a> > &nbsp;
+                <a href="/n/mb/reportTOSViolation.asp?webtag=iv-pplibchrist&rptid=775&msg=775.18&rptsn=18&lowtsn=18&uid=369385549" class="ls3">report a violation</a> >
+            </div><!-- End: dBoxMainCrumbLinks1 -->
+        </div><!-- End: dBoxMainCrumb 1 -->
+
+        
+    </div><!-- End: dBox -->
+</div><!-- End: dBoxWrapper --><!-- FP Universal: Shared -->
+<div class="spacer30"></div>
+
+<div class="dBoxWrapper">
+    <div class="dBox">
+        <div class="dBoxLeftCol">
+            <div class="dBoxLeftColText">
+                <div align="center">
+                    <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369883572" onClick="return LBB(369883572);">cgi_bin</a> <nobr></nobr>
+                    <div class="memberPic"><img src="http://acx.prospero.com/dir-app/bbcard/bbMemberPicture.aspx?rid=185&uid=369883572" border=0 height=75 width=50></div>
+                </div><!-- End: center -->
+
+                <div class="lastVisit">
+                    
+                    last visit to<br />this board<br />
+                    4/7/2003<br /><br /><br />
+                    
+
+                    
+
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369883572&u=400184051&msg=775.19&f=1" class="ls1">add to friends</a><br />
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369883572&u=400184051&msg=775.19" class="ls1">ignore posts</a>
+                </div><!-- End: lastVisit -->
+            </div><!-- End: dBoxLeftColText -->
+        </div><!-- End: dBoxLeftCol -->
+
+        <div class="dBoxMain">
+            <div class="mainBodyTextTop">
+                <div class="oneLine"><div class="boldText">re:</div><div class="textLeft1"><span class="fs10">&nbsp; Okay,  let's do it again!  Lectionary...</span></div></div>
+                <div class="oneLine"><div class="boldText">emoticon:</div><div class="textLeft"><span class="fs11">&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=2&iconName=21" border=0 height=15 width=15 align=texttop alt="Emoticon"></span></div></div>
+                <div class="oneLine"><div class="boldText">message #:</div><div class="textLeft"><span class="fs11">&nbsp; 775.19 in response to <a href="message.asp?webtag=iv-pplibchrist&msg=775.18" target=_self>775.18</a></span></div></div>
+
+
+                <div class="oneLine"><div class="boldText">from:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369883572" onClick="return LBB(369883572);">cgi_bin</a> <nobr></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">to:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369385549" onClick="return LBB(369385549);">sara_k</a> <nobr></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">date:</div><div class="textLeft"><span class="fs11">&nbsp; 11/15/2001 9:03 pm</span></div></div>
+                <div class="oneLine"><div class="boldText">replies:</div><div class="textLeft"><span class="fs11">&nbsp; 25</span></div></div>
+            </div><!-- End: mainBodyTextTop -->
+
+            <br clear="all" />
+
+            <div class="mainBodyText">
+                <span class="fs5"><!-- OldURL: http://boards2.parentsplace.com/messages/get/pplibchristiann9/40/3/3/1.html -->
+<p>that last line was very deep. nt</p>
+</span>
+                <table><tr></tr></table>
+            </div>
+
+            <div align="center">
+                
+            </div><!-- End: center -->
+        </div><!-- End: dBoxMain -->
+
+        <div class="dBoxMainCrumb1">
+            <div class="dBoxMainRateLinks">
+                <div class="dBoxMainRateLinksStars">&nbsp;</div>
+            </div><!-- End: dBoxMainRateLinks -->
+
+            <div class="dBoxMainCrumbLinks1">
+                
+                <a href="javascript:void(0)" onclick="iv_S2FOverride = 'http://messageboards.ivillage.com/n/mb/message.asp?webtag=iv-pplibchrist&msg=775.19'; iv_openS2F();" class="ls3">send to a friend</a> > &nbsp;
+                <a href="/n/mb/display.asp?webtag=iv-pplibchrist&msg=775.19&print=y" class="ls3">print</a> > &nbsp;
+                <a href="Javascript:bookmark_page('775.19');" class="ls3">bookmark</a> > &nbsp;
+                <a href="/n/mb/reportTOSViolation.asp?webtag=iv-pplibchrist&rptid=775&msg=775.19&rptsn=19&lowtsn=19&uid=369883572" class="ls3">report a violation</a> >
+            </div><!-- End: dBoxMainCrumbLinks1 -->
+        </div><!-- End: dBoxMainCrumb 1 -->
+
+        
+    </div><!-- End: dBox -->
+</div><!-- End: dBoxWrapper --><!-- FP Universal: Shared -->
+<div class="spacer30"></div>
+
+<div class="dBoxWrapper">
+    <div class="dBox">
+        <div class="dBoxLeftCol">
+            <div class="dBoxLeftColText">
+                <div align="center">
+                    <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369385549" onClick="return LBB(369385549);">sara_k</a> <nobr></nobr>
+                    <div class="memberPic"><img src="http://acx.prospero.com/dir-app/bbcard/bbMemberPicture.aspx?rid=185&uid=369385549" border=0 height=75 width=50></div>
+                </div><!-- End: center -->
+
+                <div class="lastVisit">
+                    
+                    last visit to<br />this board<br />
+                    5/22/2005<br /><br /><br />
+                    
+
+                    
+                    messages posted<br />this board<br />
+                    153<br /><br />
+                    
+
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369385549&u=400184051&msg=775.20&f=1" class="ls1">add to friends</a><br />
+                    <a href="/n/mb/ignore.asp?webtag=iv-pplibchrist&uid=369385549&u=400184051&msg=775.20" class="ls1">ignore posts</a>
+                </div><!-- End: lastVisit -->
+            </div><!-- End: dBoxLeftColText -->
+        </div><!-- End: dBoxLeftCol -->
+
+        <div class="dBoxMain">
+            <div class="mainBodyTextTop">
+                <div class="oneLine"><div class="boldText">re:</div><div class="textLeft1"><span class="fs10">&nbsp; Okay,  let's do it again!  Lectionary...</span></div></div>
+                <div class="oneLine"><div class="boldText">emoticon:</div><div class="textLeft"><span class="fs11">&nbsp;<img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=2&iconName=2" border=0 height=15 width=15 align=texttop alt="Emoticon"></span></div></div>
+                <div class="oneLine"><div class="boldText">message #:</div><div class="textLeft"><span class="fs11">&nbsp; 775.20 in response to <a href="message.asp?webtag=iv-pplibchrist&msg=775.19" target=_self>775.19</a></span></div></div>
+
+
+                <div class="oneLine"><div class="boldText">from:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369385549" onClick="return LBB(369385549);">sara_k</a> <nobr></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">to:</div><div class="textLeft"><span class="fs11">&nbsp; <a class="memname" href="/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=369883572" onClick="return LBB(369883572);">cgi_bin</a> <nobr></nobr></span></div></div>
+                
+                <div class="oneLine"><div class="boldText">date:</div><div class="textLeft"><span class="fs11">&nbsp; 11/15/2001 9:27 pm</span></div></div>
+                <div class="oneLine"><div class="boldText">replies:</div><div class="textLeft"><span class="fs11">&nbsp; 25</span></div></div>
+            </div><!-- End: mainBodyTextTop -->
+
+            <br clear="all" />
+
+            <div class="mainBodyText">
+                <span class="fs5"><!-- OldURL: http://boards2.parentsplace.com/messages/get/pplibchristiann9/40/3/3/1/1.html -->
+<p>Snort! Deep is for diving. I'm fond of the sitting pretty sentence. (nt)</p>
+</span>
+                <table><tr></tr></table>
+            </div>
+
+            <div align="center">
+                
+            </div><!-- End: center -->
+        </div><!-- End: dBoxMain -->
+
+        <div class="dBoxMainCrumb1">
+            <div class="dBoxMainRateLinks">
+                <div class="dBoxMainRateLinksStars">&nbsp;</div>
+            </div><!-- End: dBoxMainRateLinks -->
+
+            <div class="dBoxMainCrumbLinks1">
+                
+                <a href="javascript:void(0)" onclick="iv_S2FOverride = 'http://messageboards.ivillage.com/n/mb/message.asp?webtag=iv-pplibchrist&msg=775.20'; iv_openS2F();" class="ls3">send to a friend</a> > &nbsp;
+                <a href="/n/mb/display.asp?webtag=iv-pplibchrist&msg=775.20&print=y" class="ls3">print</a> > &nbsp;
+                <a href="Javascript:bookmark_page('775.20');" class="ls3">bookmark</a> > &nbsp;
+                <a href="/n/mb/reportTOSViolation.asp?webtag=iv-pplibchrist&rptid=775&msg=775.20&rptsn=20&lowtsn=20&uid=369385549" class="ls3">report a violation</a> >
+            </div><!-- End: dBoxMainCrumbLinks1 -->
+        </div><!-- End: dBoxMainCrumb 1 -->
+
+        
+    </div><!-- End: dBox -->
+</div><!-- End: dBoxWrapper -->
+
+<div class="dBoxWrapper2">
+    <div class="messDisLinks">MESSAGES IN THIS DISCUSSION &nbsp; <span class="p_msgnavnumbers"><b>1-20</b> <a class=ls1 target="_self" href="/n/mb/message.asp?webtag=iv-pplibchrist&msg=775.21">21-25</a> </span><a class=ls1 target="_self" href="/n/mb/message.asp?webtag=iv-pplibchrist&msg=775.21">read next&gt;</a></div>
+</div><!-- End; dBoxWrapper2 -->
+
+<div class="rightFloatLink"><a href="/n/mb/message.asp?webtag=iv-pplibchrist&msg=775.&prev=yes">&lt; Jump to Previous Discussion</a>&nbsp; &nbsp; <a href="/n/mb/message.asp?webtag=iv-pplibchrist&msg=775.&next=yes">Jump to Next Discussion &gt;</a></div>
+
+<div class="brownBox">
+    <div class="brownBoxLeft">
+        <div class="brownBoxLeftBox">
+            <div align="center">
+                Change the number of messages<br /> displayed on this page in<br />
+                <a class="mc" href="#" id="accountlink" onClick="window.open('http://messageboards.ivillage.com/dir-app/bbcard/profile.asp?webtag=iv-pplibchrist&uid=400184051&want=ea' ,'u400184051Window','scrollbars=yes,width=630,height=580,resizable=yes,toolbar=no,location=no,directories=no,status=no,menubar=no,copyhistory=no');return false;"><img src="http://a820.g.akamai.net/f/820/822/1d/i.ivillage.com/messageboards/redesign/settings_btn.gif" alt="" border="0" /></a>
+            </div>
+        </div><!-- End: brownBoxLeftBox -->   
+    </div><!-- End: brownBoxLeft -->
+
+    <div class="brownBoxMid">
+        <div class="brownBoxMidBox">
+            Indicate your interest in the discussion
+            <form method=get name=rateform id=msgLNintForm action="/n/mb/message.asp" target="_self"><input type=hidden name=webtag value="iv-pplibchrist"><input type=hidden name=msg value="775.1"><nobr><span class=winmed><input class=msgnavigation type=radio name=interest id=msgLNintH value=2><img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=4&iconName=tu" width=10 height=12><label for="msgLNintH">High</label>&nbsp;<input class=msgnavigation type=radio name=interest id=msgLNintN value=1 checked><label for="msgLNintN">Neutral</label>&nbsp;<input class=msgnavigation type=radio name=interest id=msgLNintI value=0><img src="http://acx.prospero.com/dir-app/icon.aspx?realmId=185&iconTypeId=4&iconName=td" width=10 height=12><label for="msgLNintI">Ignore</label>&nbsp;<input type=submit name="apply" value="Apply" onClick="this.className='b2'" onBlur="this.className='button'" class=button id=msgLNintBtn /></span></nobr></form>
+        </div><!-- End: brownBoxMidBox --> 
+    </div><!-- End: brownBoxMid-->
+
+    <div class="brownBoxRight">
+        <div class="brownBoxRightBox">
+            <div align="center">
+                Get updates to this discussion<br />delivered by email<br />
+                <a href="/n/mb/subscribe.asp?webtag=iv-pplibchrist&msg=775"><img src="http://a820.g.akamai.net/f/820/822/1d/i.ivillage.com/messageboards/redesign/signup_btn.gif" alt="" border="0" /></a>
+            </div>
+        </div><!-- End: brownBoxRightBox -->   
+    </div><!-- End: brownBoxRight -->
+</div><!-- End: brownBox -->
+
+<!-- Top level PH4 (How Do I). FP Spec. FP28 -->
+<div class="spacer10"></div>
+
+<div class="bottomAdsWrapper">
+    <div class="howDo">
+        <div class="howDoPad">
+            <span class="howDoTitle">How Do I ...</span>
+            <div class="leftList">
+                <ul>
+                    <li><a href="http://www.ivillage.com/messageboardsplus?o=dcm,mbp,iv,el,hdiboxeyp,0,0">Block banner ads and pop-under advertising?</a></li>
+                </ul>
+            </div><!-- End: leftList -->
+        </div><!-- End: howDoPad -->
+    </div><!-- End: howdo -->
+</div>
+  </td></tr>
+</table>
+
+            </td></tr></table>
+
+            <div class="borderLine">&nbsp;</div>
+            <div class="youarehere"><script language="javascript" type="text/javascript">iv_drawBack();</script> <!--<a href="#" class="rightFloatLink">Mark all as read</a></div>-->
+            <div class="borderLine">&nbsp;</div>
+
+            <!-- Ads -->
+            <div class="clearBoth"></div>
+
+            <div class="messageAdLeft">
+                <script language="javascript" type="text/javascript">iv_drawBoardCTA();</script>
+            </div><!-- End: messageAdLeft -->
+
+
+            <div class="advert300RightRead">
+                <script language="javascript" type="text/javascript">iv_drawAd14();</script>
+            </div><!-- End: advert300RightRead -->
+
+            <div class="spacer">&nbsp;</div>
+
+
+
+<br clear="all" />
+<br clear="all" />
+
+<div align="center">
+<script language="javascript" type="text/javascript">iv_drawAd11();</script>
+</div><!-- End: center -->
+
+
+            <!-- Footer -->
+            <div id="footer">
+                <ul id="footivil">
+                    <li class="label"><span>On iVillage:</span></li>
+                    <li class="first"><a href="http://www.ivillage.com/">Home</a></li>
+                    <li><a href="http://www.ivillage.com/archive/a2z/">Topics A-Z</a></li>
+                    <li><a href="http://www.ivillage.com/messageboards/">Message Boards</a></li>
+                    <li><a href="http://www.ivillage.com/archive/0,,17-3,00.html">Quizzes</a></li>
+                    <li><a href="https://subscriber.ivillage.com/funnels/5">Newsletters</a></li>
+                    <li><a href="http://www.ivillage.com/promotions/">Free Stuff</a></li>
+                    <li><a href="http://www.astrology.com/">Astrology</a></li>
+					<li><a href="http://www.ivillage.com/videos/0,,s0pz,00.html">Multimedia</a></li>
+		            <li><a href="http://www.ivillage.com/blogs/topics/0,,8fnp4s3g,00.html">Blogs</a></li>
+                    <li class="subholder">
+                        <ul id="footmainnav">
+                            <li class="first"><a href="http://beauty.ivillage.com/">Beauty &amp; Style</a></li>
+                            <li><a href="http://health.ivillage.com/">Health &amp; Well-Being</a></li>
+                            <li><a href="http://diet.ivillage.com/">Diet &amp; Fitness</a></li>
+                            <li><a href="http://love.ivillage.com/">Love &amp; Sex</a></li>
+                            <li><a href="http://parenting.ivillage.com/">Pregnancy &amp; Parenting</a></li>
+                            <li><a href="http://home.ivillage.com/">Home &amp; Food</a></li>
+                            <li><a href="http://entertainment.ivillage.com/" class="last">Entertainment</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul id="footspecial">
+                    <li class="label"><span>Special Sections:</span></li>
+                    <li class="first"><a href="http://love.ivillage.com/snd/sndonline/0,,nddp,00.html?ice=spn,yh,pers,iv,botnav">Personals</a></li>
+                    <li><a href="http://www.ivillage.com/advanta?ice=spn,adv,brdg,wk,in_rec">small Business</a></li>
+                    <li><a href="http://ivillage.edmunds.com/">Cars</a></li>
+                    <li><a href="http://jobs.careerbuilder.com/?ch=al&amp;lr=cbcb_iv&amp;siteid=civil07&amp;cbRecursionCnt=1&amp;cbsid=2542072cc18543c98f1aebbaa3f76d64-149696427-xm-2">Job Resources</a></li>
+                    <li><a href="http://www.ivillage.com/advanta?ice=spn,adv,brdg,wk,in_rec">Your Money</a></li>
+                    <li><a href="http://www.ivillage.com/0,,78pxnkds,00.html">Coupons</a></li>
+                    <li><a href="http://entertainment.ivillage.com/games/topics/0,,4vm7,00.html">Games</a></li>
+                </ul>
+
+                <ul id="footmags">
+                    <li class="label"><span>Magazines:</span></li>
+                    <li class="first"><a href="http://magazines.ivillage.com/cosmopolitan/">Cosmopolitan</a></li>
+                    <li><a href="http://magazines.ivillage.com/countryliving/">Country Living</a></li>
+                    <li><a href="http://magazines.ivillage.com/goodhousekeeping/">Good Housekeeping</a></li>
+                    <li><a href="http://magazines.ivillage.com/housebeautiful/">House Beautiful</a></li>
+                    <li><a href="http://magazines.ivillage.com/marieclaire/">Marie Claire</a></li>
+                    <li><a href="http://magazines.ivillage.com/redbook/">Redbook</a></li>
+                    <li><a href="http://magazines.ivillage.com/townandcountry/">Town &amp; Country</a></li>
+                </ul>
+
+                <div id="subfoot">
+                    <ul>
+                        <li class="first"><a href="http://www.ivillage.com/about/0,,qr4p,00.html">Terms of Service</a></li>
+                        <li><a href="http://www.ivillage.com/about/0,,qqzh,00.html">Privacy Policy</a></li>
+                        <li><a href="http://phx.corporate-ir.net/phoenix.zhtml?c=90802&amp;p=irol-investor&amp;arrivalSA=1&amp;cobrandRef=0">About iVillage</a></li>
+                        <li><a href="http://www.ivillage.com/support/0,,qk3w,00.html">Customer Support</a></li>
+                    </ul>
+
+                    <div class="copyright">&copy;1995-2006 iVillage. All Rights Reserved.</div>
+                </div><!-- End: subfoot -->
+
+            </div><!-- End: footer -->
+
+        </div><!-- End: alignLeftWrapper2 -->
+    </div><!-- End: centering div -->
+</div><!-- End: alignLeftWrapper -->
+
+
+
+<!-- Footer Tracking Version 1.1 -->
+<script type="text/javascript" language="javascript">Tacoda_AMS_DDC_js=1.0</script>
+<script type="text/javascript" language="javascript1.1">Tacoda_AMS_DDC_js=1.1</script>
+<script type="text/javascript" language="javascript1.2">Tacoda_AMS_DDC_js=1.2</script>
+<script type="text/javascript" language="javascript1.3">Tacoda_AMS_DDC_js=1.3</script>
+<script type="text/javascript" language="javascript" src="http://i.ivillage.com/includes/iv_tacoda.js"></script>
+<script type="text/javascript" language="javascript" src="http://i.ivillage.com/includes/iv_footer.js"></script>
+
+</body>
+</html>

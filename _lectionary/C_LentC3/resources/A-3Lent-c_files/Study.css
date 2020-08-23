@@ -1,0 +1,15 @@
+
+a          { color: white; font-size: 11px; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration: none }
+.indent             { font-size: 11px; line-height: 21px; font-family: Georgia, "Times New Roman", Times; text-align: justify; margin-right: 30px; margin-left: 30px }
+.versetxt        { color: maroon; font-size: 11px; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular }
+.bodytext             { font-size: 12px; line-height: 21px; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-align: justify; margin-right: 10px; margin-left: 10px }
+h4              { color: teal; font-size: 16px; font-family: Georgia, "Times New Roman", Times; letter-spacing: 2.5px }
+.bluetext          { color: blue; font-size: 12px; line-height: 22px; font-family: Georgia, "Times New Roman", Times; text-align: justify }
+.maroontext          { color: maroon; font-size: 12px; line-height: 22px; font-family: Georgia, "Times New Roman", Times; text-align: justify }
+.tealtitle         { color: teal; font-size: 12px; font-family: Georgia, "Times New Roman", Times }
+.bottom    { font-size: 10px; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-align: justify }
+a:hover       { color: yellow; font-size: 11px; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration: underline }
+.destination        { color: yellow; font-size: 11px; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration: none }
+.firstletter  { color: white; font-size: 22px; font-family: Georgia, "Times New Roman", Times }
+.whitetitle { color: white; font-size: 13px; font-family: Georgia, "Times New Roman", Times }
+.scripture   { font-size: 11px; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular }

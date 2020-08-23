@@ -1,0 +1,50 @@
+
+.leftNavcontent {
+	font-family: Tahoma, Arial;
+	color: #096b94;
+	font-size: 11px;
+	text-decoration:none;
+}
+
+.form_text_hub {
+	font-family: Tahoma, Arial;
+	color: #333333;
+	font-size: 11px;
+}
+
+.leftNavhilghlight{
+	font-family: Tahoma, Arial;
+	color: #DF6F00;
+	font-size: 11px;
+	text-decoration:none;
+}
+
+a.sideLinks {
+	font-family: Tahoma, Arial;
+	color: #096b94;
+	font-size: 12px;
+	text-decoration:none;
+}
+a.sideLinks:hover {
+	font-family: Tahoma, Arial;
+	color: #096b94;
+	font-size: 12px;
+	text-decoration:underline;
+}
+
+
+.selected {
+	font-family: Tahoma, Arial;
+	color: #666;
+	font-size: 12px;
+}
+/*a:visited {
+
+	color: #0066FF;
+	font-weight: bold;
+}
+a:link {
+	color: #0066FF;
+	font-weight: bold;
+
+}*/
