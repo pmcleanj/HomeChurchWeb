@@ -61,7 +61,7 @@ summary: "main page"
 <div id="rightPanel">
 	<h1>Lectionary Resources</h1>
 	{% for proper in site.data.lectionary %}
-    <a href="{{ proper.proper }}" {% if page.url == item.proper %}style="color: $reference-visited"{% endif %}>
+    <a href="lectionary/{{ proper.proper }}/post/" {% if page.url == item.proper %}style="color: $reference-visited"{% endif %}>
       {{ proper.proper }}
     </a>
   {% endfor %}

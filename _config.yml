@@ -32,7 +32,7 @@ excerpt_separator: <!--more-->
 
 
 collections:
-   patterns:
+   lectionary:
        output: true
    AnglicanNotes:
        output: true
