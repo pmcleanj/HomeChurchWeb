@@ -1,0 +1,18 @@
+
+.bodytext   { font-size: 12px; line-height: 21px; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-align: justify }
+.indent               { font-size: 11px; line-height: 21px; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-align: justify; margin-right: 15px; margin-left: 15px }
+.versetxt         { color: maroon; font-size: 11px; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-align: right }
+.maroontext  { color: maroon; font-size: 12px; line-height: 22px; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-align: justify }
+.bluetext  { color: blue; font-size: 12px; line-height: 22px; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-align: justify }
+.topsite { color: yellow; font-size: 11px; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration: none }
+.sidebarsite { color: black; font-weight: bold; font-size: 11px; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular }
+.sidebardirection { color: black; font-size: 11px; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular }
+.linkwhite { color: white; font-size: 11px; font-family: Verdana }
+.bottom    { font-size: 10px; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-align: justify }
+h4  { color: teal; font-weight: bold; font-size: 14px; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; letter-spacing: 3px }
+a { color: white; font-size: 11px; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration: none }
+a:hover        { font-size: 11px; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration: underline }
+.whitetitle { color: white; font-size: 13px; font-family: Georgia, "Times New Roman", Times }
+.scripture    { color: black; font-size: 11px; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular }
+.e-mail { font-size: 11px; line-height: 18px; font-family: Verdana; text-align: justify; margin-right: 20px }
+.catsubtitle { font-weight: bold; font-size: 12px; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; letter-spacing: 3px; margin-top: 30px; margin-bottom: 15px }
