@@ -97,12 +97,13 @@
 * ========================================================================== */
 .blog-footer {
 	font-family: $reference-font;
-  background-color: $reference-background;
-  color: $reference;
-  vertical-align: center;
-  z-index: 100;
-  width: 100%;
-  border-top: 1px solid  $accent;
+	background-color: $reference-background;
+	color: $reference;
+	vertical-align: center;
+	z-index: 100;
+	width: 100%;
+	border-top: 1px solid  $accent;
+	clear: both;
 }
 
 /*
@@ -177,6 +178,7 @@ article {
   text-align: center;
   line-height: 1.5em;
   background: $accent-background;
+  float: clear;
 }
 
 
