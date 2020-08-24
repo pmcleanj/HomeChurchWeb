@@ -36,12 +36,14 @@ collections:
        output: true
    AnglicanNotes:
        output: true
+   EverydayHoliness:
+       output: true
         
         
 defaults:
   - scope:
       path: ""
-      type: "anglicanNotes"
+      type: "AnglicanNotes"
     values:
       layout: "default"
   - scope:

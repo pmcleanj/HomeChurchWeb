@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+				
+<article class="post" STYLE="background: {{page.colour}}">
+
+  <h3 class="post-title">{{ page.title }}</h3>
+
+	<p class="post-meta">
+    <h6 datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%d-%m-%Y" }}</h6>
+	<a href="{{ site.baseurl }}/denizens/{{ page.denizen }}"><h6>{{ page.denizen }}</h6></a>
+	</p>
+
+	<div class="post-content">
+    {{ content }}
+    <div class="post-links">
+      {% if page.next.url %}
+        <a class="link-to-post" href="{{ page.next.url | relative_url}}">
+          <span class="link-to-post__next">&#10535; &nbsp;Next post</span>
+          <span class="link-to-post__title">{{ page.next.title }}</span>
+        </a>
+      {% endif %}
+
+      {% if page.previous.url %}
+        <a class="link-to-post" href="{{ page.previous.url | relative_url}}">
+          <span class="link-to-post__prev">&#10535; &nbsp;Previous post</span>
+          <span class="link-to-post__title">{{ page.previous.title }}</span>
+        </a>
+      {% endif %}
+    </div>
+
+  </div>
+
+</article>
+
+<small>
+	<div class="cat_list" >
+    {% for category in page.categories %}
+			<a class="cats" href="{{ site.baseurl }}/categories/index.html#{{category}}">{{ category }}</a>
+    {% endfor %}
+    </div>
+</small>

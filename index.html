@@ -9,8 +9,7 @@ summary: "main page"
 <div id="leftPanel">
 
 
-	<!-- create categories array-->
-	{% assign categories_array = "" | split:" " %}
+<!-- 	create categories array	{% assign categories_array = "" | split:" " %} -->
 	{% for note in site.AnglicanNotes %}
 	    {% for tag in note.tags %}
 	        {% assign tag_array = tag_array | push: tag | uniq %}
@@ -18,7 +17,7 @@ summary: "main page"
 	{% endfor %}
 	<br>
 	
-	<!-- {% assign tag_array = tag_array |sort %} -->
+	{% assign tag_array = tag_array |sort %}
 	{% assign tag_array = tag_array | push: "uncategorized" | uniq %}
 	
 	<br>
@@ -44,10 +43,16 @@ summary: "main page"
 		{%endfor %}
 	{% endfor %}
 	
-	{% for proper in site.lectionary %}
-		<p>proper {{proper.url}}</p>
+	<h3>Everyday Holiness</h3>
+	
+	{% for HolyDay in site.EverydayHoliness %}
+		<a class="listOlinks" href="{{site.url}}{{site.baseurl}}{{HolyDay.url}}">{{ HolyDay.title }}</a>
 	{% endfor %}
+
+
+
 </div>
+
 
 
 
@@ -66,3 +71,13 @@ summary: "main page"
     </a>
   {% endfor %}
 </div>
+
+
+
+
+<!-- ================================================================================= -->
+
+
+
+
+
